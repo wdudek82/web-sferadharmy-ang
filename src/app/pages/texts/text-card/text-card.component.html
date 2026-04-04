@@ -1,4 +1,4 @@
-<article class="text-card">
+<article class="text-card" [class.is-visible]="isVisible()">
   <a class="text-media" [attr.href]="text.href">
     <img [src]="text.image" [alt]="text.title">
   </a>
