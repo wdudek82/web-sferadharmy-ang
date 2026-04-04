@@ -1,6 +1,6 @@
 .contact {
-  background: var(--surface);
-  border-top: 1px solid var(--border-soft);
+  background: var(--surface-primary);
+  border-top: 1px solid var(--border-subtle);
 }
 
 .contact-grid {
@@ -12,18 +12,18 @@
 .contact-form {
   display: grid;
   gap: 1.4rem;
-  background: var(--surface-glass);
+  background: var(--surface-elevated);
   padding: 2rem;
   border-radius: var(--radius);
-  border: 1px solid var(--border-soft);
-  box-shadow: var(--shadow-soft);
+  border: 1px solid var(--border-subtle);
+  box-shadow: var(--shadow-elevated);
 }
 
 .form-field {
   display: grid;
   gap: 0.6rem;
   font-size: 0.95rem;
-  color: var(--ink-soft);
+  color: var(--text-secondary);
 }
 
 .form-field span {
@@ -37,24 +37,24 @@
 .form-field textarea {
   width: 100%;
   border-radius: 14px;
-  border: 1px solid var(--border-soft);
+  border: 1px solid var(--border-subtle);
   padding: 0.85rem 1rem;
   font-family: var(--font-body);
   font-size: 1rem;
   background: #fffdfb;
-  color: var(--ink);
+  color: var(--text-primary);
 }
 
 .form-field input:focus,
 .form-field textarea:focus {
   outline: 2px solid rgba(255, 159, 28, 0.25);
-  border-color: var(--sunset-orange);
+  border-color: var(--primary-color);
 }
 
 .contact-panel {
   background: #fffdfb;
   border-radius: var(--radius);
-  border: 1px solid var(--border-soft);
+  border: 1px solid var(--border-subtle);
   padding: 2rem;
   display: grid;
   gap: 1.2rem;
@@ -67,18 +67,18 @@
 }
 
 .contact-panel p {
-  color: var(--ink-soft);
+  color: var(--text-secondary);
 }
 
 .contact-item {
   display: grid;
   gap: 0.4rem;
   font-size: 0.95rem;
-  color: var(--ink-soft);
+  color: var(--text-secondary);
 }
 
 .contact-item strong {
-  color: var(--ink);
+  color: var(--text-primary);
 }
 
 @media (max-width: 900px) {

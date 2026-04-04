@@ -18,7 +18,7 @@
   padding: 1.6rem 6%;
   background: rgba(255, 247, 240, 0.88);
   backdrop-filter: blur(10px);
-  border-bottom: 1px solid var(--border-soft);
+  border-bottom: 1px solid var(--border-subtle);
 }
 
 .brand {
@@ -26,7 +26,7 @@
   font-size: 1.7rem;
   font-weight: 600;
   letter-spacing: 0.8px;
-  color: var(--ink);
+  color: var(--text-primary);
 }
 
 .nav-links {
@@ -39,13 +39,13 @@
 }
 
 .nav-links a {
-  color: var(--ink-soft);
+  color: var(--text-secondary);
   transition: color 0.3s ease;
 }
 
 .nav-links a:hover,
 .nav-links a.active {
-  color: var(--sunset-orange);
+  color: var(--primary-color);
 }
 
 .nav-toggle {
@@ -68,7 +68,7 @@
   width: 28px;
   height: 2px;
   border-radius: 999px;
-  background: var(--ink);
+  background: var(--text-primary);
   transition: transform 0.3s ease, opacity 0.3s ease;
   transform-origin: center;
 }
@@ -142,13 +142,13 @@
   font-size: 1.1rem;
   text-transform: uppercase;
   letter-spacing: 0.12em;
-  color: var(--ink-soft);
+  color: var(--text-secondary);
 }
 
 .nav-overlay-panel a {
   font-family: var(--font-display);
   font-size: 1.4rem;
-  color: var(--ink);
+  color: var(--text-primary);
 }
 
 .footer {
@@ -157,8 +157,8 @@
   display: flex;
   justify-content: space-between;
   gap: 1rem;
-  color: var(--ink-soft);
-  border-top: 1px solid var(--border-soft);
+  color: var(--text-secondary);
+  border-top: 1px solid var(--border-subtle);
   background: rgba(255, 247, 240, 0.8);
 }
 

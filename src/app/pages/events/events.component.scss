@@ -1,7 +1,7 @@
 .events {
-  background: var(--surface);
-  border-top: 1px solid var(--border-soft);
-  border-bottom: 1px solid var(--border-soft);
+  background: var(--surface-primary);
+  border-top: 1px solid var(--border-subtle);
+  border-bottom: 1px solid var(--border-subtle);
 }
 
 .event-list {
@@ -15,7 +15,7 @@
   gap: 1.5rem;
   padding: 1.6rem;
   border-radius: var(--radius);
-  border: 1px solid var(--border-soft);
+  border: 1px solid var(--border-subtle);
   background: #fffdfb;
 }
 
@@ -26,12 +26,12 @@
   font-family: var(--font-display);
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: var(--sunset-orange);
+  color: var(--primary-color);
 }
 
 .event-date strong {
   font-size: 1.5rem;
-  color: var(--ink);
+  color: var(--text-primary);
 }
 
 .event-info h3 {
@@ -40,7 +40,7 @@
 }
 
 .event-info p {
-  color: var(--ink-soft);
+  color: var(--text-secondary);
 }
 
 @media (max-width: 900px) {

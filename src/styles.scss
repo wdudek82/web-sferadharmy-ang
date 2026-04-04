@@ -1,15 +1,15 @@
 :root {
-  --sunset-orange: #ff9f1c;
-  --sunset-yellow: #ffbf69;
-  --sunset-buff: #cb997e;
-  --sunset-peach: #ffe8d6;
-  --ink: #2c2018;
-  --ink-soft: #5a4a41;
-  --surface: #fff7f0;
-  --surface-strong: #f5e4d8;
-  --surface-glass: rgba(255, 255, 255, 0.75);
-  --border-soft: rgba(90, 74, 65, 0.15);
-  --shadow-soft: 0 20px 50px rgba(44, 32, 24, 0.12);
+  --primary-color: #ff9f1c;
+  --secondary-color: #ffbf69;
+  --tertiary-color: #cb997e;
+  --quaternary-color: #ffe8d6;
+  --text-primary: #2c2018;
+  --text-secondary: #5a4a41;
+  --surface-primary: #fff7f0;
+  --surface-secondary: #f5e4d8;
+  --surface-elevated: rgba(255, 255, 255, 0.75);
+  --border-subtle: rgba(90, 74, 65, 0.15);
+  --shadow-elevated: 0 20px 50px rgba(44, 32, 24, 0.12);
   --radius: 18px;
   --font-body: 'Source Serif 4', serif;
   --font-display: 'Fraunces', serif;
@@ -27,7 +27,7 @@ body {
     radial-gradient(circle at 10% 10%, rgba(255, 191, 105, 0.35), transparent 45%),
     radial-gradient(circle at 90% 20%, rgba(255, 159, 28, 0.25), transparent 50%),
     linear-gradient(120deg, #fffaf6 0%, #fdf0e6 45%, #f8e0cf 100%);
-  color: var(--ink);
+  color: var(--text-primary);
   line-height: 1.6;
 }
 
@@ -56,7 +56,7 @@ button {
 }
 
 .section-header p {
-  color: var(--ink-soft);
+  color: var(--text-secondary);
   font-size: 1.05rem;
 }
 
@@ -74,7 +74,7 @@ button {
 }
 
 .btn.primary {
-  background: var(--sunset-orange);
+  background: var(--primary-color);
   color: #fff;
   box-shadow: 0 10px 25px rgba(255, 159, 28, 0.3);
 }
@@ -85,17 +85,17 @@ button {
 }
 
 .btn.ghost {
-  border: 1px solid var(--border-soft);
-  color: var(--ink);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-primary);
   background: transparent;
 }
 
 .card {
-  background: var(--surface-glass);
+  background: var(--surface-elevated);
   padding: 2rem;
   border-radius: var(--radius);
-  border: 1px solid var(--border-soft);
-  box-shadow: var(--shadow-soft);
+  border: 1px solid var(--border-subtle);
+  box-shadow: var(--shadow-elevated);
 }
 
 .card h3 {
@@ -104,7 +104,7 @@ button {
 }
 
 .card p {
-  color: var(--ink-soft);
+  color: var(--text-secondary);
 }
 
 @media (prefers-reduced-motion: reduce) {

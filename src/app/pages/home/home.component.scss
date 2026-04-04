@@ -10,7 +10,7 @@
   text-transform: uppercase;
   letter-spacing: 0.3em;
   font-size: 0.85rem;
-  color: var(--sunset-orange);
+  color: var(--primary-color);
   margin-bottom: 1.5rem;
 }
 
@@ -23,7 +23,7 @@
 
 .hero-text {
   font-size: 1.2rem;
-  color: var(--ink-soft);
+  color: var(--text-secondary);
   max-width: 660px;
 }
 
@@ -47,7 +47,7 @@
   text-transform: uppercase;
   letter-spacing: 0.1em;
   font-size: 0.85rem;
-  color: var(--sunset-orange);
+  color: var(--primary-color);
 }
 
 @media (max-width: 900px) {
