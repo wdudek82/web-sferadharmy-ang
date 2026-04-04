@@ -41,18 +41,18 @@
   padding: 0.85rem 1rem;
   font-family: var(--font-body);
   font-size: 1rem;
-  background: #fffdfb;
+  background: var(--surface-card);
   color: var(--text-primary);
 }
 
 .form-field input:focus,
 .form-field textarea:focus {
-  outline: 2px solid rgba(255, 159, 28, 0.25);
+  outline: 2px solid var(--primary-outline);
   border-color: var(--primary-color);
 }
 
 .contact-panel {
-  background: #fffdfb;
+  background: var(--surface-card);
   border-radius: var(--radius);
   border: 1px solid var(--border-subtle);
   padding: 2rem;

@@ -1,15 +1,7 @@
+//@use 'theme-sunset';
+@use 'theme-redwood';
+
 :root {
-  --primary-color: #ff9f1c;
-  --secondary-color: #ffbf69;
-  --tertiary-color: #cb997e;
-  --quaternary-color: #ffe8d6;
-  --text-primary: #2c2018;
-  --text-secondary: #5a4a41;
-  --surface-primary: #fff7f0;
-  --surface-secondary: #f5e4d8;
-  --surface-elevated: rgba(255, 255, 255, 0.75);
-  --border-subtle: rgba(90, 74, 65, 0.15);
-  --shadow-elevated: 0 20px 50px rgba(44, 32, 24, 0.12);
   --radius: 18px;
   --font-body: 'Source Serif 4', serif;
   --font-display: 'Fraunces', serif;
@@ -23,10 +15,7 @@
 
 body {
   font-family: var(--font-body);
-  background:
-    radial-gradient(circle at 10% 10%, rgba(255, 191, 105, 0.35), transparent 45%),
-    radial-gradient(circle at 90% 20%, rgba(255, 159, 28, 0.25), transparent 50%),
-    linear-gradient(120deg, #fffaf6 0%, #fdf0e6 45%, #f8e0cf 100%);
+  background: var(--page-background);
   color: var(--text-primary);
   line-height: 1.6;
 }
@@ -75,13 +64,13 @@ button {
 
 .btn.primary {
   background: var(--primary-color);
-  color: #fff;
-  box-shadow: 0 10px 25px rgba(255, 159, 28, 0.3);
+  color: var(--text-on-primary);
+  box-shadow: var(--shadow-primary);
 }
 
 .btn.primary:hover {
   transform: translateY(-2px);
-  background: #ff8c00;
+  background: var(--primary-color-strong);
 }
 
 .btn.ghost {

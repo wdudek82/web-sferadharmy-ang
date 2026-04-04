@@ -16,7 +16,7 @@
   gap: 1rem;
   color: var(--text-secondary);
   border-top: 1px solid var(--border-subtle);
-  background: rgba(255, 247, 240, 0.8);
+  background: var(--surface-footer);
 }
 
 @media (max-width: 900px) {
