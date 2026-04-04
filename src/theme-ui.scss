@@ -11,17 +11,18 @@
   --card-shadow: var(--shadow-elevated);
 
   --nav-bg: var(--secondary-color);
-  --nav-text: var(--text-primary);
-  --nav-link: var(--text-primary);
-  --nav-link-hover: var(--primary-color);
-  --nav-link-active: var(--primary-color);
-  --nav-toggle: var(--text-primary);
+  --nav-text: var(--text-on-primary);
+  --nav-link: var(--text-on-primary);
+  --nav-link-hover: var(--text-on-primary);
+  --nav-link-active: var(--text-on-primary);
+  --nav-link-underline: var(--text-on-primary);
+  --nav-toggle: var(--text-on-primary);
   --nav-overlay-bg: var(--surface-primary);
 
-  --button-primary-bg: var(--primary-color);
+  --button-primary-bg: var(--text-primary);
   --button-primary-text: var(--text-on-primary);
   --button-primary-shadow: var(--shadow-primary);
-  --button-primary-hover: var(--primary-color-strong);
+  --button-primary-hover: var(--secondary-color);
   --button-ghost-border: var(--border-subtle);
   --button-ghost-text: var(--text-primary);
 
