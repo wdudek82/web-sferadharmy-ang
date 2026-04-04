@@ -1,11 +1,12 @@
 import { isPlatformBrowser, NgIf } from '@angular/common';
-import { AfterViewInit, Component, Inject, PLATFORM_ID } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { AfterViewInit, Component, Inject, PLATFORM_ID, signal } from '@angular/core';
+import { FormsModule, NgForm } from '@angular/forms';
 
 declare global {
   interface Window {
     hcaptcha?: {
       render: (container: HTMLElement, options: { sitekey: string }) => number;
+      reset: (id?: number) => void;
     };
   }
 }
@@ -22,6 +23,8 @@ export class ContactComponent implements AfterViewInit {
   private hcaptchaWidgetId?: number;
   private hcaptchaLoader?: Promise<void>;
   protected isLocalhost = false;
+  protected readonly isSubmitting = signal(false);
+  protected readonly submitState = signal<'idle' | 'success' | 'error'>('idle');
 
   constructor(@Inject(PLATFORM_ID) private platformId: object) {}
 
@@ -43,18 +46,54 @@ export class ContactComponent implements AfterViewInit {
       });
   }
 
-  onSubmit(event: Event) {
-    if (this.isLocalhost) {
+  async onSubmit(form: NgForm, formEl: HTMLFormElement) {
+    if (this.isSubmitting()) {
       return;
     }
 
-    const form = event.target as HTMLFormElement | null;
-    const hCaptcha =
-      form?.querySelector<HTMLTextAreaElement>('textarea[name="h-captcha-response"]')?.value ?? '';
+    if (form.invalid) {
+      form.control.markAllAsTouched();
+      return;
+    }
 
-    if (!hCaptcha) {
-      event.preventDefault();
-      alert('Please fill out captcha field');
+    if (!this.isLocalhost) {
+      const hCaptcha =
+        formEl.querySelector<HTMLTextAreaElement>('textarea[name="h-captcha-response"]')?.value ??
+        '';
+
+      if (!hCaptcha) {
+        alert('Please fill out captcha field');
+        return;
+      }
+    }
+
+    this.isSubmitting.set(true);
+    this.submitState.set('idle');
+    try {
+      const formData = new FormData(formEl);
+      const response = await fetch(formEl.action, {
+        method: formEl.method,
+        body: formData,
+        headers: {
+          Accept: 'application/json',
+        },
+      });
+
+      if (!response.ok) {
+        throw new Error('Form submission failed.');
+      }
+
+      formEl.reset();
+      form.resetForm();
+      this.submitState.set('success');
+
+      if (!this.isLocalhost && window.hcaptcha && this.hcaptchaWidgetId !== undefined) {
+        window.hcaptcha.reset(this.hcaptchaWidgetId);
+      }
+    } catch (error) {
+      this.submitState.set('error');
+    } finally {
+      this.isSubmitting.set(false);
     }
   }
 
