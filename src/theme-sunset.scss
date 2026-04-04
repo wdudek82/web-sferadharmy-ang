@@ -1,0 +1,24 @@
+:root {
+  --primary-color: #ff9f1c;
+  --primary-color-strong: #ff8c00;
+  --secondary-color: #ffbf69;
+  --tertiary-color: #cb997e;
+  --quaternary-color: #ffe8d6;
+  --text-primary: #2c2018;
+  --text-secondary: #5a4a41;
+  --text-on-primary: #ffffff;
+  --surface-primary: #fff7f0;
+  --surface-secondary: #f5e4d8;
+  --surface-elevated: rgba(255, 255, 255, 0.75);
+  --surface-card: #fffdfb;
+  --surface-nav: rgba(255, 247, 240, 0.88);
+  --surface-footer: rgba(255, 247, 240, 0.8);
+  --border-subtle: rgba(90, 74, 65, 0.15);
+  --shadow-elevated: 0 20px 50px rgba(44, 32, 24, 0.12);
+  --shadow-primary: 0 10px 25px rgba(255, 159, 28, 0.3);
+  --primary-outline: rgba(255, 159, 28, 0.25);
+  --page-background:
+    radial-gradient(circle at 10% 10%, rgba(255, 191, 105, 0.35), transparent 45%),
+    radial-gradient(circle at 90% 20%, rgba(255, 159, 28, 0.25), transparent 50%),
+    linear-gradient(120deg, #fffaf6 0%, #fdf0e6 45%, #f8e0cf 100%);
+}
