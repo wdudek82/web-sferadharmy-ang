@@ -26,6 +26,7 @@ declare global {
   styleUrl: './contact.component.scss',
 })
 export class ContactComponent implements AfterViewInit {
+  protected readonly captchaEnabled = false;
   private readonly hcaptchaSitekey = '50b2fe65-b00b-4b9e-ad62-3ba471098be2';
   private hcaptchaWidgetId?: number;
   private hcaptchaLoader?: Promise<void>;
@@ -38,6 +39,10 @@ export class ContactComponent implements AfterViewInit {
 
   ngAfterViewInit() {
     if (!isPlatformBrowser(this.platformId)) {
+      return;
+    }
+
+    if (!this.captchaEnabled) {
       return;
     }
 
@@ -64,7 +69,7 @@ export class ContactComponent implements AfterViewInit {
       return;
     }
 
-    if (!this.isLocalhost && !this.captchaToken()) {
+    if (this.captchaEnabled && !this.isLocalhost && !this.captchaToken()) {
       alert('Please fill out captcha field');
       return;
     }
@@ -89,7 +94,7 @@ export class ContactComponent implements AfterViewInit {
       form.resetForm();
       this.submitState.set('success');
 
-      if (!this.isLocalhost && window.hcaptcha && this.hcaptchaWidgetId !== undefined) {
+      if (this.captchaEnabled && !this.isLocalhost && window.hcaptcha && this.hcaptchaWidgetId !== undefined) {
         window.hcaptcha.reset(this.hcaptchaWidgetId);
         this.captchaToken.set('');
       }
