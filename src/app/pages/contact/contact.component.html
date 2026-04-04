@@ -8,29 +8,67 @@
       class="contact-form"
       action="https://api.web3forms.com/submit"
       method="POST"
-      (ngSubmit)="onSubmit($event)"
+      (ngSubmit)="onSubmit(contactForm, formEl)"
+      [class.is-loading]="isSubmitting()"
       #contactForm="ngForm"
+      #formEl
+      novalidate
     >
+      <div class="form-overlay" *ngIf="isSubmitting()">
+        <div class="spinner" role="status" aria-live="polite" aria-label="Wysyłanie"></div>
+      </div>
       <input type="hidden" name="access_key" value="a9dd5175-ea60-401a-afc9-e459e50b2a68" />
-      <label class="form-field">
+      <label class="form-field" [class.invalid]="name.invalid && (name.touched || contactForm.submitted)">
         <span>Twoje imię</span>
-        <input type="text" name="name" placeholder="Wpisz swoje imię" required />
+        <input
+          type="text"
+          name="name"
+          placeholder="Wpisz swoje imię"
+          required
+          ngModel
+          #name="ngModel"
+        />
+        <small class="field-error" *ngIf="name.invalid && (name.touched || contactForm.submitted)">
+          Podaj imię.
+        </small>
       </label>
-      <label class="form-field">
+      <label class="form-field" [class.invalid]="email.invalid && (email.touched || contactForm.submitted)">
         <span>Email</span>
-        <input type="email" name="email" placeholder="adres@email.pl" required />
+        <input
+          type="email"
+          name="email"
+          placeholder="adres@email.pl"
+          required
+          email
+          ngModel
+          #email="ngModel"
+        />
+        <small class="field-error" *ngIf="email.invalid && (email.touched || contactForm.submitted)">
+          Podaj poprawny adres email.
+        </small>
       </label>
-      <label class="form-field">
+      <label class="form-field" [class.invalid]="message.invalid && (message.touched || contactForm.submitted)">
         <span>Wiadomość</span>
         <textarea
           name="message"
           rows="6"
           placeholder="Napisz, w czym możemy pomóc"
           required
+          ngModel
+          #message="ngModel"
         ></textarea>
+        <small class="field-error" *ngIf="message.invalid && (message.touched || contactForm.submitted)">
+          Napisz wiadomość.
+        </small>
       </label>
       <div *ngIf="!isLocalhost" id="hcaptcha-container" class="h-captcha"></div>
-      <button class="btn primary" type="submit">Wyślij</button>
+      <button class="btn primary" type="submit" [disabled]="isSubmitting()">Wyślij</button>
+      <p class="form-success" *ngIf="submitState() === 'success'">
+        Dziękujemy! Twoja wiadomość została wysłana.
+      </p>
+      <p class="form-error" *ngIf="submitState() === 'error'">
+        Nie udało się wysłać formularza. Spróbuj ponownie.
+      </p>
     </form>
     <div class="contact-panel">
       <h3>StrefaDharmy</h3>
