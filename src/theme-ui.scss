@@ -1,0 +1,32 @@
+:root {
+  --page-bg: var(--page-background);
+  --body-text: var(--text-primary);
+  --body-muted: var(--text-secondary);
+  --heading-primary: var(--text-primary);
+  --heading-secondary: var(--text-primary);
+  --accent-highlight: var(--primary-color);
+  --section-bg: var(--surface-primary);
+  --card-bg: var(--surface-elevated);
+  --card-border: var(--border-subtle);
+  --card-shadow: var(--shadow-elevated);
+
+  --nav-bg: var(--secondary-color);
+  --nav-text: var(--text-on-primary);
+  --nav-link: var(--text-on-primary);
+  --nav-link-hover: var(--text-on-primary);
+  --nav-link-active: var(--text-on-primary);
+  --nav-link-underline: var(--text-on-primary);
+  --nav-toggle: var(--text-on-primary);
+  --nav-overlay-bg: var(--surface-primary);
+
+  --button-primary-bg: var(--text-primary);
+  --button-primary-text: var(--text-on-primary);
+  --button-primary-shadow: var(--shadow-primary);
+  --button-primary-hover: var(--secondary-color);
+  --button-ghost-border: var(--border-subtle);
+  --button-ghost-text: var(--text-primary);
+
+  --input-bg: var(--surface-card);
+  --input-border: var(--border-subtle);
+  --input-focus-outline: var(--primary-outline);
+}

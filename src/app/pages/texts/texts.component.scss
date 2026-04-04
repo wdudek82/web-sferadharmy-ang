@@ -1,0 +1,9 @@
+.text-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.6rem;
+}
+
+.section {
+  background: var(--section-bg);
+}

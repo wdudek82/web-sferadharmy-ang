@@ -1,38 +1,12 @@
-<header>
-  <div class="logo">SferaDharmy</div>
-  <nav>
-    <a href="#">News</a>
-    <a href="#">Texts</a>
-    <a href="#">Contact</a>
-  </nav>
-</header>
+<div class="page">
+  <app-navbar></app-navbar>
 
-<section class="hero">
-  <h1>Welcome to SferaDharmy</h1>
-  <p>A space of practice, reflection, and quiet wisdom.</p>
-  <div class="brush-circle"></div>
-</section>
+  <main class="content">
+    <router-outlet />
+  </main>
 
-<section class="sections">
-  <div class="card">
-    <h2>News</h2>
-    <p>Updates, announcements, and upcoming gatherings.</p>
-    <a href="#">Enter</a>
-  </div>
-
-  <div class="card">
-    <h2>Texts</h2>
-    <p>Teachings, translations, and contemplative writings.</p>
-    <a href="#">Enter</a>
-  </div>
-
-  <div class="card">
-    <h2>Contact</h2>
-    <p>Reach out for questions, collaboration, or dialogue.</p>
-    <a href="#">Enter</a>
-  </div>
-</section>
-
-<footer>
-  © 2026 SferaDharmy · All Rights Reserved
-</footer>
+  <footer class="footer">
+    <div>StrefaDharmy · 2026</div>
+    <div>Kontakt: kontakt@strefadharmy.org</div>
+  </footer>
+</div>

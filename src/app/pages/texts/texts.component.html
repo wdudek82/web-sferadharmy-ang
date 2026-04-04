@@ -1,0 +1,11 @@
+<section class="section">
+  <div class="section-header">
+    <h2>Teksty</h2>
+    <p>Wybór krótkich tekstów i refleksji, które można zabrać ze sobą na co dzień.</p>
+  </div>
+  <div class="text-grid">
+    @for (text of texts; track text.id) {
+      <app-text-card [text]="text" />
+    }
+  </div>
+</section>
