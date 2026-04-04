@@ -76,6 +76,10 @@
   transform-origin: center;
 }
 
+.nav-toggle.is-open span {
+  background: var(--nav-toggle-open);
+}
+
 .nav-toggle span:nth-child(1) {
   top: 6px;
 }

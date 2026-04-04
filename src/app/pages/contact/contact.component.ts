@@ -5,7 +5,14 @@ import { FormsModule, NgForm } from '@angular/forms';
 declare global {
   interface Window {
     hcaptcha?: {
-      render: (container: HTMLElement, options: { sitekey: string }) => number;
+      render: (
+        container: HTMLElement,
+        options: {
+          sitekey: string;
+          callback?: (token: string) => void;
+          'expired-callback'?: () => void;
+        },
+      ) => number;
       reset: (id?: number) => void;
     };
   }
@@ -22,6 +29,7 @@ export class ContactComponent implements AfterViewInit {
   private readonly hcaptchaSitekey = '50b2fe65-b00b-4b9e-ad62-3ba471098be2';
   private hcaptchaWidgetId?: number;
   private hcaptchaLoader?: Promise<void>;
+  protected readonly captchaToken = signal('');
   protected isLocalhost = false;
   protected readonly isSubmitting = signal(false);
   protected readonly submitState = signal<'idle' | 'success' | 'error'>('idle');
@@ -56,15 +64,9 @@ export class ContactComponent implements AfterViewInit {
       return;
     }
 
-    if (!this.isLocalhost) {
-      const hCaptcha =
-        formEl.querySelector<HTMLTextAreaElement>('textarea[name="h-captcha-response"]')?.value ??
-        '';
-
-      if (!hCaptcha) {
-        alert('Please fill out captcha field');
-        return;
-      }
+    if (!this.isLocalhost && !this.captchaToken()) {
+      alert('Please fill out captcha field');
+      return;
     }
 
     this.isSubmitting.set(true);
@@ -89,6 +91,7 @@ export class ContactComponent implements AfterViewInit {
 
       if (!this.isLocalhost && window.hcaptcha && this.hcaptchaWidgetId !== undefined) {
         window.hcaptcha.reset(this.hcaptchaWidgetId);
+        this.captchaToken.set('');
       }
     } catch (error) {
       this.submitState.set('error');
@@ -122,7 +125,7 @@ export class ContactComponent implements AfterViewInit {
 
       const script = document.createElement('script');
       script.id = scriptId;
-      script.src = 'https://js.hcaptcha.com/1/api.js?render=explicit&hl=pl';
+      script.src = 'https://js.hcaptcha.com/1/api.js?render=explicit&hl=pl&recaptchacompat=off';
       script.async = true;
       script.defer = true;
       script.onload = () => resolve();
@@ -145,6 +148,8 @@ export class ContactComponent implements AfterViewInit {
 
     this.hcaptchaWidgetId = window.hcaptcha.render(container, {
       sitekey: this.hcaptchaSitekey,
+      callback: (token) => this.captchaToken.set(token),
+      'expired-callback': () => this.captchaToken.set(''),
     });
   }
 }
