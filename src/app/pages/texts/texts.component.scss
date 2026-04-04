@@ -1,0 +1,32 @@
+.text-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.6rem;
+}
+
+.text-card {
+  padding: 1.6rem;
+  border-radius: var(--radius);
+  background: var(--surface-strong);
+  border: 1px solid var(--border-soft);
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.text-card h3 {
+  font-family: var(--font-display);
+}
+
+.text-card p {
+  color: var(--ink-soft);
+}
+
+.text-card a {
+  margin-top: auto;
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.85rem;
+  color: var(--sunset-orange);
+}

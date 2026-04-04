@@ -6,6 +6,7 @@
       aria-label="Otwórz menu"
       aria-controls="mobile-menu"
       [attr.aria-expanded]="menuOpen()"
+      [class.is-open]="menuOpen()"
       (click)="toggleMenu()"
     >
       <span></span>
@@ -13,12 +14,13 @@
       <span></span>
     </button>
 
-    <div class="brand">SferaDharmy</div>
+    <a class="brand" routerLink="/">StrefaDharmy</a>
 
     <nav class="nav-links" aria-label="Główna nawigacja">
-      <a href="#o-nas">O nas</a>
-      <a href="#wydarzenia">Wydarzenia</a>
-      <a href="#teksty">Teksty</a>
+      <a routerLink="/o-nas" routerLinkActive="active">O nas</a>
+      <a routerLink="/wydarzenia" routerLinkActive="active">Wydarzenia</a>
+      <a routerLink="/teksty" routerLinkActive="active">Teksty</a>
+      <a routerLink="/kontakt" routerLinkActive="active">Kontakt</a>
     </nav>
 
     <div
@@ -28,113 +30,21 @@
       [attr.aria-hidden]="menuOpen() ? 'false' : 'true'"
     >
       <div class="nav-overlay-panel">
-        <div class="nav-overlay-header">
-          <span>Menu</span>
-          <button class="nav-close" type="button" (click)="closeMenu()" aria-label="Zamknij menu">
-            Zamknij
-          </button>
-        </div>
-        <a href="#o-nas" (click)="closeMenu()">O nas</a>
-        <a href="#wydarzenia" (click)="closeMenu()">Wydarzenia</a>
-        <a href="#teksty" (click)="closeMenu()">Teksty</a>
+        <h2>Menu</h2>
+        <a routerLink="/o-nas" (click)="closeMenu()">O nas</a>
+        <a routerLink="/wydarzenia" (click)="closeMenu()">Wydarzenia</a>
+        <a routerLink="/teksty" (click)="closeMenu()">Teksty</a>
+        <a routerLink="/kontakt" (click)="closeMenu()">Kontakt</a>
       </div>
     </div>
   </header>
 
-  <main>
-    <section class="hero">
-      <p class="eyebrow">Cisza. Uważność. Wspólnota.</p>
-      <h1>Przestrzeń praktyki i refleksji w codziennym życiu.</h1>
-      <p class="hero-text">
-        SferaDharmy to miejsce spotkań, rozmów i wspólnej praktyki. Tworzymy spokojne, życzliwe
-        środowisko, które wspiera uważność i głębsze zrozumienie siebie.
-      </p>
-      <div class="hero-actions">
-        <a class="btn primary" href="#wydarzenia">Dołącz do spotkań</a>
-        <a class="btn ghost" href="#o-nas">Poznaj nas</a>
-      </div>
-    </section>
-
-    <section id="o-nas" class="section about">
-      <div class="section-header">
-        <h2>O nas</h2>
-        <p>
-          Jesteśmy otwartą wspólnotą praktykującą w duchu współczucia i prostoty. Łączymy tradycję z
-          wrażliwością na współczesność.
-        </p>
-      </div>
-      <div class="cards">
-        <article class="card">
-          <h3>Wspólna praktyka</h3>
-          <p>Regularne spotkania, medytacje i czas na uważny oddech.</p>
-        </article>
-        <article class="card">
-          <h3>Rozmowy i wsparcie</h3>
-          <p>Bezpieczna przestrzeń do dzielenia się doświadczeniem.</p>
-        </article>
-        <article class="card">
-          <h3>Ugruntowana wiedza</h3>
-          <p>Teksty i refleksje, które pomagają w codziennej praktyce.</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="wydarzenia" class="section events">
-      <div class="section-header">
-        <h2>Wydarzenia</h2>
-        <p>Spotkania na żywo i online. Zostawiamy przestrzeń na ciszę, pytania i wspólne bycie.</p>
-      </div>
-      <div class="event-list">
-        <div class="event">
-          <div class="event-date">
-            <span>Środy</span>
-            <strong>19:00</strong>
-          </div>
-          <div class="event-info">
-            <h3>Wieczorna medytacja</h3>
-            <p>Regularna praktyka z krótkim wprowadzeniem i rozmową po spotkaniu.</p>
-          </div>
-        </div>
-        <div class="event">
-          <div class="event-date">
-            <span>Soboty</span>
-            <strong>10:00</strong>
-          </div>
-          <div class="event-info">
-            <h3>Krąg uważności</h3>
-            <p>Spotkanie wspólnoty, praca z oddechem i łagodne ćwiczenia uważności.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="teksty" class="section texts">
-      <div class="section-header">
-        <h2>Teksty</h2>
-        <p>Wybór krótkich tekstów i refleksji, które można zabrać ze sobą na co dzień.</p>
-      </div>
-      <div class="text-grid">
-        <article class="text-card">
-          <h3>Uważność w praktyce</h3>
-          <p>Jak wracać do oddechu, kiedy wszystko przyspiesza.</p>
-          <a href="#">Czytaj</a>
-        </article>
-        <article class="text-card">
-          <h3>Współczucie bez wysiłku</h3>
-          <p>Krótka refleksja o czułej obecności i życzliwości.</p>
-          <a href="#">Czytaj</a>
-        </article>
-        <article class="text-card">
-          <h3>Prosty rytuał dnia</h3>
-          <p>Małe praktyki, które pomagają budować uważny rytm.</p>
-          <a href="#">Czytaj</a>
-        </article>
-      </div>
-    </section>
+  <main class="content">
+    <router-outlet />
   </main>
 
   <footer class="footer">
-    <div>SferaDharmy · 2026</div>
-    <div>Kontakt: kontakt@SferaDharmy.org</div>
+    <div>StrefaDharmy · 2026</div>
+    <div>Kontakt: kontakt@strefadharmy.org</div>
   </footer>
 </div>

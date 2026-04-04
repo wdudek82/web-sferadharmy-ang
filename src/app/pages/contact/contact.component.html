@@ -1,0 +1,43 @@
+<section class="section contact">
+  <div class="section-header">
+    <h2>Kontakt</h2>
+    <p>Jeśli chcesz zapytać o spotkania, praktykę lub współpracę, napisz do nas.</p>
+  </div>
+  <div class="contact-grid">
+    <form
+      class="contact-form"
+      action="https://api.web3forms.com/submit"
+      method="POST"
+      (ngSubmit)="onSubmit($event)"
+      #contactForm="ngForm"
+    >
+      <input type="hidden" name="access_key" value="a9dd5175-ea60-401a-afc9-e459e50b2a68">
+      <label class="form-field">
+        <span>Twoje imię</span>
+        <input type="text" name="name" placeholder="Wpisz swoje imię" required>
+      </label>
+      <label class="form-field">
+        <span>Email</span>
+        <input type="email" name="email" placeholder="adres@email.pl" required>
+      </label>
+      <label class="form-field">
+        <span>Wiadomość</span>
+        <textarea name="message" rows="6" placeholder="Napisz, w czym możemy pomóc" required></textarea>
+      </label>
+      <div *ngIf="!isLocalhost" id="hcaptcha-container" class="h-captcha"></div>
+      <button class="btn primary" type="submit">Wyślij</button>
+    </form>
+    <div class="contact-panel">
+      <h3>StrefaDharmy</h3>
+      <p>Jesteśmy otwarci na kontakt i spokojną rozmowę.</p>
+      <div class="contact-item">
+        <span>Email</span>
+        <strong>kontakt@strefadharmy.org</strong>
+      </div>
+      <div class="contact-item">
+        <span>Lokalizacja</span>
+        <strong>Warszawa · spotkania hybrydowe</strong>
+      </div>
+    </div>
+  </div>
+</section>
