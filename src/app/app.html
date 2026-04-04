@@ -1,38 +1,140 @@
-<header>
-  <div class="logo">SferaDharmy</div>
-  <nav>
-    <a href="#">News</a>
-    <a href="#">Texts</a>
-    <a href="#">Contact</a>
-  </nav>
-</header>
+<div class="page">
+  <header class="topbar">
+    <button
+      class="nav-toggle"
+      type="button"
+      aria-label="Otwórz menu"
+      aria-controls="mobile-menu"
+      [attr.aria-expanded]="menuOpen()"
+      (click)="toggleMenu()"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
 
-<section class="hero">
-  <h1>Welcome to SferaDharmy</h1>
-  <p>A space of practice, reflection, and quiet wisdom.</p>
-  <div class="brush-circle"></div>
-</section>
+    <div class="brand">SferaDharmy</div>
 
-<section class="sections">
-  <div class="card">
-    <h2>News</h2>
-    <p>Updates, announcements, and upcoming gatherings.</p>
-    <a href="#">Enter</a>
-  </div>
+    <nav class="nav-links" aria-label="Główna nawigacja">
+      <a href="#o-nas">O nas</a>
+      <a href="#wydarzenia">Wydarzenia</a>
+      <a href="#teksty">Teksty</a>
+    </nav>
 
-  <div class="card">
-    <h2>Texts</h2>
-    <p>Teachings, translations, and contemplative writings.</p>
-    <a href="#">Enter</a>
-  </div>
+    <div
+      id="mobile-menu"
+      class="nav-overlay"
+      [class.is-open]="menuOpen()"
+      [attr.aria-hidden]="menuOpen() ? 'false' : 'true'"
+    >
+      <div class="nav-overlay-panel">
+        <div class="nav-overlay-header">
+          <span>Menu</span>
+          <button class="nav-close" type="button" (click)="closeMenu()" aria-label="Zamknij menu">
+            Zamknij
+          </button>
+        </div>
+        <a href="#o-nas" (click)="closeMenu()">O nas</a>
+        <a href="#wydarzenia" (click)="closeMenu()">Wydarzenia</a>
+        <a href="#teksty" (click)="closeMenu()">Teksty</a>
+      </div>
+    </div>
+  </header>
 
-  <div class="card">
-    <h2>Contact</h2>
-    <p>Reach out for questions, collaboration, or dialogue.</p>
-    <a href="#">Enter</a>
-  </div>
-</section>
+  <main>
+    <section class="hero">
+      <p class="eyebrow">Cisza. Uważność. Wspólnota.</p>
+      <h1>Przestrzeń praktyki i refleksji w codziennym życiu.</h1>
+      <p class="hero-text">
+        SferaDharmy to miejsce spotkań, rozmów i wspólnej praktyki. Tworzymy spokojne, życzliwe
+        środowisko, które wspiera uważność i głębsze zrozumienie siebie.
+      </p>
+      <div class="hero-actions">
+        <a class="btn primary" href="#wydarzenia">Dołącz do spotkań</a>
+        <a class="btn ghost" href="#o-nas">Poznaj nas</a>
+      </div>
+    </section>
 
-<footer>
-  © 2026 SferaDharmy · All Rights Reserved
-</footer>
+    <section id="o-nas" class="section about">
+      <div class="section-header">
+        <h2>O nas</h2>
+        <p>
+          Jesteśmy otwartą wspólnotą praktykującą w duchu współczucia i prostoty. Łączymy tradycję z
+          wrażliwością na współczesność.
+        </p>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <h3>Wspólna praktyka</h3>
+          <p>Regularne spotkania, medytacje i czas na uważny oddech.</p>
+        </article>
+        <article class="card">
+          <h3>Rozmowy i wsparcie</h3>
+          <p>Bezpieczna przestrzeń do dzielenia się doświadczeniem.</p>
+        </article>
+        <article class="card">
+          <h3>Ugruntowana wiedza</h3>
+          <p>Teksty i refleksje, które pomagają w codziennej praktyce.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="wydarzenia" class="section events">
+      <div class="section-header">
+        <h2>Wydarzenia</h2>
+        <p>Spotkania na żywo i online. Zostawiamy przestrzeń na ciszę, pytania i wspólne bycie.</p>
+      </div>
+      <div class="event-list">
+        <div class="event">
+          <div class="event-date">
+            <span>Środy</span>
+            <strong>19:00</strong>
+          </div>
+          <div class="event-info">
+            <h3>Wieczorna medytacja</h3>
+            <p>Regularna praktyka z krótkim wprowadzeniem i rozmową po spotkaniu.</p>
+          </div>
+        </div>
+        <div class="event">
+          <div class="event-date">
+            <span>Soboty</span>
+            <strong>10:00</strong>
+          </div>
+          <div class="event-info">
+            <h3>Krąg uważności</h3>
+            <p>Spotkanie wspólnoty, praca z oddechem i łagodne ćwiczenia uważności.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="teksty" class="section texts">
+      <div class="section-header">
+        <h2>Teksty</h2>
+        <p>Wybór krótkich tekstów i refleksji, które można zabrać ze sobą na co dzień.</p>
+      </div>
+      <div class="text-grid">
+        <article class="text-card">
+          <h3>Uważność w praktyce</h3>
+          <p>Jak wracać do oddechu, kiedy wszystko przyspiesza.</p>
+          <a href="#">Czytaj</a>
+        </article>
+        <article class="text-card">
+          <h3>Współczucie bez wysiłku</h3>
+          <p>Krótka refleksja o czułej obecności i życzliwości.</p>
+          <a href="#">Czytaj</a>
+        </article>
+        <article class="text-card">
+          <h3>Prosty rytuał dnia</h3>
+          <p>Małe praktyki, które pomagają budować uważny rytm.</p>
+          <a href="#">Czytaj</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>SferaDharmy · 2026</div>
+    <div>Kontakt: kontakt@SferaDharmy.org</div>
+  </footer>
+</div>
