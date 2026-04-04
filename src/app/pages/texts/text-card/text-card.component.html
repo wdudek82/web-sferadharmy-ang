@@ -1,0 +1,17 @@
+<article class="text-card">
+  <a class="text-media" [attr.href]="text.href">
+    <img [src]="text.image" [alt]="text.title">
+  </a>
+  <div class="text-content">
+    <div class="text-meta">
+      <span>{{ text.date }}</span>
+      <span aria-hidden="true">·</span>
+      <span>{{ text.time }}</span>
+    </div>
+    <a class="text-title" [attr.href]="text.href">
+      <h3>{{ text.title }}</h3>
+    </a>
+    <p>{{ text.excerpt }}</p>
+    <a class="text-link" [attr.href]="text.href">Czytaj</a>
+  </div>
+</article>

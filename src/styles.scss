@@ -2,10 +2,14 @@
 @use 'theme-redwood';
 @use 'theme-ui';
 
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@400&display=swap');
+
+
 :root {
   --radius: 18px;
   --font-body: 'Source Serif 4', serif;
   --font-display: 'Fraunces', serif;
+  //--font-display: "Charm", cursive;
   --h1-size: clamp(3.2rem, 5.6vw, 4.6rem);
   --h2-size: clamp(2.5rem, 4vw, 3.5rem);
   --h3-size: clamp(1.75rem, 2.6vw, 2.4rem);
@@ -19,7 +23,7 @@
 
 body {
   font-family: var(--font-body);
-  background: var(--page-bg);
+  background: var(--section-bg);
   color: var(--body-text);
   line-height: 1.6;
 }

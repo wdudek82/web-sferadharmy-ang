@@ -4,20 +4,8 @@
     <p>Wybór krótkich tekstów i refleksji, które można zabrać ze sobą na co dzień.</p>
   </div>
   <div class="text-grid">
-    <article class="text-card">
-      <h3>Uważność w praktyce</h3>
-      <p>Jak wracać do oddechu, kiedy wszystko przyspiesza.</p>
-      <a href="#">Czytaj</a>
-    </article>
-    <article class="text-card">
-      <h3>Współczucie bez wysiłku</h3>
-      <p>Krótka refleksja o czułej obecności i życzliwości.</p>
-      <a href="#">Czytaj</a>
-    </article>
-    <article class="text-card">
-      <h3>Prosty rytuał dnia</h3>
-      <p>Małe praktyki, które pomagają budować uważny rytm.</p>
-      <a href="#">Czytaj</a>
-    </article>
+    @for (text of texts; track text.id) {
+      <app-text-card [text]="text" />
+    }
   </div>
 </section>
