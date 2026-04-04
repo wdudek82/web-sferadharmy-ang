@@ -16,7 +16,7 @@ export const textsData: TextSummary[] = [
     href: '#',
     date: '12 marca 2026',
     time: '18:30',
-    image: '/images/texts/img_1.png'
+    image: '/images/texts/img_1.png',
   },
   {
     id: 'wspolczucie-bez-wysilku',
@@ -25,7 +25,7 @@ export const textsData: TextSummary[] = [
     href: '#',
     date: '5 marca 2026',
     time: '09:15',
-    image: '/images/texts/img_2.png'
+    image: '/images/texts/img_2.png',
   },
   {
     id: 'prosty-rytual-dnia',
@@ -34,7 +34,7 @@ export const textsData: TextSummary[] = [
     href: '#',
     date: '1 marca 2026',
     time: '07:45',
-    image: '/images/texts/img_3.png'
+    image: '/images/texts/img_3.png',
   },
   {
     id: 'uwaznosc-w-praktyce-2',
@@ -43,7 +43,7 @@ export const textsData: TextSummary[] = [
     href: '#',
     date: '12 marca 2026',
     time: '18:30',
-    image: '/images/texts/img_4.png'
+    image: '/images/texts/img_4.png',
   },
   {
     id: 'wspolczucie-bez-wysilku-2',
@@ -52,7 +52,7 @@ export const textsData: TextSummary[] = [
     href: '#',
     date: '5 marca 2026',
     time: '09:15',
-    image: '/images/texts/img_5.png'
+    image: '/images/texts/img_5.png',
   },
   {
     id: 'prosty-rytual-dnia-2',
@@ -61,7 +61,7 @@ export const textsData: TextSummary[] = [
     href: '#',
     date: '1 marca 2026',
     time: '07:45',
-    image: '/images/texts/img_6.png'
+    image: '/images/texts/img_6.png',
   },
   {
     id: 'uwaznosc-w-praktyce-3',
@@ -70,7 +70,7 @@ export const textsData: TextSummary[] = [
     href: '#',
     date: '12 marca 2026',
     time: '18:30',
-    image: '/images/texts/img_1.png'
+    image: '/images/texts/img_1.png',
   },
   {
     id: 'wspolczucie-bez-wysilku-3',
@@ -79,7 +79,7 @@ export const textsData: TextSummary[] = [
     href: '#',
     date: '5 marca 2026',
     time: '09:15',
-    image: '/images/texts/img_2.png'
+    image: '/images/texts/img_2.png',
   },
   {
     id: 'prosty-rytual-dnia-3',
@@ -88,6 +88,6 @@ export const textsData: TextSummary[] = [
     href: '#',
     date: '1 marca 2026',
     time: '07:45',
-    image: '/images/texts/img_3.png'
-  }
+    image: '/images/texts/img_3.png',
+  },
 ];

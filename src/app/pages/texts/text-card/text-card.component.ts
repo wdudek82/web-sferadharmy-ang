@@ -7,7 +7,7 @@ import { TextSummary } from '../texts-data';
   standalone: true,
   imports: [RouterLink],
   templateUrl: './text-card.component.html',
-  styleUrl: './text-card.component.scss'
+  styleUrl: './text-card.component.scss',
 })
 export class TextCardComponent implements AfterViewInit, OnDestroy {
   @Input({ required: true }) text!: TextSummary;
@@ -29,7 +29,7 @@ export class TextCardComponent implements AfterViewInit, OnDestroy {
           this.observer?.disconnect();
         }
       },
-      { threshold: 0.2 }
+      { threshold: 0.2 },
     );
 
     this.observer.observe(this.host.nativeElement);

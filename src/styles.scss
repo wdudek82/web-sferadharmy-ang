@@ -4,7 +4,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Charm:wght@400&display=swap');
 
-
 :root {
   --radius: 18px;
   --font-body: 'Source Serif 4', serif;
@@ -89,7 +88,10 @@ button {
   font-family: var(--font-display);
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  transition: transform 0.25s ease, background-color 0.25s ease, color 0.25s ease;
+  transition:
+    transform 0.25s ease,
+    background-color 0.25s ease,
+    color 0.25s ease;
 }
 
 .btn.primary {

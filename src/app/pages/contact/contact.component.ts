@@ -15,7 +15,7 @@ declare global {
   standalone: true,
   imports: [FormsModule, NgIf],
   templateUrl: './contact.component.html',
-  styleUrl: './contact.component.scss'
+  styleUrl: './contact.component.scss',
 })
 export class ContactComponent implements AfterViewInit {
   private readonly hcaptchaSitekey = '50b2fe65-b00b-4b9e-ad62-3ba471098be2';
@@ -73,7 +73,11 @@ export class ContactComponent implements AfterViewInit {
 
       if (existingScript) {
         existingScript.addEventListener('load', () => resolve(), { once: true });
-        existingScript.addEventListener('error', () => reject(new Error('hCaptcha failed to load')), { once: true });
+        existingScript.addEventListener(
+          'error',
+          () => reject(new Error('hCaptcha failed to load')),
+          { once: true },
+        );
         return;
       }
 
@@ -101,7 +105,7 @@ export class ContactComponent implements AfterViewInit {
     }
 
     this.hcaptchaWidgetId = window.hcaptcha.render(container, {
-      sitekey: this.hcaptchaSitekey
+      sitekey: this.hcaptchaSitekey,
     });
   }
 }

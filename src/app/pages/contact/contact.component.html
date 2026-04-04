@@ -11,18 +11,23 @@
       (ngSubmit)="onSubmit($event)"
       #contactForm="ngForm"
     >
-      <input type="hidden" name="access_key" value="a9dd5175-ea60-401a-afc9-e459e50b2a68">
+      <input type="hidden" name="access_key" value="a9dd5175-ea60-401a-afc9-e459e50b2a68" />
       <label class="form-field">
         <span>Twoje imię</span>
-        <input type="text" name="name" placeholder="Wpisz swoje imię" required>
+        <input type="text" name="name" placeholder="Wpisz swoje imię" required />
       </label>
       <label class="form-field">
         <span>Email</span>
-        <input type="email" name="email" placeholder="adres@email.pl" required>
+        <input type="email" name="email" placeholder="adres@email.pl" required />
       </label>
       <label class="form-field">
         <span>Wiadomość</span>
-        <textarea name="message" rows="6" placeholder="Napisz, w czym możemy pomóc" required></textarea>
+        <textarea
+          name="message"
+          rows="6"
+          placeholder="Napisz, w czym możemy pomóc"
+          required
+        ></textarea>
       </label>
       <div *ngIf="!isLocalhost" id="hcaptcha-container" class="h-captcha"></div>
       <button class="btn primary" type="submit">Wyślij</button>

@@ -11,5 +11,5 @@ export const routes: Routes = [
   { path: 'wydarzenia', component: EventsComponent },
   { path: 'teksty', component: TextsComponent },
   { path: 'kontakt', component: ContactComponent },
-  { path: '**', redirectTo: '' }
+  { path: '**', redirectTo: '' },
 ];

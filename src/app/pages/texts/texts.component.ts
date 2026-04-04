@@ -7,7 +7,7 @@ import { textsData } from './texts-data';
   standalone: true,
   imports: [TextCardComponent],
   templateUrl: './texts.component.html',
-  styleUrl: './texts.component.scss'
+  styleUrl: './texts.component.scss',
 })
 export class TextsComponent {
   protected readonly texts = textsData;
