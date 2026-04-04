@@ -1,43 +1,5 @@
 <div class="page">
-  <header class="topbar">
-    <button
-      class="nav-toggle"
-      type="button"
-      aria-label="Otwórz menu"
-      aria-controls="mobile-menu"
-      [attr.aria-expanded]="menuOpen()"
-      [class.is-open]="menuOpen()"
-      (click)="toggleMenu()"
-    >
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-
-    <a class="brand" routerLink="/">StrefaDharmy</a>
-
-    <nav class="nav-links" aria-label="Główna nawigacja">
-      <a routerLink="/o-nas" routerLinkActive="active">O nas</a>
-      <a routerLink="/wydarzenia" routerLinkActive="active">Wydarzenia</a>
-      <a routerLink="/teksty" routerLinkActive="active">Teksty</a>
-      <a routerLink="/kontakt" routerLinkActive="active">Kontakt</a>
-    </nav>
-
-    <div
-      id="mobile-menu"
-      class="nav-overlay"
-      [class.is-open]="menuOpen()"
-      [attr.aria-hidden]="menuOpen() ? 'false' : 'true'"
-    >
-      <div class="nav-overlay-panel">
-        <h2>Menu</h2>
-        <a routerLink="/o-nas" (click)="closeMenu()">O nas</a>
-        <a routerLink="/wydarzenia" (click)="closeMenu()">Wydarzenia</a>
-        <a routerLink="/teksty" (click)="closeMenu()">Teksty</a>
-        <a routerLink="/kontakt" (click)="closeMenu()">Kontakt</a>
-      </div>
-    </div>
-  </header>
+  <app-navbar></app-navbar>
 
   <main class="content">
     <router-outlet />

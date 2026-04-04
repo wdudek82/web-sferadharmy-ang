@@ -1,21 +1,13 @@
-import { Component, signal } from '@angular/core';
-import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
+import { Component } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, RouterLink, RouterLinkActive],
+  imports: [RouterOutlet, NavbarComponent],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
 export class App {
-  protected readonly title = signal('web-sferadharmy-ang');
-  protected readonly menuOpen = signal(false);
-
-  toggleMenu() {
-    this.menuOpen.update((open) => !open);
-  }
-
-  closeMenu() {
-    this.menuOpen.set(false);
-  }
+  protected readonly title = 'web-sferadharmy-ang';
 }
