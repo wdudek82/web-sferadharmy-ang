@@ -1,5 +1,6 @@
 //@use 'theme-sunset';
 @use 'theme-redwood';
+@use 'theme-ui';
 
 :root {
   --radius: 18px;
@@ -15,8 +16,8 @@
 
 body {
   font-family: var(--font-body);
-  background: var(--page-background);
-  color: var(--text-primary);
+  background: var(--page-bg);
+  color: var(--body-text);
   line-height: 1.6;
 }
 
@@ -42,10 +43,11 @@ button {
   font-family: var(--font-display);
   font-size: 2.3rem;
   margin-bottom: 0.8rem;
+  color: var(--heading-secondary);
 }
 
 .section-header p {
-  color: var(--text-secondary);
+  color: var(--body-muted);
   font-size: 1.05rem;
 }
 
@@ -63,28 +65,28 @@ button {
 }
 
 .btn.primary {
-  background: var(--primary-color);
-  color: var(--text-on-primary);
-  box-shadow: var(--shadow-primary);
+  background: var(--button-primary-bg);
+  color: var(--button-primary-text);
+  box-shadow: var(--button-primary-shadow);
 }
 
 .btn.primary:hover {
   transform: translateY(-2px);
-  background: var(--primary-color-strong);
+  background: var(--button-primary-hover);
 }
 
 .btn.ghost {
-  border: 1px solid var(--border-subtle);
-  color: var(--text-primary);
+  border: 1px solid var(--button-ghost-border);
+  color: var(--button-ghost-text);
   background: transparent;
 }
 
 .card {
-  background: var(--surface-elevated);
+  background: var(--card-bg);
   padding: 2rem;
   border-radius: var(--radius);
-  border: 1px solid var(--border-subtle);
-  box-shadow: var(--shadow-elevated);
+  border: 1px solid var(--card-border);
+  box-shadow: var(--card-shadow);
 }
 
 .card h3 {
@@ -93,7 +95,7 @@ button {
 }
 
 .card p {
-  color: var(--text-secondary);
+  color: var(--body-muted);
 }
 
 @media (prefers-reduced-motion: reduce) {
