@@ -28,6 +28,82 @@
   font-family: var(--font-display);
 }
 
+.theme-picker {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.theme-trigger {
+  border: none;
+  background: transparent;
+  color: var(--nav-link);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  cursor: pointer;
+  padding: 0.2rem;
+}
+
+.theme-icon {
+  width: 20px;
+  height: 20px;
+  display: block;
+  background-color: currentColor;
+  mask-image: url('/icons/pelette.png');
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  mask-position: center;
+}
+
+.theme-menu {
+  position: absolute;
+  top: calc(100% + 0.6rem);
+  right: 0;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  box-shadow: var(--card-shadow);
+  padding: 0.6rem;
+  display: grid;
+  gap: 0.4rem;
+  min-width: 220px;
+  width: max-content;
+  white-space: nowrap;
+  z-index: 30;
+  list-style-type: none;
+}
+
+.theme-option {
+  border: none;
+  background: transparent;
+  color: var(--body-text);
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  text-align: left;
+  padding: 0.4rem 0.8rem;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.theme-option.active,
+.theme-option:hover {
+  background: var(--surface-secondary);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
 .nav-links a {
   color: var(--nav-link);
   transition: color 0.3s ease;
@@ -74,6 +150,10 @@
     transform 0.3s ease,
     opacity 0.3s ease;
   transform-origin: center;
+}
+
+.nav-toggle.is-open span {
+  background: var(--nav-toggle-open);
 }
 
 .nav-toggle span:nth-child(1) {
@@ -154,6 +234,27 @@
   font-family: var(--font-display);
   font-size: 1.4rem;
   color: var(--text-primary);
+}
+
+.theme-picker.mobile {
+  margin-top: 1.4rem;
+}
+
+.theme-picker.mobile .theme-trigger {
+  color: var(--text-primary);
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.theme-picker.mobile .theme-icon {
+  width: 22px;
+  height: 22px;
+}
+
+.theme-picker.mobile .theme-menu {
+  position: static;
+  margin-top: 0.8rem;
 }
 
 @media (max-width: 900px) {

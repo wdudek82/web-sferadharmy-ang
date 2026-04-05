@@ -61,7 +61,13 @@
           Napisz wiadomość.
         </small>
       </label>
-      <div *ngIf="!isLocalhost" id="hcaptcha-container" class="h-captcha"></div>
+      <input
+        *ngIf="captchaEnabled && !isLocalhost"
+        type="hidden"
+        name="h-captcha-response"
+        [value]="captchaToken()"
+      />
+      <div *ngIf="captchaEnabled && !isLocalhost" id="hcaptcha-container" class="h-captcha"></div>
       <button class="btn primary" type="submit" [disabled]="isSubmitting()">Wyślij</button>
       <p class="form-success" *ngIf="submitState() === 'success'">
         Dziękujemy! Twoja wiadomość została wysłana.

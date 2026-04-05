@@ -20,6 +20,36 @@
     <a routerLink="/wydarzenia" routerLinkActive="active">Wydarzenia</a>
     <a routerLink="/teksty" routerLinkActive="active">Teksty</a>
     <a routerLink="/kontakt" routerLinkActive="active">Kontakt</a>
+    @if (themeSelectorEnabled) {
+      <div class="theme-picker">
+      <button
+        class="theme-trigger"
+        type="button"
+        aria-haspopup="listbox"
+        [attr.aria-expanded]="themeMenuOpen()"
+        (click)="toggleThemeMenu()"
+      >
+        <span class="theme-icon" aria-hidden="true"></span>
+        <span class="sr-only">Zmień motyw</span>
+      </button>
+      @if (themeMenuOpen()) {
+        <ul class="theme-menu" role="listbox">
+          @for (theme of themeOptions; track theme.id) {
+            <li>
+              <button
+                type="button"
+                class="theme-option"
+                [class.active]="currentTheme().id === theme.id"
+                (click)="setTheme(theme)"
+              >
+                {{ theme.label }}
+              </button>
+            </li>
+          }
+        </ul>
+      }
+      </div>
+    }
   </nav>
 
   <div
@@ -34,6 +64,36 @@
       <a routerLink="/wydarzenia" (click)="closeMenu()">Wydarzenia</a>
       <a routerLink="/teksty" (click)="closeMenu()">Teksty</a>
       <a routerLink="/kontakt" (click)="closeMenu()">Kontakt</a>
+      @if (themeSelectorEnabled) {
+        <div class="theme-picker mobile">
+        <button
+          class="theme-trigger"
+          type="button"
+          aria-haspopup="listbox"
+          [attr.aria-expanded]="themeMenuOpen()"
+          (click)="toggleThemeMenu()"
+        >
+          <span class="theme-icon" aria-hidden="true"></span>
+          <span>Zmień motyw</span>
+        </button>
+        @if (themeMenuOpen()) {
+          <ul class="theme-menu" role="listbox">
+            @for (theme of themeOptions; track theme.id) {
+              <li>
+                <button
+                  type="button"
+                  class="theme-option"
+                  [class.active]="currentTheme().id === theme.id"
+                  (click)="setTheme(theme)"
+                >
+                  {{ theme.label }}
+                </button>
+              </li>
+            }
+          </ul>
+        }
+        </div>
+      }
     </div>
   </div>
 </header>
