@@ -160,6 +160,11 @@ button {
   max-width: 50%;
 }
 
+.clear-both {
+  // Forces following content below floated elements.
+  clear: both;
+}
+
 .image-crop {
   // Core crop container for Markdown images.
   display: block;
@@ -340,9 +345,26 @@ button {
   --crop-zoom: 1.5;
 }
 
+@media (max-width: 640px) {
+  .crop-w-10,
+  .crop-w-15,
+  .crop-w-20,
+  .crop-w-30,
+  .crop-w-40 {
+    width: 50%;
+  }
+
+  .crop-w-50 {
+    width: 50%;
+  }
+}
 
 @media (prefers-reduced-motion: reduce) {
   .btn {
     transition: none;
   }
+}
+
+.clear-fix {
+  clear: both;
 }

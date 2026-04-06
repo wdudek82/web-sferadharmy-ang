@@ -72,7 +72,8 @@ After the Dharma Masters shared their words, I walked out behind them as Chin Ju
 
 #### **Trek up Nirvana Mountain**
 
-<div class="image-crop float-right crop-w-20 crop-ratio-3-4 crop-x-60 crop-zoom-120">
+[//]: # (<div class="image-crop float-right crop-w-30 crop-ratio-3-4 crop-x-60 crop-zoom-120">)
+<div class="image-crop float-right crop-w-30 crop-ratio-3-4 crop-x-60 crop-zoom-120">
   <img
     src="https://images.squarespace-cdn.com/content/v1/638101f1bfb9485af6a60b8f/6e32706b-0f99-4bda-a737-683264daf059/IMG_7512.jpg"
     alt="Rev. Heng Sure"
@@ -146,9 +147,11 @@ DM Jin Wei shared:
 
 **My reflection:** A taste. Not a lifetime contract but an exploration. Permission to see whether this lifestyle aligns with my deeper aspirations.
 
+<div class="clear-both"></div>
+
 ### **Circle with Family and Friends**
 
-![](https://images.squarespace-cdn.com/content/v1/638101f1bfb9485af6a60b8f/71667de9-32ee-40ed-b0c7-d4e1eb690b48/IMG_7557.jpg)
+![IMG_7557.jpg](https://images.squarespace-cdn.com/content/v1/638101f1bfb9485af6a60b8f/71667de9-32ee-40ed-b0c7-d4e1eb690b48/IMG_7557.jpg)
 
 After the ceremony, my Tongan and outdoor adopted family gathered with DM Jin Chuan and DM Jin Wei in a sharing circle. Everyone offered well-wishes as I prepared to join the Dharma Realm Buddhist Association’s Sangha-Laity Training Program in the United States. Unexpectedly, this moment wove together the threads of my life into one multicultural fabric.
 

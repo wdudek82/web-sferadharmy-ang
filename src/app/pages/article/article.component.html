@@ -55,12 +55,14 @@
       Zamknij
     </button>
     <figure class="lightbox-figure" (click)="$event.stopPropagation()">
-      <img
-        [src]="lightboxSrc()"
-        [alt]="lightboxCaption()"
-        [attr.width]="lightboxWidth()"
-        [attr.height]="lightboxHeight()"
-      />
+      <div class="lightbox-media">
+        <img
+          [src]="lightboxSrc()"
+          [alt]="lightboxCaption()"
+          [attr.width]="lightboxWidth()"
+          [attr.height]="lightboxHeight()"
+        />
+      </div>
       @if (lightboxCaption()) {
         <figcaption>{{ lightboxCaption() }}</figcaption>
       }

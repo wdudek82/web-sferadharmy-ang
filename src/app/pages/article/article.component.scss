@@ -101,6 +101,18 @@
   margin: 2rem 0;
 }
 
+@media (max-width: 900px) {
+  :host ::ng-deep markdown .article-image-row {
+    grid-template-columns: repeat(2, minmax(180px, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  :host ::ng-deep markdown .article-image-row {
+    grid-template-columns: 1fr;
+  }
+}
+
 :host ::ng-deep markdown .article-image-row img {
   width: 100%;
   height: auto;
@@ -124,30 +136,47 @@
   background: rgba(8, 10, 12, 0.8);
   display: grid;
   place-items: center;
-  padding: 1rem 1.5rem 3rem;
+  padding: 1rem;
   z-index: 1000;
 }
 
 .lightbox-figure {
-  max-width: min(1200px, 92vw);
-  max-height: 82vh;
-  display: grid;
+  --lightbox-media-pad: 8px;
+  --lightbox-chrome: 5.5rem;
+  max-width: 95vw;
+  max-height: 95vh;
+  display: flex;
+  flex-direction: column;
   //gap: 0.75rem;
   background: #ffffff;
   color: #f5f5f5;
   box-shadow: 0 20px 45px rgba(0, 0, 0, 0.35);
 }
 
-.lightbox-figure img {
-  width: 100%;
-  max-height: 72vh;
+.lightbox-media {
+  flex: 1 1 auto;
+  min-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 95vw;
+  max-height: calc(95vh - var(--lightbox-chrome));
+  background: #ffffff;
+  padding: var(--lightbox-media-pad) var(--lightbox-media-pad) 0;
+}
+
+.lightbox-media img {
+  width: auto;
+  height: auto;
+  max-width: calc(95vw - (var(--lightbox-media-pad) * 2));
+  max-height: calc(95vh - var(--lightbox-chrome) - (var(--lightbox-media-pad) * 2));
   object-fit: contain;
   border-radius: 0;
   background: #ffffff;
-  padding: 8px 8px 0;
 }
 
 .lightbox-figure figcaption {
+  flex: 0 0 auto;
   font-size: 1rem;
   color: #111111;
   text-align: center;
@@ -155,6 +184,26 @@
   padding: 0.1rem 0.8rem;
   width: fit-content;
   margin: 0 auto;
+}
+
+.lightbox-actions {
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: center;
+  background: #ffffff;
+  padding: 0.1rem 0 0.8rem;
+}
+
+.lightbox-save {
+  font-size: 0.9rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #111111;
+  text-decoration: underline;
+}
+
+.lightbox-save:hover {
+  color: #3a3a3a;
 }
 
 .lightbox-close {
