@@ -27,11 +27,12 @@ I have walked to the Buddha Hall many times, but that day felt different. My bod
 
 When I arrived, I sat next to James, my Tongan brother. He has been with me since I first left Taiwan for New Zealand and has been part of my entire journey away from home. That is nearly thirty years of friendship and brotherhood. I could feel sadness radiating from him. I had not had time to fully explain what this Trainee Program meant, and I think part of him worried he was losing a brother. The weight of that unspoken fear hung between us.
 
-<img
-src="https://images.squarespace-cdn.com/content/v1/638101f1bfb9485af6a60b8f/ad8fed82-00cd-4c3f-816f-cb7678897d41/IMG_7527.jpg"
-alt="IMG_7527.jpg"
-class="float-right half-width"
-/>
+<div class="image-crop float-right crop-w-40 crop-ratio-3-4 crop-x-70">
+  <img
+    src="https://images.squarespace-cdn.com/content/v1/638101f1bfb9485af6a60b8f/ad8fed82-00cd-4c3f-816f-cb7678897d41/IMG_7527.jpg"
+    alt="IMG_7527.jpg"
+  />
+</div>
 
 Then he said quietly, “I love you, brother. You’ve been such a big part of my life.” Then he added what we always say to each other, “I got your back bro.”
 
@@ -41,21 +42,23 @@ The ceremony began with reciting _Nā mó běn shī Shì jiā móu ní fó_ (南
 
 ![IMG_7522.jpg](https://images.squarespace-cdn.com/content/v1/638101f1bfb9485af6a60b8f/b4105690-53a5-406e-8073-7b294f91a67e/IMG_7522.jpg)
 
-<img
-src="https://images.squarespace-cdn.com/content/v1/638101f1bfb9485af6a60b8f/19dd6781-7179-4b0f-b125-8aeb50050385/IMG_7509.jpg"
-alt="IMG_7509.jpg"
-class="float-right half-width"
-/>
+<div class="image-crop float-right crop-w-40 crop-ratio-3-4 crop-x-40">
+  <img
+  src="https://images.squarespace-cdn.com/content/v1/638101f1bfb9485af6a60b8f/19dd6781-7179-4b0f-b125-8aeb50050385/IMG_7509.jpg"
+  alt="IMG_7509.jpg"
+  />
+</div>
 
 When they had all entered, I stopped bowing, walked over, and hugged each one to welcome and appreciate them. That is not something we usually do in the monastery, but I wanted them to feel at home the way they have always made me feel at home. In that moment, I was not trying to be a “good Buddhist” or follow protocol. I was simply Wade, loving the people who first taught me what unconditional love feels like.
 
 Later, some told me it was a touching moment. Some even cried. I think they saw something in that gesture, that I was not becoming someone else. I was becoming more myself. During the recitation and bowing, I periodically turned toward them. Eye contact. A silent thank you for being there.
 
-<img
-src="https://images.squarespace-cdn.com/content/v1/638101f1bfb9485af6a60b8f/0635be8b-cc1e-49bb-a3f2-6f7fdfa17f88/IMG_8414.JPG"
-alt="IMG_8414.JPG"
-class="float-left half-width"
-/>
+<div class="image-crop float-left crop-w-40 crop-ratio-3-4 crop-x-40">
+  <img
+    src="https://images.squarespace-cdn.com/content/v1/638101f1bfb9485af6a60b8f/0635be8b-cc1e-49bb-a3f2-6f7fdfa17f88/IMG_8414.JPG"
+    alt="IMG_8414.JPG"
+  />
+</div>
 
 The energy shifted when the four Dharma Masters entered: Reverend Heng Sure, DM Jin Yong, DM Jin Chuan, and DM Jin Wei. A beautiful solemnity filled the space. The air itself seemed denser and more sacred.
 
@@ -69,11 +72,12 @@ After the Dharma Masters shared their words, I walked out behind them as Chin Ju
 
 #### **Trek up Nirvana Mountain**
 
-<img
-src="https://images.squarespace-cdn.com/content/v1/638101f1bfb9485af6a60b8f/6e32706b-0f99-4bda-a737-683264daf059/IMG_7512.jpg"
-alt="Rev. Heng Sure"
-class="float-right half-width crop-vertical-20"
-/>
+<div class="image-crop float-right crop-w-20 crop-ratio-3-4 crop-x-60 crop-zoom-120">
+  <img
+    src="https://images.squarespace-cdn.com/content/v1/638101f1bfb9485af6a60b8f/6e32706b-0f99-4bda-a737-683264daf059/IMG_7512.jpg"
+    alt="Rev. Heng Sure"
+  />
+</div>
 
 Rev. Heng Sure shared:
 
@@ -99,11 +103,12 @@ She told me her friends—who once said her son had 'stepped off the planet'—w
 
 #### **Dharma Affinities**
 
-<img
-src="https://images.squarespace-cdn.com/content/v1/638101f1bfb9485af6a60b8f/283cfd72-7eeb-4b2b-84fb-397e02a7e208/IMG_7513.jpg"
-alt="DM Jin Yong"
-class="float-right half-width crop-vertical-20"
-/>
+<div class="image-crop float-right crop-w-20 crop-ratio-3-4 crop-x-100 crop-zoom-120">
+  <img
+    src="https://images.squarespace-cdn.com/content/v1/638101f1bfb9485af6a60b8f/283cfd72-7eeb-4b2b-84fb-397e02a7e208/IMG_7513.jpg"
+    alt="DM Jin Yong"
+  />
+</div>
 
 DM Jin Yong said:
 
@@ -113,11 +118,12 @@ DM Jin Yong said:
 
 #### **Redefining Monasticism**
 
-<img
-src="https://images.squarespace-cdn.com/content/v1/638101f1bfb9485af6a60b8f/13633467-2d86-43aa-b973-824196d9502a/IMG_7515.jpg"
-alt="DM Jin Chuan"
-class="float-right half-width crop-vertical-20"
-/>
+<div class="image-crop float-right crop-w-20 crop-ratio-3-4 crop-x-30 crop-zoom-140">
+  <img
+    src="https://images.squarespace-cdn.com/content/v1/638101f1bfb9485af6a60b8f/13633467-2d86-43aa-b973-824196d9502a/IMG_7515.jpg"
+    alt="DM Jin Chuan"
+  />
+</div>
 
 DM Jin Chuan said:
 
@@ -127,11 +133,12 @@ DM Jin Chuan said:
 
 #### **A Taste of Monastic Life**
 
-<img
-src="https://images.squarespace-cdn.com/content/v1/638101f1bfb9485af6a60b8f/7eb750fa-e43f-4d56-81c5-b39994054ead/IMG_7514.jpg"
-alt="DM Jin Wei"
-class="float-right half-width crop-vertical-20"
-/>
+<div class="image-crop float-right crop-w-20 crop-ratio-3-4 crop-x-80 crop-zoom-110">
+  <img
+    src="https://images.squarespace-cdn.com/content/v1/638101f1bfb9485af6a60b8f/7eb750fa-e43f-4d56-81c5-b39994054ead/IMG_7514.jpg"
+    alt="DM Jin Wei"
+  />
+</div>
 
 DM Jin Wei shared:
 

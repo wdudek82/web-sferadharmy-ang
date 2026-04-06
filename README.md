@@ -138,7 +138,7 @@ Available float helpers:
 
 ### 5) Image rows (grid)
 
-Use the row wrapper to show 2–4 images in a responsive grid:
+Use the row wrapper to show 2-4 images in a responsive grid:
 
 ```
 <div class="article-image-row">
@@ -149,22 +149,45 @@ Use the row wrapper to show 2–4 images in a responsive grid:
 </div>
 ```
 
-### 6) Framed crops (show only a fragment)
+### 6) Cropped images (flexible utility system)
 
-To crop the top/bottom of a larger image while keeping a rounded frame, use the `image-frame` wrapper and a crop class:
+Use the `image-crop` wrapper with utility classes for sizing, aspect ratio, and focus. This system avoids empty space, supports text wrapping, and keeps markup minimal.
 
 ```
-<figure class="image-frame float-right half-width crop-vertical-10">
+<div class="image-crop float-right crop-w-40 crop-ratio-3-4 crop-x-30 crop-y-60">
   <img src="..." alt="..." />
-</figure>
+</div>
 ```
 
-Available crop classes:
-- `crop-vertical-10` (crop 10% from top and bottom)
-- `crop-vertical-20`
-- `crop-vertical-30`
+Core wrapper:
+- `image-crop` (required for cropping)
 
-You can move the crop class onto the `<img>` if you prefer; both are supported.
+Float helpers (text wrap):
+- `float-left`
+- `float-right`
+
+Sizes (width):
+- `crop-w-20`, `crop-w-30`, `crop-w-40`, `crop-w-50`
+- `crop-px-200`, `crop-px-300`, `crop-px-400`
+
+Aspect ratios (preferred for height control):
+- `crop-ratio-1-1`, `crop-ratio-4-3`, `crop-ratio-3-4`, `crop-ratio-16-9`, `crop-ratio-2-3`
+
+Focus control:
+- Vertical focus (top to bottom): `crop-x-0` ... `crop-x-100`
+- Horizontal focus (left to right): `crop-y-0` ... `crop-y-100`
+
+Zoom (crop tighter without changing frame size):
+- `crop-zoom-105`, `crop-zoom-110`, `crop-zoom-120`, `crop-zoom-130`
+
+Optional helpers:
+- `image-block` (adds vertical margins)
+- `image-inline` (inline-block wrapper)
+- `rounded` (adds `shape-outside` for nicer text wrap)
+
+Notes:
+- The image crop clears previous floats to avoid clustering. Use `float-left` or `float-right` on the wrapper to wrap text around the image.
+- `object-position` uses the focus utilities. `crop-x-50` and `crop-y-50` center the visible area.
 
 ### 7) Lightbox
 
