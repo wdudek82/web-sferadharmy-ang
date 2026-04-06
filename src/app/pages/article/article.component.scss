@@ -19,7 +19,8 @@
 
 .article-nav-link {
   display: inline-flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
   gap: 0.6rem;
   color: inherit;
   max-width: 48%;
@@ -29,6 +30,7 @@
   margin-left: auto;
   text-align: right;
   justify-content: flex-end;
+  align-items: flex-end;
 }
 
 .article-nav-link span:last-child {
