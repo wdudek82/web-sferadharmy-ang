@@ -16,7 +16,7 @@ export const textsData: TextSummary[] = [
     href: '#',
     date: '12 marca 2026',
     time: '18:30',
-    image: '/images/texts/img_1.png',
+    image: '/images/texts/trainee-ceremony.jpg',
   },
   {
     id: 'wspolczucie-bez-wysilku',
@@ -70,7 +70,7 @@ export const textsData: TextSummary[] = [
     href: '#',
     date: '12 marca 2026',
     time: '18:30',
-    image: '/images/texts/img_1.png',
+    image: '/images/texts/trainee-ceremony.jpg',
   },
   {
     id: 'wspolczucie-bez-wysilku-3',
