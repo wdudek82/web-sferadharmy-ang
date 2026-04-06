@@ -1,4 +1,4 @@
-﻿﻿# Trainee Ceremony: Search for Purpose
+﻿# Trainee Ceremony: Search for Purpose
 
 by Chin Zhi (Mingchee Tan)
 

@@ -1,14 +1,15 @@
 import { Component, DestroyRef, HostListener, inject, signal } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, RouterLink } from '@angular/router';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { filter, map, switchMap } from 'rxjs/operators';
 import { MarkdownModule } from 'ngx-markdown';
 import { ArticleService } from '../../services/article.service';
+import { textsData } from '../texts/texts-data';
 
 @Component({
   selector: 'app-article',
   standalone: true,
-  imports: [MarkdownModule],
+  imports: [MarkdownModule, RouterLink],
   templateUrl: './article.component.html',
   styleUrl: './article.component.scss',
 })
@@ -21,6 +22,10 @@ export class ArticleComponent {
   protected readonly lightboxCaption = signal('');
   protected readonly lightboxWidth = signal(1200);
   protected readonly lightboxHeight = signal(900);
+  protected readonly prevLink = signal<string | null>(null);
+  protected readonly prevTitle = signal<string | null>(null);
+  protected readonly nextLink = signal<string | null>(null);
+  protected readonly nextTitle = signal<string | null>(null);
 
   private readonly articleService = inject(ArticleService);
   private readonly route = inject(ActivatedRoute);
@@ -32,7 +37,10 @@ export class ArticleComponent {
         takeUntilDestroyed(this.destroyRef),
         map((params) => params.get('id')),
         filter((id): id is string => Boolean(id)),
-        switchMap((id) => this.articleService.getArticle(id)),
+        switchMap((id) => {
+          this.updateNav(id);
+          return this.articleService.getArticle(id);
+        }),
       )
       .subscribe({
         next: (markdown) => {
@@ -73,5 +81,16 @@ export class ArticleComponent {
     if (this.lightboxOpen()) {
       this.closeLightbox();
     }
+  }
+
+  private updateNav(id: string) {
+    const index = textsData.findIndex((text) => text.id === id);
+    const prev = index > 0 ? textsData[index - 1] : null;
+    const next = index >= 0 && index < textsData.length - 1 ? textsData[index + 1] : null;
+
+    this.prevLink.set(prev ? prev.href : null);
+    this.prevTitle.set(prev ? prev.title : null);
+    this.nextLink.set(next ? next.href : null);
+    this.nextTitle.set(next ? next.title : null);
   }
 }

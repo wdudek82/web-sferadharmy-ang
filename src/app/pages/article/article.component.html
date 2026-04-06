@@ -1,5 +1,22 @@
 <section class="section article">
   <div class="article-shell">
+    @if (!isLoading() && !notFound()) {
+      <nav class="article-nav">
+        @if (prevLink()) {
+          <a class="article-nav-link" [routerLink]="prevLink()">
+            <span class="article-nav-label">&lt; Poprzedni:</span>
+            <span>{{ prevTitle() }}</span>
+          </a>
+        }
+        @if (nextLink()) {
+          <a class="article-nav-link" [routerLink]="nextLink()">
+            <span class="article-nav-label">Następny:</span>
+            <span>{{ nextTitle() }}</span>
+            <span class="article-nav-label">&gt;</span>
+          </a>
+        }
+      </nav>
+    }
     @if (isLoading()) {
       <p class="article-status">Wczytywanie tekstu…</p>
     } @else if (notFound()) {
@@ -11,6 +28,27 @@
     }
   </div>
 </section>
+@if (!isLoading() && !notFound()) {
+  <section class="section article">
+    <div class="article-shell">
+      <nav class="article-nav article-nav-bottom">
+        @if (prevLink()) {
+          <a class="article-nav-link" [routerLink]="prevLink()">
+            <span class="article-nav-label">&lt; Poprzedni:</span>
+            <span>{{ prevTitle() }}</span>
+          </a>
+        }
+        @if (nextLink()) {
+          <a class="article-nav-link" [routerLink]="nextLink()">
+            <span class="article-nav-label">Następny:</span>
+            <span>{{ nextTitle() }}</span>
+            <span class="article-nav-label">&gt;</span>
+          </a>
+        }
+      </nav>
+    </div>
+  </section>
+}
 @if (lightboxOpen()) {
   <div class="lightbox" role="dialog" aria-modal="true" (click)="closeLightbox()">
     <button class="lightbox-close" type="button" (click)="closeLightbox()" aria-label="Zamknij">
