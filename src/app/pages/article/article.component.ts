@@ -1,7 +1,7 @@
 import { Component, DestroyRef, HostListener, inject, signal } from '@angular/core';
 import { ActivatedRoute, RouterLink } from '@angular/router';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
-import { filter, map, switchMap } from 'rxjs/operators';
+import { filter, map, switchMap, tap } from 'rxjs/operators';
 import { MarkdownModule } from 'ngx-markdown';
 import { ArticleService } from '../../services/article.service';
 import { textsData } from '../texts/texts-data';
@@ -37,6 +37,7 @@ export class ArticleComponent {
         takeUntilDestroyed(this.destroyRef),
         map((params) => params.get('id')),
         filter((id): id is string => Boolean(id)),
+        tap(() => window.scrollTo({ top: 0, left: 0 })),
         switchMap((id) => {
           this.updateNav(id);
           return this.articleService.getArticle(id);
