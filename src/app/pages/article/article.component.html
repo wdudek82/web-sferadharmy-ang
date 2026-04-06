@@ -33,15 +33,14 @@
       <nav class="article-nav article-nav-bottom">
         @if (prevLink()) {
           <a class="article-nav-link" [routerLink]="prevLink()">
-            <span class="article-nav-label">&lt; Poprzedni:</span>
+            <span class="article-nav-label">&lt; Poprzedni</span>
             <span>{{ prevTitle() }}</span>
           </a>
         }
         @if (nextLink()) {
           <a class="article-nav-link next" [routerLink]="nextLink()">
-            <span class="article-nav-label">Następny:</span>
+            <span class="article-nav-label">Następny ></span>
             <span>{{ nextTitle() }}</span>
-            <span class="article-nav-label">&gt;</span>
           </a>
         }
       </nav>
