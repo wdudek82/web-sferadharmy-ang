@@ -1,24 +1,15 @@
-﻿---
-id: trainee-ceremony-search-for-purpose
-title: Trainee Ceremony: A Search for Purpose
-date: 2026-03-01
-author: Chin Zhi (Mingchee Tan)
-image: ./images/trainee-ceremony.jpg
----
-
-# Trainee Ceremony: Search for Purpose
+﻿﻿# Trainee Ceremony: Search for Purpose
 
 by Chin Zhi (Mingchee Tan)
 
 **March 3rd, 2026 | Redwood Vihara, CA, USA | 13th day of 1st Lunar Month**
 
-![IMG_9530.jpg](https://images.squarespace-cdn.com/content/v1/638101f1bfb9485af6a60b8f/1773260684440-LEPTKQEIW3ABL90JOA11/IMG_9530.jpg?format=500w)
-
-![vlcsnap-2026-03-07-16h28m08s649.png](https://images.squarespace-cdn.com/content/v1/638101f1bfb9485af6a60b8f/1773267275583-6T3P8IUP10NG5CFTWX86/vlcsnap-2026-03-07-16h28m08s649.png?format=750w)
-
-![IMG_2409.jpg](https://images.squarespace-cdn.com/content/v1/638101f1bfb9485af6a60b8f/1773273922920-A8XX6AB15F9NX2BZ31BL/IMG_2409.jpg?format=500w)
-
-![IMG_2414.jpg](https://images.squarespace-cdn.com/content/v1/638101f1bfb9485af6a60b8f/1773260530627-UQW26OVN22CJKCF843BE/IMG_2414.jpg?format=500w)
+<div class="article-image-row">
+  <img src="https://images.squarespace-cdn.com/content/v1/638101f1bfb9485af6a60b8f/1773260684440-LEPTKQEIW3ABL90JOA11/IMG_9530.jpg?format=500w" alt="This is an example alt text" />
+  <img src="https://images.squarespace-cdn.com/content/v1/638101f1bfb9485af6a60b8f/1773267275583-6T3P8IUP10NG5CFTWX86/vlcsnap-2026-03-07-16h28m08s649.png?format=750w" alt="This is an example alt text" />
+  <img src="https://images.squarespace-cdn.com/content/v1/638101f1bfb9485af6a60b8f/1773273922920-A8XX6AB15F9NX2BZ31BL/IMG_2409.jpg?format=500w" alt="This is an example alt text" />
+  <img src="https://images.squarespace-cdn.com/content/v1/638101f1bfb9485af6a60b8f/1773260530627-UQW26OVN22CJKCF843BE/IMG_2414.jpg?format=500w" alt="This is an example alt text" />
+</div>
 
 On March 1st, 2026, I stood in the middle of the hall surrounded by family, friends, and the larger Dharma community making vows to become a Trainee (Anagarika) under the guidance of the Sangha led by the Ven. Master Hsuan Hua with my Dharma Name Chin Zhi (親智).
 
@@ -32,9 +23,11 @@ Then a simple thought occurred to me: _Why not join the monastery, at least for 
 
 When the day of the Trainee Ceremony finally arrived, it felt surreal. Despite all my earlier rationalizations, moments of panic and doubt still surfaced in the weeks beforehand. I wish I could say that I approached the decision with heroic certainty, free from anxiety, but the truth is that doubts continued to creep into my mind:
 
-View fullsize
-
-![](https://images.squarespace-cdn.com/content/v1/638101f1bfb9485af6a60b8f/19bf2fbf-7699-4cce-9629-1d3f78a37e45/PHOTO-2026-03-01-21-10-24.jpg)
+<img
+src="https://images.squarespace-cdn.com/content/v1/638101f1bfb9485af6a60b8f/19bf2fbf-7699-4cce-9629-1d3f78a37e45/PHOTO-2026-03-01-21-10-24.jpg"
+alt="PHOTO-2026-03-01-21-10-24.jpg"
+class="float-right half-width"
+/>
 
 _Are you sure about this?  
 You’re not cut out for this.  
@@ -53,13 +46,10 @@ On the day of the ceremony itself, my heart felt unexpectedly cool and calm. Eve
 
 ### Learning Gratitude
 
-View fullsize
-
-![](https://images.squarespace-cdn.com/content/v1/638101f1bfb9485af6a60b8f/da5adf47-475b-42d3-b602-95b8ef919204/IMG_2467.jpg)
-
-View fullsize
-
-![](https://images.squarespace-cdn.com/content/v1/638101f1bfb9485af6a60b8f/5c781766-8885-4aae-9e99-cd80fcc7e4c3/IMG_2464.jpg)
+<div class="article-image-row">
+  <img src="https://images.squarespace-cdn.com/content/v1/638101f1bfb9485af6a60b8f/da5adf47-475b-42d3-b602-95b8ef919204/IMG_2467.jpg" alt="This is an example alt text" />
+  <img src="https://images.squarespace-cdn.com/content/v1/638101f1bfb9485af6a60b8f/5c781766-8885-4aae-9e99-cd80fcc7e4c3/IMG_2464.jpg" alt="This is an example alt text" />
+</div>
 
 After the ceremony, I gathered with a small circle of friends and family, especially those who were less familiar with Buddhism. Some had traveled great distances to be there. My younger sister Susan came all the way from New York City, and my old friend Jose journeyed from Maine. We sat together in a circle, speaking one at a time while the others listened mindfully.
 
@@ -67,9 +57,11 @@ Each person was invited to reflect on two questions: _What is your relationship 
 
 I did not expect the depth of support and love that followed.
 
-View fullsize
-
-![](https://images.squarespace-cdn.com/content/v1/638101f1bfb9485af6a60b8f/613a2a5c-1f2d-47cf-a50e-c5e4627d35a1/IMG_2472.jpg)
+<img
+  src="https://images.squarespace-cdn.com/content/v1/638101f1bfb9485af6a60b8f/613a2a5c-1f2d-47cf-a50e-c5e4627d35a1/IMG_2472.jpg"
+  alt="IMG_2472"
+  class="float-right half-width"
+/>
 
 My sister Susan expressed how happy she was that I was finally following my dream. She even reassured me that she would take care of our mother and that I should not worry. For anyone who knows me, that concern has always weighed heavily on my mind. Hearing those words lifted an enormous burden from my heart.
 

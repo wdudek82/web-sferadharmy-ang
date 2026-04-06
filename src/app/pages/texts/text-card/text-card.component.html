@@ -1,17 +1,23 @@
 <article class="text-card" [class.is-visible]="isVisible()">
-  <a class="text-media" [attr.href]="text.href">
-    <img [src]="text.image" [alt]="text.title" />
+  <a class="text-media" [routerLink]="text.href">
+    <img
+      [ngSrc]="text.thumbnail"
+      [alt]="text.title"
+      width="640"
+      height="420"
+      sizes="(max-width: 900px) 90vw, 33vw"
+    />
   </a>
   <div class="text-content">
     <div class="text-meta">
       <span>{{ text.date }}</span>
-      <span aria-hidden="true">·</span>
+      <span aria-hidden="true">&middot;</span>
       <span>{{ text.time }}</span>
     </div>
-    <a class="text-title" [attr.href]="text.href">
+    <a class="text-title" [routerLink]="text.href">
       <h3>{{ text.title }}</h3>
     </a>
     <p>{{ text.excerpt }}</p>
-    <a class="text-link" [attr.href]="text.href">Czytaj</a>
+    <a class="text-link" [routerLink]="text.href">Czytaj</a>
   </div>
 </article>

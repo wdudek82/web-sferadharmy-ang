@@ -1,0 +1,146 @@
+.article-shell {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.article-status {
+  font-size: 1.1rem;
+  color: var(--body-muted);
+}
+
+:host ::ng-deep markdown {
+  display: block;
+}
+
+:host ::ng-deep markdown h1,
+:host ::ng-deep markdown h2,
+:host ::ng-deep markdown h3 {
+  font-family: var(--font-display);
+  color: var(--heading-primary);
+  margin: 2.5rem 0 1rem;
+}
+
+:host ::ng-deep markdown h1 {
+  font-size: clamp(2.6rem, 4.6vw, 3.8rem);
+}
+
+:host ::ng-deep markdown p {
+  margin: 1rem 0;
+  line-height: 1.75;
+}
+
+:host ::ng-deep markdown img {
+  max-width: 100%;
+  border-radius: var(--radius);
+  margin: 1.5rem 0;
+  display: block;
+}
+
+:host ::ng-deep markdown img.float-left {
+  float: left;
+  margin: 0 1.5rem 1.2rem 0;
+}
+
+:host ::ng-deep markdown img.float-right {
+  float: right;
+  margin: 0 0 1.2rem 1.5rem;
+}
+
+:host ::ng-deep markdown img[class*='crop-vertical-'] {
+  clip-path: inset(var(--crop, 0) 0);
+  margin-top: calc(var(--crop, 0) * -1);
+  margin-bottom: calc(var(--crop, 0) * -1);
+}
+
+:host ::ng-deep markdown img.crop-vertical-10 {
+  --crop: 10%;
+}
+
+:host ::ng-deep markdown img.crop-vertical-20 {
+  --crop: 20%;
+}
+
+:host ::ng-deep markdown img.crop-vertical-30 {
+  --crop: 30%;
+}
+
+:host ::ng-deep markdown .article-image-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+:host ::ng-deep markdown .article-image-row img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  margin: 0;
+  border-radius: calc(var(--radius) - 4px);
+  cursor: zoom-in;
+}
+
+:host ::ng-deep markdown blockquote {
+  border-left: 3px solid var(--card-border);
+  padding-left: 1rem;
+  margin: 1.5rem 0;
+  color: var(--body-muted);
+}
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(8, 10, 12, 0.8);
+  display: grid;
+  place-items: center;
+  padding: 1rem 1.5rem 3rem;
+  z-index: 1000;
+}
+
+.lightbox-figure {
+  max-width: min(1200px, 92vw);
+  max-height: 82vh;
+  display: grid;
+  //gap: 0.75rem;
+  background: #ffffff;
+  color: #f5f5f5;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.35);
+}
+
+.lightbox-figure img {
+  width: 100%;
+  max-height: 72vh;
+  object-fit: contain;
+  border-radius: 0;
+  background: #ffffff;
+  padding: 8px 8px 0;
+}
+
+.lightbox-figure figcaption {
+  font-size: 1rem;
+  color: #111111;
+  text-align: center;
+  background: #ffffff;
+  padding: 0.1rem 0.8rem;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.lightbox-close {
+  position: fixed;
+  top: 1.5rem;
+  right: 1.5rem;
+  background: rgba(16, 18, 20, 0.8);
+  color: #f5f5f5;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 999px;
+  padding: 0.6rem 1.4rem;
+  font-size: 0.9rem;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+}
+
+.lightbox-close:hover {
+  background: rgba(16, 18, 20, 0.95);
+}

@@ -26,8 +26,13 @@ body {
   font-family: var(--font-body);
   background: var(--section-bg);
   color: var(--body-text);
+  font-size: 1.5rem;
   line-height: 1.6;
   overflow-x: hidden;
+}
+
+p {
+  font-size: 1em;
 }
 
 a {
@@ -77,7 +82,7 @@ button {
 
 .section-header p {
   color: var(--body-muted);
-  font-size: 1.05rem;
+  font-size: 1em;
 }
 
 .btn {
@@ -134,6 +139,25 @@ button {
 
 .card p {
   color: var(--body-muted);
+}
+
+.float-left {
+  // Keep floats for Markdown articles to enable classic text wrap around images without extra markup.
+  float: left;
+  margin: 0 16px 12px 0;
+  max-width: 300px;
+}
+
+.float-right {
+  // Keep floats for Markdown articles to enable classic text wrap around images without extra markup.
+  float: right;
+  margin: 0 0 12px 16px;
+  max-width: 300px;
+}
+
+.half-width {
+  width: 50%;
+  max-width: 50%;
 }
 
 @media (prefers-reduced-motion: reduce) {
