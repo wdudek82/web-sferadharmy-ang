@@ -46,24 +46,6 @@
   margin: 0 0 1.2rem 1.5rem;
 }
 
-:host ::ng-deep markdown img[class*='crop-vertical-'] {
-  clip-path: inset(var(--crop, 0) 0);
-  margin-top: calc(var(--crop, 0) * -1);
-  margin-bottom: calc(var(--crop, 0) * -1);
-}
-
-:host ::ng-deep markdown img.crop-vertical-10 {
-  --crop: 10%;
-}
-
-:host ::ng-deep markdown img.crop-vertical-20 {
-  --crop: 20%;
-}
-
-:host ::ng-deep markdown img.crop-vertical-30 {
-  --crop: 30%;
-}
-
 :host ::ng-deep markdown .article-image-row {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));

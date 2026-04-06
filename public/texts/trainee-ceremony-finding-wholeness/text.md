@@ -30,7 +30,7 @@ When I arrived, I sat next to James, my Tongan brother. He has been with me sinc
 <img
 src="https://images.squarespace-cdn.com/content/v1/638101f1bfb9485af6a60b8f/ad8fed82-00cd-4c3f-816f-cb7678897d41/IMG_7527.jpg"
 alt="IMG_7527.jpg"
-class="float-right half-width crop-vertical-10"
+class="float-right half-width"
 />
 
 Then he said quietly, “I love you, brother. You’ve been such a big part of my life.” Then he added what we always say to each other, “I got your back bro.”
@@ -44,7 +44,7 @@ The ceremony began with reciting _Nā mó běn shī Shì jiā móu ní fó_ (南
 <img
 src="https://images.squarespace-cdn.com/content/v1/638101f1bfb9485af6a60b8f/19dd6781-7179-4b0f-b125-8aeb50050385/IMG_7509.jpg"
 alt="IMG_7509.jpg"
-class="float-right half-width crop-vertical-20"
+class="float-right half-width"
 />
 
 When they had all entered, I stopped bowing, walked over, and hugged each one to welcome and appreciate them. That is not something we usually do in the monastery, but I wanted them to feel at home the way they have always made me feel at home. In that moment, I was not trying to be a “good Buddhist” or follow protocol. I was simply Wade, loving the people who first taught me what unconditional love feels like.

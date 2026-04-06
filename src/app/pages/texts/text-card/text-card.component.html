@@ -17,7 +17,9 @@
     <a class="text-title" [routerLink]="text.href">
       <h3>{{ text.title }}</h3>
     </a>
-    <p>{{ text.excerpt }}</p>
+    <p>
+      {{ text.excerpt | slice: 0 : 200 }}@if (text.excerpt.length > 200) {…}
+    </p>
     <a class="text-link" [routerLink]="text.href">Czytaj</a>
   </div>
 </article>
