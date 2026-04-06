@@ -9,7 +9,7 @@
           </a>
         }
         @if (nextLink()) {
-          <a class="article-nav-link" [routerLink]="nextLink()">
+          <a class="article-nav-link next" [routerLink]="nextLink()">
             <span class="article-nav-label">Następny:</span>
             <span>{{ nextTitle() }}</span>
             <span class="article-nav-label">&gt;</span>
@@ -39,7 +39,7 @@
           </a>
         }
         @if (nextLink()) {
-          <a class="article-nav-link" [routerLink]="nextLink()">
+          <a class="article-nav-link next" [routerLink]="nextLink()">
             <span class="article-nav-label">Następny:</span>
             <span>{{ nextTitle() }}</span>
             <span class="article-nav-label">&gt;</span>

@@ -34,16 +34,16 @@ export const textsData: TextSummary[] = [
     thumbnail:
       'https://images.squarespace-cdn.com/content/v1/638101f1bfb9485af6a60b8f/1770489264052-MKICFSJG5QFPC6ZL6TIG/IMG_7478+%281%29.jpg?format=2500w',
   },
-  // {
-  //   id: 'trainee-ceremony-search-for-purpose-2',
-  //   author: 'Chin Zhi (Mingchee Tan)',
-  //   title: 'Trainee Ceremony: A Search for Purpose',
-  //   excerpt:
-  //     'On March 1st, 2026, I stood in the middle of the hall surrounded by family, friends, and the larger Dharma community making vows to become a Trainee (Anagarika) under the guidance of the Sangha led by the Ven. Master Hsuan Hua with my Dharma Name Chin Zhi (親智).',
-  //   href: '/teksty/trainee-ceremony-search-for-purpose-2',
-  //   date: '1 marca 2026',
-  //   time: '13:00',
-  //   thumbnail:
-  //     'https://images.squarespace-cdn.com/content/v1/638101f1bfb9485af6a60b8f/19bf2fbf-7699-4cce-9629-1d3f78a37e45/PHOTO-2026-03-01-21-10-24.jpg',
-  // },
+  {
+    id: 'trainee-ceremony-search-for-purpose-2',
+    author: 'Chin Zhi (Mingchee Tan)',
+    title: 'Trainee Ceremony: A Search for Purpose 2',
+    excerpt:
+      'On March 1st, 2026, I stood in the middle of the hall surrounded by family, friends, and the larger Dharma community making vows to become a Trainee (Anagarika) under the guidance of the Sangha led by the Ven. Master Hsuan Hua with my Dharma Name Chin Zhi (親智).',
+    href: '/teksty/trainee-ceremony-search-for-purpose-2',
+    date: '1 marca 2026',
+    time: '13:00',
+    thumbnail:
+      'https://images.squarespace-cdn.com/content/v1/638101f1bfb9485af6a60b8f/19bf2fbf-7699-4cce-9629-1d3f78a37e45/PHOTO-2026-03-01-21-10-24.jpg',
+  },
 ];

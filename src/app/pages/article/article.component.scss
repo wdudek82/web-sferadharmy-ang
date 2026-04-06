@@ -25,6 +25,12 @@
   max-width: 48%;
 }
 
+.article-nav-link.next {
+  margin-left: auto;
+  text-align: right;
+  justify-content: flex-end;
+}
+
 .article-nav-link span:last-child {
   color: var(--body-text);
 }
