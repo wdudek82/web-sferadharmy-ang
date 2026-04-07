@@ -21,7 +21,7 @@
     } @else if (notFound()) {
       <p class="article-status">Nie znaleziono tego tekstu.</p>
     } @else {
-      <div class="article-content" (click)="onArticleClick($event)">
+      <div class="article-content" #articleContent>
         <markdown [data]="content()" />
       </div>
     }
@@ -46,24 +46,4 @@
       </nav>
     </div>
   </section>
-}
-@if (lightboxOpen()) {
-  <div class="lightbox" role="dialog" aria-modal="true" (click)="closeLightbox()">
-    <button class="lightbox-close" type="button" (click)="closeLightbox()" aria-label="Zamknij">
-      Zamknij
-    </button>
-    <figure class="lightbox-figure" (click)="$event.stopPropagation()">
-      <div class="lightbox-media">
-        <img
-          [src]="lightboxSrc()"
-          [alt]="lightboxCaption()"
-          [attr.width]="lightboxWidth()"
-          [attr.height]="lightboxHeight()"
-        />
-      </div>
-      @if (lightboxCaption()) {
-        <figcaption>{{ lightboxCaption() }}</figcaption>
-      }
-    </figure>
-  </div>
 }

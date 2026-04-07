@@ -66,7 +66,7 @@ I walked to the center of the hall. I felt calm, solid, grounded. Facing the Dha
 
 After the Dharma Masters shared their words, I walked out behind them as Chin Jue, beginning a new chapter of my life going to a new continent
 
-![](https://images.squarespace-cdn.com/content/v1/638101f1bfb9485af6a60b8f/cac381fe-6891-4041-b817-88b14e0098cf/IMG_7531.jpg)
+![IMG_7531.jpg](https://images.squarespace-cdn.com/content/v1/638101f1bfb9485af6a60b8f/cac381fe-6891-4041-b817-88b14e0098cf/IMG_7531.jpg)
 
 ### **Instructions from the Dharma Masters**
 

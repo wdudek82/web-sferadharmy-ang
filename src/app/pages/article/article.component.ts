@@ -1,4 +1,5 @@
-import { Component, DestroyRef, HostListener, inject, signal } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
+import { Component, DestroyRef, ElementRef, PLATFORM_ID, ViewChild, inject, signal } from '@angular/core';
 import { ActivatedRoute, RouterLink } from '@angular/router';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { filter, map, switchMap, tap } from 'rxjs/operators';
@@ -17,19 +18,18 @@ export class ArticleComponent {
   protected readonly content = signal('');
   protected readonly isLoading = signal(true);
   protected readonly notFound = signal(false);
-  protected readonly lightboxOpen = signal(false);
-  protected readonly lightboxSrc = signal('');
-  protected readonly lightboxCaption = signal('');
-  protected readonly lightboxWidth = signal(1200);
-  protected readonly lightboxHeight = signal(900);
   protected readonly prevLink = signal<string | null>(null);
   protected readonly prevTitle = signal<string | null>(null);
   protected readonly nextLink = signal<string | null>(null);
   protected readonly nextTitle = signal<string | null>(null);
 
+  @ViewChild('articleContent') private articleContent?: ElementRef<HTMLElement>;
+
   private readonly articleService = inject(ArticleService);
   private readonly route = inject(ActivatedRoute);
   private readonly destroyRef = inject(DestroyRef);
+  private readonly platformId = inject(PLATFORM_ID);
+  private lightboxInitPending = false;
 
   constructor() {
     this.route.paramMap
@@ -48,6 +48,7 @@ export class ArticleComponent {
           this.content.set(markdown);
           this.isLoading.set(false);
           this.notFound.set(false);
+          this.queueLightboxInit();
         },
         error: () => {
           this.content.set('');
@@ -55,33 +56,6 @@ export class ArticleComponent {
           this.notFound.set(true);
         },
       });
-  }
-
-  protected onArticleClick(event: MouseEvent) {
-    const target = event.target as HTMLElement | null;
-    if (!target || target.tagName !== 'IMG') {
-      return;
-    }
-
-    const imageElement = target as HTMLImageElement;
-    event.preventDefault();
-
-    this.lightboxSrc.set(imageElement.currentSrc || imageElement.src);
-    this.lightboxCaption.set(imageElement.alt || '');
-    this.lightboxWidth.set(imageElement.naturalWidth || 1200);
-    this.lightboxHeight.set(imageElement.naturalHeight || 900);
-    this.lightboxOpen.set(true);
-  }
-
-  protected closeLightbox() {
-    this.lightboxOpen.set(false);
-  }
-
-  @HostListener('document:keydown.escape')
-  protected onEscape() {
-    if (this.lightboxOpen()) {
-      this.closeLightbox();
-    }
   }
 
   private updateNav(id: string) {
@@ -93,5 +67,64 @@ export class ArticleComponent {
     this.prevTitle.set(prev ? prev.title : null);
     this.nextLink.set(next ? next.href : null);
     this.nextTitle.set(next ? next.title : null);
+  }
+
+  private queueLightboxInit() {
+    if (!isPlatformBrowser(this.platformId)) {
+      return;
+    }
+
+    if (this.lightboxInitPending) {
+      return;
+    }
+
+    this.lightboxInitPending = true;
+    window.setTimeout(() => {
+      this.lightboxInitPending = false;
+      this.prepareLightboxImages();
+    }, 0);
+  }
+
+  private prepareLightboxImages() {
+    const host = this.articleContent?.nativeElement;
+    if (!host) {
+      return;
+    }
+
+    const images = Array.from(host.querySelectorAll('img'));
+    images.forEach((image) => {
+      const pictureParent = image.parentElement?.tagName === 'PICTURE' ? image.parentElement : null;
+      const wrapperTarget = pictureParent ?? image;
+      const anchorParent = wrapperTarget.parentElement;
+
+      if (anchorParent?.tagName === 'A') {
+        const anchor = anchorParent as HTMLAnchorElement;
+        if (!anchor.dataset['lightbox']) {
+          anchor.dataset['lightbox'] = 'article-gallery';
+        }
+        if (image.alt && !anchor.dataset['title']) {
+          anchor.dataset['title'] = image.alt;
+        }
+        if (!anchor.getAttribute('href')) {
+          anchor.href = image.currentSrc || image.src;
+        }
+        return;
+      }
+
+      const href = image.currentSrc || image.src;
+      if (!href || !wrapperTarget.parentElement) {
+        return;
+      }
+
+      const anchor = document.createElement('a');
+      anchor.href = href;
+      anchor.dataset['lightbox'] = 'article-gallery';
+      if (image.alt) {
+        anchor.dataset['title'] = image.alt;
+      }
+
+      wrapperTarget.parentElement.insertBefore(anchor, wrapperTarget);
+      anchor.appendChild(wrapperTarget);
+    });
   }
 }
