@@ -1,4 +1,4 @@
-﻿# Trainee Ceremony: Search for Purpose 2
+﻿# Trainee Ceremony: Search for Purpose
 
 by Chin Zhi (Mingchee Tan)
 
@@ -23,11 +23,13 @@ Then a simple thought occurred to me: _Why not join the monastery, at least for 
 
 When the day of the Trainee Ceremony finally arrived, it felt surreal. Despite all my earlier rationalizations, moments of panic and doubt still surfaced in the weeks beforehand. I wish I could say that I approached the decision with heroic certainty, free from anxiety, but the truth is that doubts continued to creep into my mind:
 
-<img
-src="https://images.squarespace-cdn.com/content/v1/638101f1bfb9485af6a60b8f/19bf2fbf-7699-4cce-9629-1d3f78a37e45/PHOTO-2026-03-01-21-10-24.jpg"
-alt="PHOTO-2026-03-01-21-10-24.jpg"
-class="float-right half-width"
-/>
+<figure class="float-right half-width">
+  <img
+  src="https://images.squarespace-cdn.com/content/v1/638101f1bfb9485af6a60b8f/19bf2fbf-7699-4cce-9629-1d3f78a37e45/PHOTO-2026-03-01-21-10-24.jpg"
+  alt="PHOTO-2026-03-01-21-10-24.jpg"
+  />
+  <figcaption>PHOTO-2026-03-01-21-10-24.jpg</figcaption>
+</figure>
 
 _Are you sure about this?  
 You’re not cut out for this.  
@@ -47,8 +49,8 @@ On the day of the ceremony itself, my heart felt unexpectedly cool and calm. Eve
 ### Learning Gratitude
 
 <div class="article-image-row">
-  <img src="https://images.squarespace-cdn.com/content/v1/638101f1bfb9485af6a60b8f/da5adf47-475b-42d3-b602-95b8ef919204/IMG_2467.jpg" alt="This is an example alt text" />
-  <img src="https://images.squarespace-cdn.com/content/v1/638101f1bfb9485af6a60b8f/5c781766-8885-4aae-9e99-cd80fcc7e4c3/IMG_2464.jpg" alt="This is an example alt text" />
+  <img src="https://images.squarespace-cdn.com/content/v1/638101f1bfb9485af6a60b8f/da5adf47-475b-42d3-b602-95b8ef919204/IMG_2467.jpg" alt="This is an example alt text" title="IMG_2467" />
+  <img src="https://images.squarespace-cdn.com/content/v1/638101f1bfb9485af6a60b8f/5c781766-8885-4aae-9e99-cd80fcc7e4c3/IMG_2464.jpg" alt="This is an example alt text" title="IMG_2464" />
 </div>
 
 After the ceremony, I gathered with a small circle of friends and family, especially those who were less familiar with Buddhism. Some had traveled great distances to be there. My younger sister Susan came all the way from New York City, and my old friend Jose journeyed from Maine. We sat together in a circle, speaking one at a time while the others listened mindfully.
@@ -57,11 +59,13 @@ Each person was invited to reflect on two questions: _What is your relationship 
 
 I did not expect the depth of support and love that followed.
 
-<img
-  src="https://images.squarespace-cdn.com/content/v1/638101f1bfb9485af6a60b8f/613a2a5c-1f2d-47cf-a50e-c5e4627d35a1/IMG_2472.jpg"
-  alt="IMG_2472"
-  class="float-right half-width"
-/>
+<figure class="float-right half-width">
+  <img
+    src="https://images.squarespace-cdn.com/content/v1/638101f1bfb9485af6a60b8f/613a2a5c-1f2d-47cf-a50e-c5e4627d35a1/IMG_2472.jpg"
+    alt="IMG_2472"
+  />
+  <figcaption>IMG_2472</figcaption>
+</figure>
 
 My sister Susan expressed how happy she was that I was finally following my dream. She even reassured me that she would take care of our mother and that I should not worry. For anyone who knows me, that concern has always weighed heavily on my mind. Hearing those words lifted an enormous burden from my heart.
 
@@ -73,7 +77,7 @@ I told my friends and family that I was not “disappearing into the mist.” I 
 
 In a strange way, stepping away from the world opened my heart even more deeply toward the people I love. I am not trying to “leave the home life,” but to return to my true home—and in that sense I bring my friends and family with me in spirit.
 
-![](https://images.squarespace-cdn.com/content/v1/638101f1bfb9485af6a60b8f/e2cc6fbe-9036-454a-b8b8-701cbf87f107/IMG_9732.png)
+![IMG_9732.png](https://images.squarespace-cdn.com/content/v1/638101f1bfb9485af6a60b8f/e2cc6fbe-9036-454a-b8b8-701cbf87f107/IMG_9732.png "IMG_9732.png")
 
 I am not particularly eloquent, but these are the reflections that arose from that day.
 
@@ -83,4 +87,4 @@ With eternal gratitude to the Buddha, the Dharma, and the Sangha; to Venerable M
 
 May we all find our true inner calling and find our way home.
 
-![](https://images.squarespace-cdn.com/content/v1/638101f1bfb9485af6a60b8f/df526a6e-05a3-40af-aad5-106ab3ae9475/Group+Photo+2.png)
+![Group+Photo+2.png](https://images.squarespace-cdn.com/content/v1/638101f1bfb9485af6a60b8f/df526a6e-05a3-40af-aad5-106ab3ae9475/Group+Photo+2.png "Group+Photo+2.png")

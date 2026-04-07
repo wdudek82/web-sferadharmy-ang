@@ -187,7 +187,9 @@ I was reassured that this “love of thousands,” generations of care behind ea
 
 As a farewell, my Tongan and Somoan family sang together, “[Rejoice in the Lord Always](https://youtu.be/-n8BDGENu24).”
 
-[//]: # (<iframe width="100%" height="500" src="https://www.youtube.com/embed/-n8BDGENu24?si=0xTUh3CyJJ3M0jJL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>)
+<div class="article-video-embed">
+  <iframe src="https://www.youtube.com/embed/-n8BDGENu24?si=0xTUh3CyJJ3M0jJL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
 
 Sitting there, surrounded by faces I have known for decades and others for only a few years, something became clear. I have spent my whole life searching for home. Taiwan to New Zealand to Australia. Sport, Christianity, outdoor spirituality, Buddhism. One family to another.
 
