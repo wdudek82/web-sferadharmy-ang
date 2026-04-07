@@ -32,7 +32,7 @@ When I arrived, I sat next to James, my Tongan brother. He has been with me sinc
     src="https://images.squarespace-cdn.com/content/v1/638101f1bfb9485af6a60b8f/ad8fed82-00cd-4c3f-816f-cb7678897d41/IMG_7527.jpg"
     alt="IMG_7527.jpg"
   />
-  <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+  <figcaption>IMG_7527.jpg</figcaption>
 </figure>
 
 Then he said quietly, “I love you, brother. You’ve been such a big part of my life.” Then he added what we always say to each other, “I got your back bro.”

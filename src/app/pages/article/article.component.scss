@@ -77,7 +77,6 @@
 :host ::ng-deep markdown img {
   max-width: 100%;
   border-radius: var(--radius);
-  margin: 1.5rem 0;
   display: block;
 }
 
@@ -93,14 +92,13 @@
 }
 
 :host ::ng-deep markdown figcaption {
-  font-size: 0.8em;
+  font-size: 0.7em;
   color: var(--body-muted);
-  margin-top: 0.6rem;
+  //margin-top: 0.6rem;
   white-space: normal;
   overflow-wrap: anywhere;
   word-break: break-word;
   hyphens: auto;
-  //text-overflow: ellipsis;
 }
 
 :host ::ng-deep markdown .image-crop img {
@@ -121,7 +119,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 1rem;
-  margin: 2rem 0;
+  margin: 1rem 0;
 }
 
 @media (max-width: 900px) {
