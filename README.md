@@ -103,7 +103,7 @@ Add a new entry:
 
 ### 3) Images in Markdown
 
-You can use standard Markdown images or inline HTML for advanced layout.
+Use standard Markdown for simple images. The app auto-wires Lightbox2 to all article images.
 
 #### Standard image
 
@@ -111,30 +111,39 @@ You can use standard Markdown images or inline HTML for advanced layout.
 ![Alt text](https://example.com/image.jpg)
 ```
 
+#### Image with caption (recommended for clean Markdown)
+
+Use Markdown image title as caption text:
+
+```
+![Alt text](https://example.com/image.jpg "Fig. 1 - Caption text.")
+```
+
+This is rendered as a semantic `<figure><figcaption>...</figcaption></figure>` at runtime.
+
 #### Local image (recommended for assets stored with the article)
 
 ```
-![Alt text](./images/photo.jpg)
+![Alt text](./images/photo.jpg "Optional caption")
 ```
 
-The app automatically rewrites `./images/...` to the correct `/texts/<article-id>/images/...` path.
+The app automatically rewrites `./images/...` to `/texts/<article-id>/images/...`.
 
-### 4) Floating images left/right
+### 4) Floating + cropped images with manual figcaption
 
-Use inline HTML for floats:
+Use HTML when you need float, crop ratio/position, and full visual control:
 
 ```
-<img
-  src="https://example.com/photo.jpg"
-  alt="Description"
-  class="float-right half-width"
-/>
+<figure class="image-crop float-right crop-w-40 crop-ratio-3-4 crop-x-30">
+  <img src="https://example.com/photo.jpg" alt="Accessible alt text" />
+  <figcaption>Fig. 2 - Manual caption text.</figcaption>
+</figure>
 ```
 
-Available float helpers:
-- `float-left`
-- `float-right`
-- `half-width` (sets width to 50%)
+Notes:
+- Keep `alt` for accessibility.
+- `figcaption` is separate from `alt`.
+- Caption text is styled at `0.8em` and long tokens wrap (filenames/URLs).
 
 ### 5) Image rows (grid)
 
@@ -149,18 +158,19 @@ Use the row wrapper to show 2-4 images in a responsive grid:
 </div>
 ```
 
-### 6) Cropped images (flexible utility system)
+### 6) Cropped images (utility system)
 
-Use the `image-crop` wrapper with utility classes for sizing, aspect ratio, and focus. This system avoids empty space, supports text wrapping, and keeps markup minimal.
+Use `image-crop` with utility classes for sizing, aspect ratio, and focus. Crop is applied to the media area, while `figcaption` stays outside the crop.
 
 ```
-<div class="image-crop float-right crop-w-40 crop-ratio-3-4 crop-x-30 crop-y-60">
+<figure class="image-crop float-right crop-w-40 crop-ratio-3-4 crop-x-30 crop-y-60">
   <img src="..." alt="..." />
-</div>
+  <figcaption>Optional caption</figcaption>
+</figure>
 ```
 
 Core wrapper:
-- `image-crop` (required for cropping)
+- `image-crop` (required)
 
 Float helpers (text wrap):
 - `float-left`
@@ -191,4 +201,15 @@ Notes:
 
 ### 7) Lightbox
 
-All images inside an article open in a lightbox when clicked. The lightbox displays the full image (without `?format=...`) and uses the image `alt` text as the caption.
+All images inside an article open in Lightbox2 when clicked.
+
+Caption priority in the lightbox:
+1. `figcaption` text (if image is inside a `figure`)
+2. Markdown image title (if present)
+3. `alt` text
+
+Implementation notes:
+- Lightbox2 assets are loaded via `angular.json`:
+  - CSS: `node_modules/lightbox2/dist/css/lightbox.min.css`
+  - JS: `node_modules/lightbox2/dist/js/lightbox-plus-jquery.min.js`
+- Article images are wrapped with `<a data-lightbox="article-gallery">...</a>` at runtime when needed.
