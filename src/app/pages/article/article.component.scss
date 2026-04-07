@@ -81,9 +81,30 @@
   display: block;
 }
 
+:host ::ng-deep markdown .article-figure {
+  margin: 1.5rem 0;
+}
+
+:host ::ng-deep markdown .article-figure > img,
+:host ::ng-deep markdown .article-figure > a > img,
+:host ::ng-deep markdown .article-figure > picture img,
+:host ::ng-deep markdown .article-figure > a > picture img {
+  margin: 0;
+}
+
+:host ::ng-deep markdown figcaption {
+  font-size: 0.8em;
+  color: var(--body-muted);
+  margin-top: 0.6rem;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  hyphens: auto;
+  //text-overflow: ellipsis;
+}
+
 :host ::ng-deep markdown .image-crop img {
   margin: 0;
-  border-radius: inherit;
 }
 
 :host ::ng-deep markdown img.float-left {

@@ -81,8 +81,73 @@ export class ArticleComponent {
     this.lightboxInitPending = true;
     window.setTimeout(() => {
       this.lightboxInitPending = false;
+      this.convertTitledImagesToFigures();
       this.prepareLightboxImages();
     }, 0);
+  }
+
+  private convertTitledImagesToFigures() {
+    const host = this.articleContent?.nativeElement;
+    if (!host) {
+      return;
+    }
+
+    const titledImages = Array.from(host.querySelectorAll('img[title]'));
+    titledImages.forEach((image) => {
+      if (image.closest('figure')) {
+        return;
+      }
+
+      const title = image.getAttribute('title')?.trim();
+      if (!title) {
+        image.removeAttribute('title');
+        return;
+      }
+
+      const parent = image.parentElement;
+      if (!parent) {
+        return;
+      }
+
+      const figure = document.createElement('figure');
+      figure.className = 'article-figure';
+
+      const caption = document.createElement('figcaption');
+      caption.textContent = title;
+
+      const mediaNode = parent.tagName === 'A' ? parent : image;
+      const container = mediaNode.parentElement;
+      if (!container) {
+        return;
+      }
+
+      const containerChildren = Array.from(container.childNodes);
+      const containsOnlyMediaNode = containerChildren.every((node) => {
+        if (node === mediaNode) {
+          return true;
+        }
+
+        return node.nodeType === Node.TEXT_NODE && !node.textContent?.trim();
+      });
+
+      if (container.tagName === 'P') {
+        if (!containsOnlyMediaNode || !container.parentElement) {
+          return;
+        }
+
+        image.removeAttribute('title');
+        figure.appendChild(mediaNode);
+        figure.appendChild(caption);
+        container.parentElement.insertBefore(figure, container);
+        container.remove();
+        return;
+      }
+
+      image.removeAttribute('title');
+      container.insertBefore(figure, mediaNode);
+      figure.appendChild(mediaNode);
+      figure.appendChild(caption);
+    });
   }
 
   private prepareLightboxImages() {
@@ -93,6 +158,9 @@ export class ArticleComponent {
 
     const images = Array.from(host.querySelectorAll('img'));
     images.forEach((image) => {
+      const figureCaption = image.closest('figure')?.querySelector('figcaption')?.textContent?.trim() ?? '';
+      const imageTitle = image.getAttribute('title')?.trim() ?? '';
+      const lightboxTitle = figureCaption || imageTitle || image.alt || '';
       const pictureParent = image.parentElement?.tagName === 'PICTURE' ? image.parentElement : null;
       const wrapperTarget = pictureParent ?? image;
       const anchorParent = wrapperTarget.parentElement;
@@ -102,8 +170,8 @@ export class ArticleComponent {
         if (!anchor.dataset['lightbox']) {
           anchor.dataset['lightbox'] = 'article-gallery';
         }
-        if (image.alt && !anchor.dataset['title']) {
-          anchor.dataset['title'] = image.alt;
+        if (lightboxTitle && !anchor.dataset['title']) {
+          anchor.dataset['title'] = lightboxTitle;
         }
         if (!anchor.getAttribute('href')) {
           anchor.href = image.currentSrc || image.src;
@@ -119,8 +187,8 @@ export class ArticleComponent {
       const anchor = document.createElement('a');
       anchor.href = href;
       anchor.dataset['lightbox'] = 'article-gallery';
-      if (image.alt) {
-        anchor.dataset['title'] = image.alt;
+      if (lightboxTitle) {
+        anchor.dataset['title'] = lightboxTitle;
       }
 
       wrapperTarget.parentElement.insertBefore(anchor, wrapperTarget);

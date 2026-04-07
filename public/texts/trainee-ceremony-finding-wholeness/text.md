@@ -27,12 +27,13 @@ I have walked to the Buddha Hall many times, but that day felt different. My bod
 
 When I arrived, I sat next to James, my Tongan brother. He has been with me since I first left Taiwan for New Zealand and has been part of my entire journey away from home. That is nearly thirty years of friendship and brotherhood. I could feel sadness radiating from him. I had not had time to fully explain what this Trainee Program meant, and I think part of him worried he was losing a brother. The weight of that unspoken fear hung between us.
 
-<div class="image-crop float-right crop-w-40 crop-ratio-3-4 crop-x-70">
+<figure class="image-crop float-right crop-w-40 crop-ratio-3-4">
   <img
     src="https://images.squarespace-cdn.com/content/v1/638101f1bfb9485af6a60b8f/ad8fed82-00cd-4c3f-816f-cb7678897d41/IMG_7527.jpg"
     alt="IMG_7527.jpg"
   />
-</div>
+  <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+</figure>
 
 Then he said quietly, “I love you, brother. You’ve been such a big part of my life.” Then he added what we always say to each other, “I got your back bro.”
 
@@ -40,25 +41,27 @@ The words came straight from his heart, heavy with emotion. It hit me square in 
 
 The ceremony began with reciting _Nā mó běn shī Shì jiā móu ní fó_ (南無本師釋迦牟尼佛, Homage to our Fundamental Teacher, Shakyamuni Buddha) and bowing for half an hour. After a few lines, I looked around and saw my family and friends being guided to their seats. I felt an overwhelming need to welcome them personally. Many were Christians who have never been in a Buddhist monastery before.
 
-![IMG_7522.jpg](https://images.squarespace-cdn.com/content/v1/638101f1bfb9485af6a60b8f/b4105690-53a5-406e-8073-7b294f91a67e/IMG_7522.jpg)
+![IMG_7522.jpg](https://images.squarespace-cdn.com/content/v1/638101f1bfb9485af6a60b8f/b4105690-53a5-406e-8073-7b294f91a67e/IMG_7522.jpg "IMG_7531.jpg")
 
-<div class="image-crop float-right crop-w-40 crop-ratio-3-4 crop-x-40">
+<figure class="image-crop float-right crop-w-40 crop-ratio-3-4 crop-x-40">
   <img
   src="https://images.squarespace-cdn.com/content/v1/638101f1bfb9485af6a60b8f/19dd6781-7179-4b0f-b125-8aeb50050385/IMG_7509.jpg"
   alt="IMG_7509.jpg"
   />
-</div>
+  <figcaption>IMG_7509.jpg</figcaption>
+</figure>
 
 When they had all entered, I stopped bowing, walked over, and hugged each one to welcome and appreciate them. That is not something we usually do in the monastery, but I wanted them to feel at home the way they have always made me feel at home. In that moment, I was not trying to be a “good Buddhist” or follow protocol. I was simply Wade, loving the people who first taught me what unconditional love feels like.
 
 Later, some told me it was a touching moment. Some even cried. I think they saw something in that gesture, that I was not becoming someone else. I was becoming more myself. During the recitation and bowing, I periodically turned toward them. Eye contact. A silent thank you for being there.
 
-<div class="image-crop float-left crop-w-40 crop-ratio-3-4 crop-x-40">
+<figure class="image-crop float-left crop-w-40 crop-ratio-3-4 crop-x-40">
   <img
     src="https://images.squarespace-cdn.com/content/v1/638101f1bfb9485af6a60b8f/0635be8b-cc1e-49bb-a3f2-6f7fdfa17f88/IMG_8414.JPG"
     alt="IMG_8414.JPG"
   />
-</div>
+  <figcaption>IMG_8414.JPG</figcaption>
+</figure>
 
 The energy shifted when the four Dharma Masters entered: Reverend Heng Sure, DM Jin Yong, DM Jin Chuan, and DM Jin Wei. A beautiful solemnity filled the space. The air itself seemed denser and more sacred.
 
@@ -66,19 +69,19 @@ I walked to the center of the hall. I felt calm, solid, grounded. Facing the Dha
 
 After the Dharma Masters shared their words, I walked out behind them as Chin Jue, beginning a new chapter of my life going to a new continent
 
-![IMG_7531.jpg](https://images.squarespace-cdn.com/content/v1/638101f1bfb9485af6a60b8f/cac381fe-6891-4041-b817-88b14e0098cf/IMG_7531.jpg)
+![IMG_7531.jpg](https://images.squarespace-cdn.com/content/v1/638101f1bfb9485af6a60b8f/cac381fe-6891-4041-b817-88b14e0098cf/IMG_7531.jpg "IMG_7531.jpg")
 
 ### **Instructions from the Dharma Masters**
 
 #### **Trek up Nirvana Mountain**
 
-[//]: # (<div class="image-crop float-right crop-w-30 crop-ratio-3-4 crop-x-60 crop-zoom-120">)
-<div class="image-crop float-right crop-w-30 crop-ratio-3-4 crop-x-60 crop-zoom-120">
+<figure class="image-crop float-right crop-w-30 crop-ratio-3-4 crop-x-60 crop-zoom-120">
   <img
     src="https://images.squarespace-cdn.com/content/v1/638101f1bfb9485af6a60b8f/6e32706b-0f99-4bda-a737-683264daf059/IMG_7512.jpg"
     alt="Rev. Heng Sure"
   />
-</div>
+  <figcaption>Rev. Heng Sure</figcaption>
+</figure>
 
 Rev. Heng Sure shared:
 
@@ -104,12 +107,13 @@ She told me her friends—who once said her son had 'stepped off the planet'—w
 
 #### **Dharma Affinities**
 
-<div class="image-crop float-right crop-w-20 crop-ratio-3-4 crop-x-100 crop-zoom-120">
+<figure class="image-crop float-right crop-w-20 crop-ratio-3-4 crop-x-100 crop-zoom-120">
   <img
     src="https://images.squarespace-cdn.com/content/v1/638101f1bfb9485af6a60b8f/283cfd72-7eeb-4b2b-84fb-397e02a7e208/IMG_7513.jpg"
     alt="DM Jin Yong"
   />
-</div>
+  <figcaption>DM Jin Yon</figcaption>
+</figure>
 
 DM Jin Yong said:
 
@@ -119,12 +123,13 @@ DM Jin Yong said:
 
 #### **Redefining Monasticism**
 
-<div class="image-crop float-right crop-w-20 crop-ratio-3-4 crop-x-30 crop-zoom-140">
+<figure class="image-crop float-right crop-w-20 crop-ratio-3-4 crop-x-30 crop-zoom-140">
   <img
     src="https://images.squarespace-cdn.com/content/v1/638101f1bfb9485af6a60b8f/13633467-2d86-43aa-b973-824196d9502a/IMG_7515.jpg"
     alt="DM Jin Chuan"
   />
-</div>
+  <figcaption>DM Jin Chuan</figcaption>
+</figure>
 
 DM Jin Chuan said:
 
@@ -134,11 +139,14 @@ DM Jin Chuan said:
 
 #### **A Taste of Monastic Life**
 
-<div class="image-crop float-right crop-w-20 crop-ratio-3-4 crop-x-80 crop-zoom-110">
-  <img
-    src="https://images.squarespace-cdn.com/content/v1/638101f1bfb9485af6a60b8f/7eb750fa-e43f-4d56-81c5-b39994054ead/IMG_7514.jpg"
-    alt="DM Jin Wei"
-  />
+<div>
+  <figure class="image-crop float-right crop-w-20 crop-ratio-3-4 crop-x-80 crop-zoom-110">
+    <img
+      src="https://images.squarespace-cdn.com/content/v1/638101f1bfb9485af6a60b8f/7eb750fa-e43f-4d56-81c5-b39994054ead/IMG_7514.jpg"
+      alt="DM Jin Wei"
+    />
+    <figcaption>DM Jin Wei</figcaption>
+  </figure>
 </div>
 
 DM Jin Wei shared:
@@ -151,7 +159,7 @@ DM Jin Wei shared:
 
 ### **Circle with Family and Friends**
 
-![IMG_7557.jpg](https://images.squarespace-cdn.com/content/v1/638101f1bfb9485af6a60b8f/71667de9-32ee-40ed-b0c7-d4e1eb690b48/IMG_7557.jpg)
+![IMG_7557.jpg](https://images.squarespace-cdn.com/content/v1/638101f1bfb9485af6a60b8f/71667de9-32ee-40ed-b0c7-d4e1eb690b48/IMG_7557.jpg "IMG_7557.jpg")
 
 After the ceremony, my Tongan and outdoor adopted family gathered with DM Jin Chuan and DM Jin Wei in a sharing circle. Everyone offered well-wishes as I prepared to join the Dharma Realm Buddhist Association’s Sangha-Laity Training Program in the United States. Unexpectedly, this moment wove together the threads of my life into one multicultural fabric.
 
@@ -171,13 +179,15 @@ My Christian family nodded. Their voices reminded of the love and compassion the
 
 **A Continuous Circle of Support**
 
-![](https://images.squarespace-cdn.com/content/v1/638101f1bfb9485af6a60b8f/056c42ab-b7ce-4db4-a928-eda48ec771ae/2026-01+Redwood+Vihara+Winter+Meditation+Weekend+Top+89-46.jpg)
+![2026-01+Redwood+Vihara+Winter+Meditation+Weekend+Top+89-46.jpg](https://images.squarespace-cdn.com/content/v1/638101f1bfb9485af6a60b8f/056c42ab-b7ce-4db4-a928-eda48ec771ae/2026-01+Redwood+Vihara+Winter+Meditation+Weekend+Top+89-46.jpg "2026-01+Redwood+Vihara+Winter+Meditation+Weekend+Top+89-46.jpg")
 
 The circle ended with the metaphor of Redwood Vihara’s fairy rings, where new trees grow from ancient roots, all interconnected. A beautiful symbol for lineage, community, and expanded family.
 
 I was reassured that this “love of thousands,” generations of care behind each of us, continues to support me. I am not walking alone. I have been blessed with teachers and friends who have my back no matter what.
 
 As a farewell, my Tongan and Somoan family sang together, “[Rejoice in the Lord Always](https://youtu.be/-n8BDGENu24).”
+
+[//]: # (<iframe width="100%" height="500" src="https://www.youtube.com/embed/-n8BDGENu24?si=0xTUh3CyJJ3M0jJL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>)
 
 Sitting there, surrounded by faces I have known for decades and others for only a few years, something became clear. I have spent my whole life searching for home. Taiwan to New Zealand to Australia. Sport, Christianity, outdoor spirituality, Buddhism. One family to another.
 
