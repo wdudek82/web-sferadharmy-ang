@@ -5,7 +5,7 @@ import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { filter, map, switchMap, tap } from 'rxjs/operators';
 import { MarkdownModule } from 'ngx-markdown';
 import { ArticleService } from '../../services/article.service';
-import { textsData } from '../texts/texts-data';
+import { resolveTextHref, textsData } from '../texts/texts-data';
 
 @Component({
   selector: 'app-article',
@@ -63,9 +63,9 @@ export class ArticleComponent {
     const prev = index > 0 ? textsData[index - 1] : null;
     const next = index >= 0 && index < textsData.length - 1 ? textsData[index + 1] : null;
 
-    this.prevLink.set(prev ? prev.href : null);
+    this.prevLink.set(prev ? resolveTextHref(prev) : null);
     this.prevTitle.set(prev ? prev.title : null);
-    this.nextLink.set(next ? next.href : null);
+    this.nextLink.set(next ? resolveTextHref(next) : null);
     this.nextTitle.set(next ? next.title : null);
   }
 

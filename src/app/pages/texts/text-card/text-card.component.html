@@ -1,5 +1,5 @@
 <article class="text-card" [class.is-visible]="isVisible()">
-  <a class="text-media" [routerLink]="text.href">
+  <a class="text-media" [routerLink]="href">
     <img
       [ngSrc]="text.thumbnail"
       [alt]="text.title"
@@ -11,15 +11,20 @@
   <div class="text-content">
     <div class="text-meta">
       <span>{{ text.date }}</span>
-      <span aria-hidden="true">&middot;</span>
+      @if (text.time) {
+        <span aria-hidden="true">&middot;</span>
+      }
       <span>{{ text.time }}</span>
     </div>
-    <a class="text-title" [routerLink]="text.href">
+    <a class="text-title" [routerLink]="href">
       <h3>{{ text.title }}</h3>
     </a>
     <p>
-      {{ text.excerpt | slice: 0 : 200 }}@if (text.excerpt.length > 200) {…}
+      {{ text.excerpt | slice: 0 : 200 }}
+      @if (text.excerpt.length > 200) {
+        …
+      }
     </p>
-    <a class="text-link" [routerLink]="text.href">Czytaj</a>
+    <a class="text-link" [routerLink]="href">Czytaj</a>
   </div>
 </article>

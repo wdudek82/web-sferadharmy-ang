@@ -74,6 +74,23 @@
   line-height: 1.75;
 }
 
+:host ::ng-deep markdown ul,
+:host ::ng-deep markdown ol {
+  margin: 1rem 0;
+  padding-inline-start: 2.5rem;
+  list-style-position: outside;
+}
+
+:host ::ng-deep markdown li {
+  margin: 0.4rem 0;
+  line-height: 1.75;
+}
+
+:host ::ng-deep markdown li > p:only-child {
+  display: inline;
+  margin: 0;
+}
+
 :host ::ng-deep markdown img {
   max-width: 100%;
   border-radius: var(--radius);
