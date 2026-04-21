@@ -73,7 +73,7 @@ After the Dharma Masters shared their words, I walked out behind them as Chin Ju
 
 ### **Instructions from the Dharma Masters**
 
-#### **Trek up Nirvana Mountain**
+### **Trek up Nirvana Mountain**
 
 <figure class="image-crop float-right crop-w-30 crop-ratio-3-4 crop-x-60 crop-zoom-120">
   <img
@@ -95,7 +95,7 @@ What struck me most was the permission in his words: “even if, at some point, 
 
 Hearing my journey described as significant for Australia, New Zealand, Taiwan, and America, even the entire world, felt both grand and somehow true. I have spent fifteen years in each of the first three countries, each shaping who I am in ways I am still discovering. America will add another layer. But the significance is not about me. It is about choosing something difficult, something that does not align with the world’s usual logic of accumulation and achievement. That choice itself opens possibilities for myself and others.
 
-#### **Stepping Off the Planet**
+### **Stepping Off the Planet**
 
 Rev. Heng Sure continued:
 
@@ -105,7 +105,7 @@ She told me her friends—who once said her son had 'stepped off the planet'—w
 
 **My reflection:** I thought about my own mother in Taiwan. Would she someday feel the same? Or would I always seem like I had “stepped off the planet”?
 
-#### **Dharma Affinities**
+### **Dharma Affinities**
 
 <figure class="image-crop float-right crop-w-20 crop-ratio-3-4 crop-x-100 crop-zoom-120">
   <img
@@ -121,7 +121,7 @@ DM Jin Yong said:
 
 **My reflection:** That felt humbling and slightly terrifying. I do not feel like someone with great affinities. I just try to show up and be kind. Maybe that is what it means to cultivate affinities: showing up repeatedly until connection becomes natural.
 
-#### **Redefining Monasticism**
+### **Redefining Monasticism**
 
 <figure class="image-crop float-right crop-w-20 crop-ratio-3-4 crop-x-30 crop-zoom-140">
   <img
@@ -137,7 +137,7 @@ DM Jin Chuan said:
 
 **My reflection:** That hit me hard. Returning home. That is exactly what it felt like.
 
-#### **A Taste of Monastic Life**
+### **A Taste of Monastic Life**
 
 <div>
   <figure class="image-crop float-right crop-w-20 crop-ratio-3-4 crop-x-80 crop-zoom-110">

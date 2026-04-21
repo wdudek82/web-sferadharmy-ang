@@ -1,4 +1,4 @@
-﻿
+﻿﻿
 # Awakin Retreat: Participant Reflections
 
 ### Helen Kimura - Awakening Through Service
@@ -36,7 +36,7 @@ That was the gift of the silent dinner, and why it continues to resonate in my h
 
 ![](https://images.squarespace-cdn.com/content/v1/638101f1bfb9485af6a60b8f/421238c0-0efb-48a7-81d9-4b33068e9f2f/Screenshot+2025-11-07+at+16.46.52.png)
 
-#### Jin Wei Shi - Serving from Ground Level
+### Jin Wei Shi - Serving from Ground Level
 
 More than a week has passed, and my heart is still integrating and digesting what unfolded in that shared space.
 
@@ -52,7 +52,7 @@ One image stays with me: the moment when Mark Moore knelt by the stone circle wh
 
 I wish to serve from this ground level — where each act is a bow, each gesture an offering.
 
-#### Parag Shah - Practicing Love, Loving the Practice
+### Parag Shah - Practicing Love, Loving the Practice
 
 I have attended many retreats hosted by the ServiceSpace ecosystem, mostly as a volunteer—except for one I joined as a participant in 2015. Each retreat follows its own path yet leads to the same destination, rooted in the spirit of _“Practicing love and loving the practice.”_
 
@@ -68,7 +68,7 @@ Although I didn’t fully understand the literal meaning of the daily morning re
 
 And what still lingers with me in quiet moments is the chant I heard at CTTB—_Namo Guan Shi Yin Pusa._
 
-#### Jin Chuan Shi - Wow! Sacred Resonances
+### Jin Chuan Shi - Wow! Sacred Resonances
 
 _Excerpt from the Community Night: “Stories Along the Bodhisattva Path”_
 
@@ -84,7 +84,7 @@ May its vibration continue to ripple outward, carrying the blessings of this ret
 
 ![](https://images.squarespace-cdn.com/content/v1/638101f1bfb9485af6a60b8f/aecc4c0a-26f8-498c-92fb-bbdc2645ebff/2025-09-06+Evening+of+Stories+Along+Bodhisattva+Path-145.jpg)
 
-#### Liz P. Gopal - Dancing with the Redwoods
+### Liz P. Gopal - Dancing with the Redwoods
 
 What touched me most was the effortless spirit of service that flowed through everyone. From the first smile of welcome to the last folded chair, each act felt like a prayer—an offering to something larger than ourselves.
 

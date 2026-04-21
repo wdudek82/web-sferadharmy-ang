@@ -20,13 +20,13 @@ From there, the retreat unfolded along the arc of _me, we, and us_. The question
 
 These questions turned us toward the places we often avoid—the knots of confusion and uncertainty—and invited us to linger there together.  
 
-#### **The “Me” of Compassion**
+### **The “Me” of Compassion**
 
 Richie Davidson, a pioneer in neuroscience and mindfulness, reminded us that compassion is not foreign to us. It is in our wiring. He shared research showing how infants instinctively gravitate toward kindness. Cynthia followed with an embodied _qigong_ practice, helping us sense how our well-being flows through our own energy field and into those around us. Compassion begins as something intimate and bodily that connects with those around us.
 
 ![](https://images.squarespace-cdn.com/content/v1/638101f1bfb9485af6a60b8f/ada73b62-0f83-445f-9860-d20f441b88fb/Screenshot+2025-09-23+at+10.21.16%E2%80%AFAM.png)
 
-#### **The “We” of Connection**
+### **The “We” of Connection**
 
 Vanessa Andreotti widened the frame, pointing out how much of our modern world rests on separation: the language of subject and object, the habit of putting ourselves or others on pedestals only to look down from them. That model is dying, she said, because endless growth and exploitation are no longer sustainable. What is needed now is a shift toward subject–subject relations: wholeness meeting wholeness, life meeting life.
 
@@ -34,7 +34,7 @@ After her words, Rabbi Ariel Berger sang from his tradition. A melody of grief, 
 
 ![](https://images.squarespace-cdn.com/content/v1/638101f1bfb9485af6a60b8f/e85bfc8b-f415-48cd-81d9-69afff88cdbb/DSCF5511.jpg)
 
-#### **The “Us” of Belonging**
+### **The “Us” of Belonging**
 
 As the retreat deepened, the circle widened. Community night at Camp Harmon brought together 200 people in music, skits, and stories. Three snapshots: Brian Conroy opening the night with us all connecting like redwood trees; Rebecca Henderson sharing how her late husband taught her what it meant to be truly in service; the performance of _Sweep Clean_, a song born from learning from a street sweeper in India. Wisdom is everywhere, if we are willing to see it.
 
@@ -44,7 +44,7 @@ Brian Conroy encouraging us all to connect like the redwoods.
 
 The closing ritual of Three Steps and a Bow grounded the retreat in humility. With every three steps, we bowed to the earth, to ancestors, to visible and invisible kin. We remembered that “us” is not only this circle of participants, but also past and future generations, the redwoods around us, the living ecosystems that sustain us.
 
-#### **A Gathering of Noble Friends**
+### **A Gathering of Noble Friends**
 
 Looking back, the retreat was less an event than a gathering of noble friends. We listened deeply. We laughed together. We discovered resonance in the midst of difference. We asked for guidance from the redwoods. The work was not to fix the world, but to attend to it with presence, authenticity, and care.
 
