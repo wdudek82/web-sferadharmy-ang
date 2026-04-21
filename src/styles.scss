@@ -26,8 +26,13 @@ body {
   font-family: var(--font-body);
   background: var(--section-bg);
   color: var(--body-text);
+  font-size: 1.5rem;
   line-height: 1.6;
   overflow-x: hidden;
+}
+
+p {
+  font-size: 1em;
 }
 
 a {
@@ -77,7 +82,7 @@ button {
 
 .section-header p {
   color: var(--body-muted);
-  font-size: 1.05rem;
+  font-size: 1em;
 }
 
 .btn {
@@ -114,6 +119,11 @@ button {
   background: transparent;
 }
 
+.btn.ghost:hover {
+  transform: translateY(-2px);
+  background: var(--surface-secondary);
+}
+
 .card {
   background: var(--card-bg);
   padding: 2rem;
@@ -131,8 +141,258 @@ button {
   color: var(--body-muted);
 }
 
+.float-left {
+  // Keep floats for Markdown articles to enable classic text wrap around images without extra markup.
+  float: left;
+  margin: 0 16px 12px 0;
+  max-width: 100%;
+}
+
+.float-right {
+  // Keep floats for Markdown articles to enable classic text wrap around images without extra markup.
+  float: right;
+  margin: 0 0 12px 16px;
+  max-width: 100%;
+}
+
+.half-width {
+  width: 50%;
+  max-width: 50%;
+}
+
+.clear-both {
+  // Forces following content below floated elements.
+  clear: both;
+}
+
+.image-crop {
+  // Core crop container for Markdown images.
+  display: block;
+  position: relative;
+  // Prevent successive floats from stacking side by side.
+  clear: both;
+  --crop-radius: 10px;
+  --crop-media-height: auto;
+}
+
+.image-crop > a,
+.image-crop > picture {
+  // Treat linked images and picture elements as crop frames.
+  display: block;
+  width: 100%;
+  height: var(--crop-media-height);
+  aspect-ratio: var(--crop-ratio, auto);
+  overflow: hidden;
+  border-radius: var(--crop-radius);
+  line-height: 0;
+}
+
+.image-crop > a > picture {
+  // Preserve full-frame sizing when Lightbox wraps a <picture> in an <a>.
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.image-crop > img,
+.image-crop > a img,
+.image-crop > picture img {
+  // Fill the crop frame and focus using CSS variables.
+  width: 100%;
+  height: 100%;
+  display: block;
+  margin: 0;
+  object-fit: cover;
+  object-position: var(--crop-x, 50%) var(--crop-y, 50%);
+  // Optional zoom-in to crop more without changing the frame size.
+  transform: scale(var(--crop-zoom, 1));
+  transform-origin: var(--crop-x, 50%) var(--crop-y, 50%);
+}
+
+.image-crop > img {
+  // Direct images do not have a frame wrapper, so clip on the image itself.
+  border-radius: var(--crop-radius);
+  aspect-ratio: var(--crop-ratio, auto);
+  height: var(--crop-media-height);
+  clip-path: inset(0 round var(--crop-radius));
+}
+
+.image-block {
+  // Optional vertical spacing for standalone images.
+  margin: 16px 0;
+}
+
+.image-inline {
+  // Optional inline wrapper to keep images in text flow.
+  display: inline-block;
+}
+
+.image-crop.rounded {
+  // Improve wrap shape when floating, matching the rounded crop.
+  shape-outside: inset(0 round 10px);
+}
+
+.crop-x-0 {
+  // Vertical focus controls (top to bottom).
+  --crop-y: 0%;
+}
+.crop-x-10 {
+  --crop-y: 10%;
+}
+.crop-x-20 {
+  --crop-y: 20%;
+}
+.crop-x-30 {
+  --crop-y: 30%;
+}
+.crop-x-40 {
+  --crop-y: 40%;
+}
+.crop-x-50 {
+  --crop-y: 50%;
+}
+.crop-x-60 {
+  --crop-y: 60%;
+}
+.crop-x-70 {
+  --crop-y: 70%;
+}
+.crop-x-80 {
+  --crop-y: 80%;
+}
+.crop-x-90 {
+  --crop-y: 90%;
+}
+.crop-x-100 {
+  --crop-y: 100%;
+}
+
+.crop-y-0 {
+  // Horizontal focus controls (left to right).
+  --crop-x: 0%;
+}
+.crop-y-10 {
+  --crop-x: 10%;
+}
+.crop-y-20 {
+  --crop-x: 20%;
+}
+.crop-y-30 {
+  --crop-x: 30%;
+}
+.crop-y-40 {
+  --crop-x: 40%;
+}
+.crop-y-50 {
+  --crop-x: 50%;
+}
+.crop-y-60 {
+  --crop-x: 60%;
+}
+.crop-y-70 {
+  --crop-x: 70%;
+}
+.crop-y-80 {
+  --crop-x: 80%;
+}
+.crop-y-90 {
+  --crop-x: 90%;
+}
+.crop-y-100 {
+  --crop-x: 100%;
+}
+
+.crop-w-10 {
+  // Percentage-based width helpers.
+  width: 10%;
+}
+.crop-w-15 {
+  width: 15%;
+}
+.crop-w-20 {
+  width: 20%;
+}
+.crop-w-30 {
+  width: 30%;
+}
+.crop-w-40 {
+  width: 40%;
+}
+.crop-w-50 {
+  width: 50%;
+}
+
+.crop-px-200 {
+  // Fixed-size helpers (useful for square/thumbnail crops).
+  width: 200px;
+  --crop-media-height: 200px;
+}
+.crop-px-300 {
+  width: 300px;
+  --crop-media-height: 300px;
+}
+.crop-px-400 {
+  width: 400px;
+  --crop-media-height: 300px;
+}
+
+.crop-ratio-1-1 {
+  // Aspect ratio helpers (preferred over explicit heights).
+  --crop-ratio: 1 / 1;
+}
+.crop-ratio-4-3 {
+  --crop-ratio: 4 / 3;
+}
+.crop-ratio-3-4 {
+  --crop-ratio: 3 / 4;
+}
+.crop-ratio-16-9 {
+  --crop-ratio: 16 / 9;
+}
+.crop-ratio-2-3 {
+  --crop-ratio: 2 / 3;
+}
+
+.crop-zoom-105 {
+  // Zoom the image within the frame to reduce left/right or top/bottom space.
+  --crop-zoom: 1.05;
+}
+.crop-zoom-110 {
+  --crop-zoom: 1.1;
+}
+.crop-zoom-120 {
+  --crop-zoom: 1.2;
+}
+.crop-zoom-130 {
+  --crop-zoom: 1.3;
+}
+.crop-zoom-140 {
+  --crop-zoom: 1.4;
+}
+.crop-zoom-150 {
+  --crop-zoom: 1.5;
+}
+
+@media (max-width: 640px) {
+  .crop-w-10,
+  .crop-w-15,
+  .crop-w-20,
+  .crop-w-30,
+  .crop-w-40 {
+    width: 50%;
+  }
+
+  .crop-w-50 {
+    width: 50%;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .btn {
     transition: none;
   }
+}
+
+.clear-fix {
+  clear: both;
 }

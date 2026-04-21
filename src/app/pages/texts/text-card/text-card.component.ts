@@ -1,10 +1,12 @@
 import { AfterViewInit, Component, ElementRef, Input, OnDestroy, signal } from '@angular/core';
+import { NgOptimizedImage, SlicePipe } from '@angular/common';
+import { RouterLink } from '@angular/router';
 import { TextSummary } from '../texts-data';
 
 @Component({
   selector: 'app-text-card',
   standalone: true,
-  imports: [],
+  imports: [RouterLink, NgOptimizedImage, SlicePipe],
   templateUrl: './text-card.component.html',
   styleUrl: './text-card.component.scss',
 })

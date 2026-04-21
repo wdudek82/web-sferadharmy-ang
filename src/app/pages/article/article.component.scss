@@ -1,0 +1,171 @@
+.article-shell {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.article-nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  font-family: var(--font-display);
+  color: var(--heading-secondary);
+}
+
+.article-nav-bottom {
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
+
+.article-nav-link {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.6rem;
+  color: inherit;
+  max-width: 48%;
+}
+
+.article-nav-link.next {
+  margin-left: auto;
+  text-align: right;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.article-nav-link span:last-child {
+  color: var(--body-text);
+}
+
+.article-nav-label {
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 0.8rem;
+  color: var(--body-muted);
+}
+
+.article-nav-link:hover span:last-child {
+  text-decoration: underline;
+}
+
+.article-status {
+  font-size: 1.1rem;
+  color: var(--body-muted);
+}
+
+:host ::ng-deep markdown {
+  display: block;
+}
+
+:host ::ng-deep markdown h1,
+:host ::ng-deep markdown h2,
+:host ::ng-deep markdown h3 {
+  font-family: var(--font-display);
+  color: var(--heading-primary);
+  margin: 2.5rem 0 1rem;
+}
+
+:host ::ng-deep markdown h1 {
+  font-size: clamp(2.6rem, 4.6vw, 3.8rem);
+}
+
+:host ::ng-deep markdown p {
+  margin: 1rem 0;
+  line-height: 1.75;
+}
+
+:host ::ng-deep markdown img {
+  max-width: 100%;
+  border-radius: var(--radius);
+  display: block;
+}
+
+:host ::ng-deep markdown .article-figure {
+  margin: 1.5rem 0;
+}
+
+:host ::ng-deep markdown .article-figure > img,
+:host ::ng-deep markdown .article-figure > a > img,
+:host ::ng-deep markdown .article-figure > picture img,
+:host ::ng-deep markdown .article-figure > a > picture img {
+  margin: 0;
+}
+
+:host ::ng-deep markdown figcaption {
+  font-size: 0.7em;
+  color: var(--body-muted);
+  //margin-top: 0.6rem;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  hyphens: auto;
+}
+
+:host ::ng-deep markdown .image-crop img {
+  margin: 0;
+}
+
+:host ::ng-deep markdown img.float-left {
+  float: left;
+  margin: 0 1.5rem 1.2rem 0;
+}
+
+:host ::ng-deep markdown img.float-right {
+  float: right;
+  margin: 0 0 1.2rem 1.5rem;
+}
+
+:host ::ng-deep markdown .article-image-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+@media (max-width: 900px) {
+  :host ::ng-deep markdown .article-image-row {
+    grid-template-columns: repeat(2, minmax(180px, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  :host ::ng-deep markdown .article-image-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+:host ::ng-deep markdown .article-image-row img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  margin: 0;
+  border-radius: calc(var(--radius) - 4px);
+  cursor: zoom-in;
+}
+
+:host ::ng-deep markdown blockquote {
+  border-left: 3px solid var(--card-border);
+  padding-left: 1rem;
+  margin: 1.5rem 0;
+  color: var(--body-muted);
+}
+
+:host ::ng-deep markdown .article-video-embed {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  aspect-ratio: 16 / 9;
+  margin: 1.5rem 0;
+  border-radius: calc(var(--radius) - 4px);
+  overflow: hidden;
+}
+
+:host ::ng-deep markdown .article-video-embed > iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
