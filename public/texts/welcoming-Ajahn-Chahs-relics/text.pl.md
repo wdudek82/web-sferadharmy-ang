@@ -1,4 +1,4 @@
-﻿# Powitanie relikwii Ajahna Chah
+# Powitanie relikwii Ajahna Chah
 
 ![](https://images.squarespace-cdn.com/content/v1/638101f1bfb9485af6a60b8f/1fecff97-8d67-4b58-8a78-a654dcaaf382/DC6A0394+copy+%283%29.jpg)
 

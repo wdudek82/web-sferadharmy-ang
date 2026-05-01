@@ -1,5 +1,5 @@
-﻿
-# Ofiarowanie Ciału Buddy: Przyjmowanie jałmużny
+
+# Ofiarowanie Ciału Buddy: Runda Jałmużny
 
 autor: Will Liu, student DRBU MA 2
 

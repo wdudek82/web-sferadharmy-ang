@@ -1,4 +1,4 @@
-﻿# Ceremonia Trainee: Odnajdywanie pełni
+# Ceremonia Trainee: Odnajdywanie pełni
 
 autor: Chin Jue (Wade Chang)
 

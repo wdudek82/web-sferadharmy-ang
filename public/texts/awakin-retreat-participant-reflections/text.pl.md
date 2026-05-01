@@ -1,4 +1,4 @@
-﻿
+
 # Rekolekcje Awakin: Refleksje Uczestników
 
 ### Helen Kimura – Przebudzenie poprzez służbę

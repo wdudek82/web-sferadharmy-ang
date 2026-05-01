@@ -1,53 +1,53 @@
 ﻿
-# Awakin Retreat: A Symphony of Noble Friends
+# Odosobnienie Awakin: Symfonia Szlachetnych Przyjaciół
 
-We began with a sacred invocation in a circle of stones surrounded by redwoods. Leaders, seekers, and servants from around the world sat shoulder to shoulder, and the invitation was simple: to listen, to serve, to discover what might emerge.
+Rozpoczęliśmy od świętej inwokacji w kręgu kamieni otoczonym przez sekwoje. Liderzy, poszukujący i służący z całego świata siedzieli ramię w ramię, a zaproszenie było proste: słuchać, służyć i odkrywać to, co może się wyłonić.
 
 ![](https://images.squarespace-cdn.com/content/v1/638101f1bfb9485af6a60b8f/85ffcdde-76fe-4752-9746-3871094e71da/DSCF5125.jpg)
 
-This retreat had its seeds at the Berkeley Buddhist Monastery doorstep with Service Space making offerings of the noon meal—keeping the monks alive with sustenance. And over the years, Rev. Heng Sure and Nipun Mehta have discussed a gathering centered on the Bodhisattva path. Rev. Heng Sure often says: “In the monastery, we _talk_ about the Bodhisattva path. ServiceSpace _walks_ the Bodhisattva path.” The AwaKIN retreat was born.
+Te rekolekcje miały swoje zalążki na progu Berkeley Buddhist Monastery, gdzie Service Space składało ofiary w postaci południowego posiłku — podtrzymując mnichów przy życiu dzięki pożywieniu. Przez lata Rev. Heng Sure i Nipun Mehta rozmawiali o spotkaniu skupionym wokół ścieżki Bodhisattwy. Rev. Heng Sure często mówi: „W klasztorze *mówimy* o ścieżce Bodhisattwy. ServiceSpace *kroczy* ścieżką Bodhisattwy.” Tak narodziły się rekolekcje AwaKIN.
 
-Awake = _Bodhi_; KIN = _sattva_. We wake up together, interconnected, like Indra’s Net of infinite pearls, each reflecting all the other pearls, and within each pair of pearls there are countless inter-reflections: infinite breadth, infinite depth. From this insight, the Bodhisattva plays the infinite game of service. Inner transformation manifests as outer service. Outer service becomes the field of deep inner transformation.
+Awake = *Bodhi*; KIN = *sattva*. Budzimy się razem, wzajemnie powiązani, jak Sieć Indry z nieskończonych pereł, z których każda odbija wszystkie pozostałe, a w każdej parze pereł istnieją niezliczone wzajemne odbicia: nieskończona szerokość, nieskończona głębia. Z tego wglądu Bodhisattwa podejmuje nieskończoną grę służby. Wewnętrzna przemiana przejawia się jako zewnętrzna służba. Zewnętrzna służba staje się polem głębokiej wewnętrznej transformacji.
 
-On the first evening, Rev. Heng Sure asked: “What is our potential?” Not the potential defined by society, but to our inherent nature of compassion and wisdom.
+Pierwszego wieczoru Rev. Heng Sure zapytał: „Jaki jest nasz potencjał?” Nie ten definiowany przez społeczeństwo, lecz ten wynikający z naszej wrodzonej natury współczucia i mądrości.
 
-From there, the retreat unfolded along the arc of _me, we, and us_. The questions at the heart of the retreat were simple yet penetrating:
+Stamtąd rekolekcje rozwijały się wzdłuż łuku *ja, my i nas*. Pytania będące ich sercem były proste, a zarazem przenikliwe:
 
--   _What perplexes you about the world today?_
-    
--   _Where are the acupuncture points for regenerative compassion?_
-    
+-   _Co wprawia cię dziś w zakłopotanie w świecie?_
 
-These questions turned us toward the places we often avoid—the knots of confusion and uncertainty—and invited us to linger there together.  
+-   _Gdzie znajdują się punkty akupunktury dla regenerującego współczucia?_
 
-### **The “Me” of Compassion**
+Te pytania skierowały nas ku miejscom, których często unikamy — ku węzłom zamieszania i niepewności — i zaprosiły nas, byśmy trwali tam razem.
 
-Richie Davidson, a pioneer in neuroscience and mindfulness, reminded us that compassion is not foreign to us. It is in our wiring. He shared research showing how infants instinctively gravitate toward kindness. Cynthia followed with an embodied _qigong_ practice, helping us sense how our well-being flows through our own energy field and into those around us. Compassion begins as something intimate and bodily that connects with those around us.
+### **„Ja” współczucia**
+
+Richie Davidson, pionier neuronauki i uważności, przypomniał nam, że współczucie nie jest nam obce. Jest wpisane w nasze „okablowanie”. Podzielił się badaniami pokazującymi, jak niemowlęta instynktownie skłaniają się ku życzliwości. Następnie Cynthia poprowadziła ucieleśnioną praktykę *qigong*, pomagając nam odczuć, jak nasze dobrostan przepływa przez nasze własne pole energii i do tych, którzy są wokół nas. Współczucie zaczyna się jako coś intymnego i cielesnego, co łączy nas z innymi.
 
 ![](https://images.squarespace-cdn.com/content/v1/638101f1bfb9485af6a60b8f/ada73b62-0f83-445f-9860-d20f441b88fb/Screenshot+2025-09-23+at+10.21.16%E2%80%AFAM.png)
 
-### **The “We” of Connection**
+### **„My” połączenia**
 
-Vanessa Andreotti widened the frame, pointing out how much of our modern world rests on separation: the language of subject and object, the habit of putting ourselves or others on pedestals only to look down from them. That model is dying, she said, because endless growth and exploitation are no longer sustainable. What is needed now is a shift toward subject–subject relations: wholeness meeting wholeness, life meeting life.
+Vanessa Andreotti poszerzyła perspektywę, wskazując, jak bardzo nasz współczesny świat opiera się na separacji: języku podmiotu i przedmiotu, nawyku stawiania siebie lub innych na piedestale tylko po to, by potem patrzeć z niego w dół. Ten model umiera — powiedziała — ponieważ nieograniczony wzrost i eksploatacja nie są już możliwe do utrzymania. Potrzebna jest teraz zmiana w kierunku relacji podmiot–podmiot: całość spotykająca całość, życie spotykające życie.
 
-After her words, Rabbi Ariel Berger sang from his tradition. A melody of grief, repeated until it turned, almost imperceptibly, into joy. It was not a concept but a _frequency_: grief held until it transformed. That evening closed with a silent dinner, where serving and being served dissolved into one community, one body, one shared act of reverence.
+Po jej słowach rabin Ariel Berger zaśpiewał z własnej tradycji. Melodia żałoby, powtarzana, aż niemal niezauważalnie przekształciła się w radość. Nie była to koncepcja, lecz *częstotliwość*: żałoba podtrzymywana aż do przemiany. Wieczór zakończył się cichą kolacją, podczas której służenie i bycie obsługiwanym stopiły się w jedną wspólnotę, jedno ciało, jeden wspólny akt czci.
 
 ![](https://images.squarespace-cdn.com/content/v1/638101f1bfb9485af6a60b8f/e85bfc8b-f415-48cd-81d9-69afff88cdbb/DSCF5511.jpg)
 
-### **The “Us” of Belonging**
+### **„Nas” przynależności**
 
-As the retreat deepened, the circle widened. Community night at Camp Harmon brought together 200 people in music, skits, and stories. Three snapshots: Brian Conroy opening the night with us all connecting like redwood trees; Rebecca Henderson sharing how her late husband taught her what it meant to be truly in service; the performance of _Sweep Clean_, a song born from learning from a street sweeper in India. Wisdom is everywhere, if we are willing to see it.
+W miarę jak rekolekcje się pogłębiały, krąg się poszerzał. Wieczór wspólnotowy w Camp Harmon zgromadził 200 osób wokół muzyki, scenek i opowieści. Trzy obrazy: Brian Conroy otwierający wieczór, gdy wszyscy łączyliśmy się jak drzewa sekwoi; Rebecca Henderson dzieląca się tym, jak jej zmarły mąż nauczył ją, co to znaczy naprawdę służyć; wykonanie *Sweep Clean*, pieśni zrodzonej z nauki od ulicznego zamiatacza w Indiach. Mądrość jest wszędzie, jeśli tylko jesteśmy gotowi ją dostrzec.
 
 ![](https://images.squarespace-cdn.com/content/v1/638101f1bfb9485af6a60b8f/71575398-d7be-4d46-bc59-7182957bf7b7/2025-09-06+Evening+of+Stories+Along+Bodhisattva+Path-9.jpg)
 
-Brian Conroy encouraging us all to connect like the redwoods.
+Brian Conroy zachęcający nas wszystkich do łączenia się jak sekwoje.
 
-The closing ritual of Three Steps and a Bow grounded the retreat in humility. With every three steps, we bowed to the earth, to ancestors, to visible and invisible kin. We remembered that “us” is not only this circle of participants, but also past and future generations, the redwoods around us, the living ecosystems that sustain us.
+Zamykający rytuał Trzech Kroków i Ukłonu ugruntował rekolekcje w pokorze. Po każdych trzech krokach kłanialiśmy się ziemi, przodkom oraz widzialnym i niewidzialnym krewnym. Przypomnieliśmy sobie, że „my” to nie tylko ten krąg uczestników, lecz także przeszłe i przyszłe pokolenia, sekwoje wokół nas oraz żywe ekosystemy, które nas podtrzymują.
 
-### **A Gathering of Noble Friends**
+### **Zgromadzenie Szlachetnych Przyjaciół**
 
-Looking back, the retreat was less an event than a gathering of noble friends. We listened deeply. We laughed together. We discovered resonance in the midst of difference. We asked for guidance from the redwoods. The work was not to fix the world, but to attend to it with presence, authenticity, and care.
+Patrząc wstecz, rekolekcje były mniej wydarzeniem, a bardziej zgromadzeniem szlachetnych przyjaciół. Słuchaliśmy głęboko. Śmialiśmy się razem. Odkrywaliśmy rezonans pośród różnic. Prosiliśmy sekwoje o wskazówki. Praca nie polegała na naprawianiu świata, lecz na troszczeniu się o niego z obecnością, autentycznością i uważnością.
 
-How the ripples of this retreat will move outward is unknown. Already, conversations are opening about future gatherings, collaborations on compassion and AI, and projects that bridge inner and outer transformation. Yet the real fruit may be quieter: a widening circle of awakened service, stretching toward infinity like the symbol that held our reflections—suffering giving rise to compassion, and compassion embracing suffering, without end.
+Jak fale tego spotkania będą się rozchodzić dalej — nie wiadomo. Już teraz otwierają się rozmowy o przyszłych spotkaniach, współpracy na styku współczucia i sztucznej inteligencji oraz o projektach łączących wewnętrzną i zewnętrzną transformację. A jednak prawdziwy owoc może być cichszy: poszerzający się krąg przebudzonej służby, rozciągający się ku nieskończoności jak symbol, który podtrzymywał nasze refleksje — cierpienie rodzące współczucie, a współczucie obejmujące cierpienie, bez końca.
 
 ![](https://images.squarespace-cdn.com/content/v1/638101f1bfb9485af6a60b8f/e9df0aa6-752e-4ad4-96ad-a73719c67115/Infinity+Cropped.jpg)
+

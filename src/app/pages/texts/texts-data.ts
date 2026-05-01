@@ -17,10 +17,9 @@ export const textsData: TextSummary[] = [
   {
     id: 'trainee-ceremony-search-for-purpose',
     author: 'Chin Zhi (Mingchee Tan)',
-    title: 'Trainee Ceremony: A Search for Purpose',
+    title: 'Ceremonia osób w treningu:  Poszukiwanie celu',
     excerpt:
-      'On March 1st, 2026, I stood in the middle of the hall surrounded by family, friends, and the larger Dharma community making vows to become a Trainee (Anagarika) under the guidance of the Sangha led by the Ven. Master Hsuan Hua with my Dharma Name Chin Zhi (親智).',
-    // href: '/teksty/trainee-ceremony-search-for-purpose',
+      '1 marca 2026 roku stałem pośrodku sali, otoczony przez rodzinę, przyjaciół i szerszą wspólnotę Dharmy, składając śluby, by zostać Trainee (Anagariką) pod przewodnictwem Sanghi prowadzonej przez Czcigodnego Mistrza Hsuan Hua, przyjmując imię Dharmy Chin Zhi (親智).',
     date: '1 marca 2026',
     time: '13:00',
     thumbnail:
@@ -75,9 +74,9 @@ export const textsData: TextSummary[] = [
   {
     id: 'welcoming-Ajahn-Chahs-relics',
     author: '',
-    title: 'Welcoming Ajahn Chah’s Relics',
+    title: 'Powitanie relikwii Ajahna Chah',
     excerpt:
-      'The story began during the 90th birthday celebration of Ajahn Sumedho. During the gathering, Joseph Cappel (formerly Ajahn Pabhakaro), who once served as Ajahn Chah’s attendant, offered relic hairs of Ajahn Chah to the monastics present. Among those receiving relics was Venerable Issaro. When they came into his hands, a thought arose immediately in his heart: these should go to Redwood Vihara.',
+      'Historia zaczęła się podczas obchodów 90. urodzin Ajahna Sumedho. W trakcie zgromadzenia Joseph Cappel (dawniej Ajahn Pabhakaro), który niegdyś służył jako osobisty pomocnik Ajahna Chah, ofiarował obecnym mnichom relikwie włosów Ajahna Chah. Wśród tych, którzy je otrzymali, był Czcigodny Issaro. Gdy znalazły się w jego rękach, natychmiast pojawiła się w jego sercu myśl: powinny trafić do Redwood Vihara.',
     date: '4 września 2024',
     time: '',
     thumbnail:
