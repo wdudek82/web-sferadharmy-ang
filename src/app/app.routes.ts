@@ -7,7 +7,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { TextsComponent } from './pages/texts/texts.component';
 
 export const routes: Routes = [
-  { path: '', component: HomeComponent },
+  { path: '', component: AboutComponent },
   { path: 'o-nas', component: AboutComponent },
   { path: 'wydarzenia', component: EventsComponent },
   { path: 'teksty/:id', component: ArticleComponent },
