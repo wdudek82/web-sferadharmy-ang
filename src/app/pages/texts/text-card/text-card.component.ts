@@ -1,7 +1,7 @@
 import { AfterViewInit, Component, ElementRef, Input, OnDestroy, signal } from '@angular/core';
 import { NgOptimizedImage, SlicePipe } from '@angular/common';
 import { RouterLink } from '@angular/router';
-import { TextSummary } from '../texts-data';
+import { resolveTextHref, TextSummary } from '../texts-data';
 
 @Component({
   selector: 'app-text-card',
@@ -38,5 +38,9 @@ export class TextCardComponent implements AfterViewInit, OnDestroy {
 
   ngOnDestroy() {
     this.observer?.disconnect();
+  }
+
+  protected get href(): string {
+    return resolveTextHref(this.text);
   }
 }

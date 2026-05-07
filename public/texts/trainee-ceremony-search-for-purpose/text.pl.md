@@ -1,4 +1,4 @@
-﻿# Ceremonia osób w treningu:  Poszukiwanie celu
+# Ceremonia Trainee: Poszukiwanie celu
 
 autor: Chin Zhi (Mingchee Tan)
 
