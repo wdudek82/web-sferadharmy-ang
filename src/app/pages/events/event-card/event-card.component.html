@@ -1,0 +1,30 @@
+<article class="event-card" [class.is-visible]="isVisible()">
+  <a class="event-media" [routerLink]="href">
+    <img
+      [ngSrc]="event.thumbnail"
+      [alt]="event.title"
+      width="640"
+      height="420"
+      sizes="(max-width: 900px) 90vw, 33vw"
+    />
+  </a>
+  <div class="event-content">
+    <div class="event-meta">
+      <span>{{ event.date }}</span>
+      @if (event.time) {
+        <span aria-hidden="true">&middot;</span>
+      }
+      <span>{{ event.time }}</span>
+    </div>
+    <a class="event-title" [routerLink]="href">
+      <h3>{{ event.title }}</h3>
+    </a>
+    <p>
+      {{ event.excerpt | slice: 0 : 200 }}
+      @if (event.excerpt.length > 200) {
+        …
+      }
+    </p>
+    <a class="event-link" [routerLink]="href">Więcej</a>
+  </div>
+</article>

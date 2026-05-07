@@ -1,28 +1,11 @@
-<section class="section events">
+<section class="section">
   <div class="section-header">
     <h2>Wydarzenia</h2>
     <p>Spotkania na żywo i online. Zostawiamy przestrzeń na ciszę, pytania i wspólne bycie.</p>
   </div>
-  <div class="event-list">
-    <div class="event">
-      <div class="event-date">
-        <span>Środy</span>
-        <strong>19:00</strong>
-      </div>
-      <div class="event-info">
-        <h3>Wieczorna medytacja</h3>
-        <p>Regularna praktyka z krótkim wprowadzeniem i rozmową po spotkaniu.</p>
-      </div>
-    </div>
-    <div class="event">
-      <div class="event-date">
-        <span>Soboty</span>
-        <strong>10:00</strong>
-      </div>
-      <div class="event-info">
-        <h3>Krąg uważności</h3>
-        <p>Spotkanie wspólnoty, praca z oddechem i łagodne ćwiczenia uważności.</p>
-      </div>
-    </div>
+  <div class="event-grid">
+    @for (event of events; track event.id) {
+      <app-event-card [event]="event" />
+    }
   </div>
 </section>

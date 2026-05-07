@@ -4,17 +4,17 @@ import { ActivatedRoute, RouterLink } from '@angular/router';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { filter, map, switchMap, tap } from 'rxjs/operators';
 import { MarkdownModule } from 'ngx-markdown';
-import { ArticleService } from '../../services/article.service';
-import { resolveTextHref, textsData } from '../texts/texts-data';
+import { ArticleService } from '../../../services/article.service';
+import { eventsData, resolveEventHref } from '../event-data';
 
 @Component({
-  selector: 'app-article',
+  selector: 'app-event',
   standalone: true,
   imports: [MarkdownModule, RouterLink],
-  templateUrl: './article.component.html',
-  styleUrl: './article.component.scss',
+  templateUrl: './event.component.html',
+  styleUrl: './event.component.scss',
 })
-export class ArticleComponent {
+export class EventComponent {
   protected readonly content = signal('');
   protected readonly isLoading = signal(true);
   protected readonly notFound = signal(false);
@@ -38,13 +38,13 @@ export class ArticleComponent {
         map((params) => params.get('id')),
         filter((id): id is string => Boolean(id)),
         tap(() => {
-          if (isPlatformBrowser(this.platformId)) {
-            window.scrollTo({ top: 0, left: 0 });
-          }
+            if (isPlatformBrowser(this.platformId)) {
+                window.scrollTo({ top: 0, left: 0 });
+            }
         }),
         switchMap((id) => {
           this.updateNav(id);
-          return this.articleService.getArticle(id);
+          return this.articleService.getArticle(id, 'event-content');
         }),
       )
       .subscribe({
@@ -63,13 +63,13 @@ export class ArticleComponent {
   }
 
   private updateNav(id: string) {
-    const index = textsData.findIndex((text) => text.id === id);
-    const prev = index > 0 ? textsData[index - 1] : null;
-    const next = index >= 0 && index < textsData.length - 1 ? textsData[index + 1] : null;
+    const index = eventsData.findIndex((event) => event.id === id);
+    const prev = index > 0 ? eventsData[index - 1] : null;
+    const next = index >= 0 && index < eventsData.length - 1 ? eventsData[index + 1] : null;
 
-    this.prevLink.set(prev ? resolveTextHref(prev) : null);
+    this.prevLink.set(prev ? resolveEventHref(prev) : null);
     this.prevTitle.set(prev ? prev.title : null);
-    this.nextLink.set(next ? resolveTextHref(next) : null);
+    this.nextLink.set(next ? resolveEventHref(next) : null);
     this.nextTitle.set(next ? next.title : null);
   }
 

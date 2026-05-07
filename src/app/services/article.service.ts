@@ -6,11 +6,17 @@ import { map, Observable } from 'rxjs';
 export class ArticleService {
   private readonly http = inject(HttpClient);
 
-  getArticle(id: string): Observable<string> {
-    const basePath = `/texts/${id}/`;
+  getArticle(id: string, type: 'texts' | 'event-content' = 'texts'): Observable<string> {
+    const basePath = `/${type}/${id}/`;
     const url = `${basePath}text.md`;
 
     return this.http.get(url, { responseType: 'text' }).pipe(
+      map((content) => {
+        if (content.trim().startsWith('<!doctype html>') || content.trim().startsWith('<html')) {
+          throw new Error('Article not found');
+        }
+        return content;
+      }),
       map((markdown) => this.rewriteRelativeUrls(this.stripFrontmatter(markdown), basePath)),
     );
   }
