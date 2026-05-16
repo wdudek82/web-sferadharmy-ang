@@ -15,7 +15,7 @@ export function resolveTextHref(text: Pick<TextSummary, 'id' | 'href'>): string 
 
 export const textsData: TextSummary[] = [
   {
-    id: 'trainee-ceremony-search-for-purpose',
+    id: 'ceremonia-osób-w-treningu-poszukiwanie-celu',
     author: 'Chin Zhi (Mingchee Tan)',
     title: 'Ceremonia osób w treningu:  Poszukiwanie celu',
     excerpt:
@@ -26,53 +26,51 @@ export const textsData: TextSummary[] = [
       'https://images.squarespace-cdn.com/content/v1/638101f1bfb9485af6a60b8f/19bf2fbf-7699-4cce-9629-1d3f78a37e45/PHOTO-2026-03-01-21-10-24.jpg',
   },
   {
-    id: 'trainee-ceremony-finding-wholeness',
+    id: 'ceremonia-osób-w-treningu-odnajdywanie-pełni',
     author: 'Chin Jue (Wade Chang)',
-    title: 'Trainee Ceremony: Finding Wholeness',
+    title: 'Ceremonia osób w treningu: odnajdywanie pełni',
     excerpt:
-      'Being able to take this step into the Trainee Ceremony at Gold Coast Dharma Realm (GCDR) meant a great deal to me. This is where I began learning about Buddhism three years ago. It is where I met wise advisors who changed how I see the world, where I developed friendships deeper than I knew possible, and where my family expanded in ways I never expected. I have spent many hours volunteering here, attended more Dharma assemblies than I can count, and even lived in the monastery itself. GCDR is not just a place; it has become part of who I am. Looking back, I can trace the transformation from someone seeking peace in the outdoors to someone learning that the deepest wilderness to explore is within.',
+      'Możliwość wykonania tego kroku i przystąpienia do ceremonii Trainee w Gold Coast Dharma Realm (GCDR) miała dla mnie ogromne znaczenie. To tutaj trzy lata temu zacząłem poznawać buddyzm. To tutaj spotkałem mądrych doradców, którzy zmienili moje postrzeganie świata, tutaj nawiązałem głębsze przyjaźnie, niż kiedykolwiek uważałem za możliwe, i tutaj moja „rodzina” rozszerzyła się w sposób, którego nigdy się nie spodziewałem. Spędziłem tu wiele godzin jako wolontariusz, uczestniczyłem w niezliczonych zgromadzeniach Dharmy, a nawet mieszkałem w samym klasztorze. GCDR to nie tylko miejsce — stało się częścią mnie. Patrząc wstecz, widzę przemianę od kogoś, kto szukał spokoju na łonie natury, do kogoś, kto uczy się, że najgłębszą „dziczą” do odkrycia jest wnętrze.',
     date: '7 lutego 2026',
     time: '13:00',
     thumbnail:
       'https://images.squarespace-cdn.com/content/v1/638101f1bfb9485af6a60b8f/1770489264052-MKICFSJG5QFPC6ZL6TIG/IMG_7478+%281%29.jpg?format=2500w',
   },
   {
-    id: 'awakin-retreat-participant-reflections',
+    id: 'wybudzające-odosobnienie-refleksje-uczestniczki',
     author: '',
-    title: 'Awakin Retreat: Participant Reflections',
+    title: 'Wybudzające odosobnienie: refleksje uczestniczki',
     excerpt:
-      'I have attended many retreats hosted by the ServiceSpace ecosystem, mostly as a volunteer—except for one I joined as a participant in 2015. Each retreat follows its own path yet leads to the same destination, rooted in the spirit of “Practicing love and loving the practice.”\n' +
-      '\n' +
-      'The AwaKin retreat at Redwood Vihara was no different, yet it was unique in its own way. We gathered in the Monastery with Rev. Heng Sure as a host and Jin-Chuan Shi and Jin-Wei Shi as volunteer anchors. Most volunteers didn’t know each other beforehand—some were from the monastery and were doing the heavy lifting, others were from ServiceSpace USA, and a few of us flew in from India as part of the ServiceSpace India crew. The way all volunteers bonded and became one source of action was inspiring to witness and be part of. ',
+      'Jednym z najbardziej poruszających momentów rekolekcji AwaKin była cicha kolacja. Goście zgromadzili się w ciszy w kamiennym kręgu, podczas gdy mnisi i wolontariusze serwowali posiłek bez słów. Już od samego początku coś świętego wypełniało przestrzeń.',
     date: '9 listopada 2025',
     time: '',
     thumbnail:
       'https://images.squarespace-cdn.com/content/v1/638101f1bfb9485af6a60b8f/1762685659164-5Z0WIA5E9V7H2CBLMVBW/2025-09-06+Evening+of+Stories+Along+Bodhisattva+Path-55.jpg?format=2500w',
   },
   {
-    id: 'awakin-retreat-a-symphony-of-noble-friends',
+    id: 'wybudzające-odosobnienie-symfonia-szlachetnych-przyjaciół',
     author: '',
-    title: 'Awakin Retreat: A Symphony of Noble Friends',
+    title: 'Wybudzające odosobnienie: symfonia szlachetnych przyjaciół',
     excerpt:
-      'We began with a sacred invocation in a circle of stones surrounded by redwoods. Leaders, seekers, and servants from around the world sat shoulder to shoulder, and the invitation was simple: to listen, to serve, to discover what might emerge.',
+      'Richie Davidson, pionier neuronauki i uważności, przypomniał nam, że współczucie nie jest nam obce. Jest wpisane w nasze „okablowanie”. Podzielił się badaniami pokazującymi, jak niemowlęta instynktownie skłaniają się ku życzliwości. Następnie Cynthia poprowadziła ucieleśnioną praktykę *qigong*, pomagając nam odczuć, jak nasze dobrostan przepływa przez nasze własne pole energii i do tych, którzy są wokół nas. Współczucie zaczyna się jako coś intymnego i cielesnego, co łączy nas z innymi.',
     date: '23 września 2025',
     time: '',
     thumbnail:
       'https://images.squarespace-cdn.com/content/v1/638101f1bfb9485af6a60b8f/1758650036038-09GOZRUHHMTRME245Q4T/DSCF5125.jpg?format=2500w',
   },
   {
-    id: 'offering-to-the-buddhas-body-alms-round',
+    id: 'dar-składany-ciała-buddhy-jałmużna',
     author: '',
-    title: 'Offering to the Buddha’s Body: Alms Round',
+    title: 'Dar składany ciału Buddhy: jałmużna',
     excerpt:
-      'I vividly remember standing on the main street of Boulder Creek waiting for the monks to come by on alms round. Then, from a distance, I saw them: monks, walking in dignified silence. They came from two lineages—three in the ochre robes of the Thai Forest lineage, two in the yellow robes and dark brown precept sashes of the Dharma Realm Buddhist Association… I had a reflection: This was a scene from the Buddha’s own time. The Buddha himself walked like this on alms round. This is how the Sangha sustained itself over the millennia.',
+      'Wyraźnie pamiętam, jak stałem na głównej ulicy Boulder Creek, czekając, aż mnisi przejdą w rundzie jałmużny. Wtedy, z oddali, zobaczyłem ich: mnichów idących w godnej ciszy. Pochodzili z dwóch linii przekazu — trzech w ochrowych szatach tradycji Tajskiej Leśnej, dwóch w żółtych szatach i ciemnobrązowych pasach wskazań Stowarzyszenia Buddyjskiego Dharma Realm. Trzymali swoje misy jałmużne z czcią, krocząc uważnie, krok po kroku. Pojawiła się we mnie refleksja: *to była scena z czasów samego Buddy*. *Sam Budda chodził tak w rundzie jałmużny. W ten sposób Sangha utrzymywała się przez tysiąclecia.* Stało się dla mnie jasne, że gdy mnich przyjmuje pełne święcenia i zakłada szaty wskazań, staje się żywym ucieleśnieniem Buddy Śakjamuniego. Gdziekolwiek się pojawi — w jakimkolwiek kraju, w jakimkolwiek kontekście — jego obecność niesie żywy puls nauk Buddy.',
     date: '12 maja 2025',
     time: '',
     thumbnail:
       'https://images.squarespace-cdn.com/content/v1/638101f1bfb9485af6a60b8f/1747112315802-M0EQAO0TR2EM2BUH9AF6/IMG_1408.jpg?format=2500w',
   },
   {
-    id: 'welcoming-Ajahn-Chahs-relics',
+    id: 'powitanie-relikwii-ajahna-chah',
     author: '',
     title: 'Powitanie relikwii Ajahna Chah',
     excerpt:

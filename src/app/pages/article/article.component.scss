@@ -70,8 +70,8 @@
 }
 
 :host ::ng-deep markdown p {
-  margin: initial;
-  line-height: initial;
+  margin: 1rem 0;
+  line-height: 1.75;
 }
 
 :host ::ng-deep markdown ul,
