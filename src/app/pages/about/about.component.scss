@@ -1,14 +1,138 @@
-.cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1.8rem;
-}
-.section {
-  background: var(--section-bg);
+.about-nav {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--card-border);
+  flex-wrap: wrap;
+
+  a {
+    font-family: var(--font-display);
+    text-decoration: none;
+    font-weight: 500;
+    color: var(--body-muted);
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: var(--accent-highlight);
+    }
+  }
 }
 
-.about-text > p {
-  margin: 1rem 0;
-  line-height: 1.75;
+.about-section {
+  scroll-margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+
+.mistrz-hua-content {
+  .float-img {
+    &.left {
+      float: left;
+      margin: 0 2rem 1rem 0;
+    }
+    &.right {
+      float: right;
+      margin: 0 0 1rem 2rem;
+    }
+    width: 300px;
+    max-width: 100%;
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: var(--radius);
+    }
+  }
+
+  .video-container {
+    margin: 3rem auto 0;
+    position: relative;
+    padding-bottom: 39.375%; /* 70% of 56.25% (16:9) */
+    width: 70%;
+    overflow: hidden;
+    border-radius: var(--radius);
+    box-shadow: var(--card-shadow);
+
+    @media (max-width: 992px) {
+      width: 100%;
+      padding-bottom: 56.25%;
+    }
+
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .playlist-link {
+    margin-top: 1rem;
+    font-size: 0.9em;
+    color: var(--body-muted);
+  }
+}
+
+.community-section {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+
+  .paragraph-box {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+
+    @media (max-width: 992px) {
+      flex-direction: column;
+    }
+
+    .photo-box {
+      flex: 0 0 20%;
+      display: flex;
+      flex-direction: column;
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--card-shadow);
+
+      @media (max-width: 992px) {
+        width: 100%;
+        flex: none;
+      }
+
+      .photo {
+        height: 150px;
+        background-color: var(--surface-secondary);
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      .caption {
+        background-color: var(--heading-primary);
+        color: white;
+        padding: 0.5rem 1rem;
+        text-align: center;
+        font-size: 0.8rem;
+        font-family: var(--font-display);
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    .text-box {
+      flex: 1;
+    }
+  }
+}
+
+.mentorzy-header {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
 }
 
