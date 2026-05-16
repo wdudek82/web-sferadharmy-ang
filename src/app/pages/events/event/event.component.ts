@@ -93,7 +93,7 @@ export class EventComponent {
       if (lb && typeof lb.init === 'function') {
         lb.init();
       }
-    }, 0);
+    }, 200);
   }
 
   private convertTitledImagesToFigures() {

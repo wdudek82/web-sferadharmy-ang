@@ -34,15 +34,11 @@ export class AboutComponent implements AfterViewInit {
       this.prepareLightboxImages();
 
       // Trigger Lightbox to scan the new DOM elements
-      // First try to destroy if it exists to force a clean re-init
       const lb = (window as any).lightbox;
       if (lb && typeof lb.init === 'function') {
-        // Lightbox2 doesn't have a public destroy() but calling init()
-        // usually re-binds if things changed.
-        // However, we want to make sure it sees the new 'a' tags.
         lb.init();
       }
-    }, 100);
+    }, 200);
   }
 
   private prepareLightboxImages() {
@@ -59,12 +55,9 @@ export class AboutComponent implements AfterViewInit {
 
     const images = Array.from(mistrzHuaSection.querySelectorAll('img'));
     images.forEach((image) => {
-      // Check if image is already wrapped to avoid double wrapping
-      if (image.parentElement?.tagName === 'A' && image.parentElement.dataset['lightbox']) {
-        return;
-      }
       const lightboxTitle = image.alt || '';
-      const wrapperTarget = image;
+      const pictureParent = image.parentElement?.tagName === 'PICTURE' ? image.parentElement : null;
+      const wrapperTarget = pictureParent ?? image;
       const anchorParent = wrapperTarget.parentElement;
 
       if (anchorParent?.tagName === 'A') {

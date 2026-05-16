@@ -96,6 +96,22 @@
       width: 100%;
       height: auto;
       border-radius: var(--radius);
+      display: block;
+    }
+
+    .article-figure {
+      margin: 0;
+    }
+
+    figcaption {
+      font-size: 0.7em;
+      color: var(--body-muted);
+      margin-top: 0.6rem;
+      white-space: normal;
+      overflow-wrap: anywhere;
+      word-break: break-word;
+      hyphens: auto;
+      line-height: 1.4;
     }
   }
 
