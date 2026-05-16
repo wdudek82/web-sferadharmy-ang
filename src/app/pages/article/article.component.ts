@@ -87,6 +87,12 @@ export class ArticleComponent {
       this.lightboxInitPending = false;
       this.convertTitledImagesToFigures();
       this.prepareLightboxImages();
+
+      // Trigger Lightbox to scan the new DOM elements
+      const lb = (window as any).lightbox;
+      if (lb && typeof lb.init === 'function') {
+        lb.init();
+      }
     }, 0);
   }
 

@@ -22,10 +22,65 @@
 .about-section {
   scroll-margin-top: 2rem;
   margin-bottom: 4rem;
+
+  .section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+
+    h2, h3 {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin: 0;
+    }
+
+    .go-back {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 24px;
+      height: 24px;
+      color: var(--body-muted);
+      text-decoration: none;
+      transition: all 0.2s ease;
+      border-radius: 50%;
+      background-color: var(--surface-secondary);
+
+      &:hover {
+        color: var(--accent-highlight);
+        background-color: var(--surface-tertiary);
+        transform: translateY(-2px);
+      }
+
+      .icon-arrow-up {
+        width: 10px;
+        height: 10px;
+        border-top: 2px solid currentColor;
+        border-right: 2px solid currentColor;
+        transform: rotate(-45deg);
+        margin-top: 2px;
+      }
+
+      .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+      }
+    }
+  }
 }
 
 .mistrz-hua-content {
   .float-img {
+    cursor: zoom-in;
     &.left {
       float: left;
       margin: 0 2rem 1rem 0;
