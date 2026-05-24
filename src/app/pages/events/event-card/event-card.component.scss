@@ -73,11 +73,11 @@
 
 .event-hosts {
   margin: 0;
-  color: var(--body-muted);
+  color: var(--accent-highlight-strong);
   white-space: pre-line;
 }
 
-.event-content p {
+.event-content p:not(.event-hosts) {
   color: var(--body-muted);
 }
 

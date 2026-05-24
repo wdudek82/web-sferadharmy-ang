@@ -30,9 +30,9 @@ export const eventsData: EventSummary[] = [
     title: 'Dekonstruując Rzeczywistość: Fizyka kwantowa, czasoprzestrzeń i iluzja jaźni',
     hosts:
       'Prowadzą:\n' +
-      'prof. Bogdan Staszewski — University College Dublin\n' +
-      'dr inż. Tomasz Szczygielski — Karma Dechen Choling Center\n' +
-      'Rev. Heng Sure — Dharma Realm Buddhist University, California',
+      '- prof. Bogdan Staszewski — University College Dublin\n' +
+      '- dr inż. Tomasz Szczygielski — Karma Dechen Choling Center\n' +
+      '- Rev. Heng Sure — Dharma Realm Buddhist University, California',
     excerpt:
       'A co jeśli wszystko, co uważasz za rzeczywistość, jest jedynie konstruktem?\n' +
       'Wyobraź sobie, że wszystko, co myślisz o czasie, przestrzeni, świecie — a nawet o sobie samym — może być dalekie od rzeczywistości.',

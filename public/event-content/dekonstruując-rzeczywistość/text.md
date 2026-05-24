@@ -1,5 +1,4 @@
-# Dekonstruując Rzeczywistość
-## Fizyka kwantowa, czasoprzestrzeń i iluzja jaźni
+# Dekonstruując Rzeczywistość: Fizyka kwantowa, czasoprzestrzeń i iluzja jaźni
 
 ![](https://scontent-ham3-1.xx.fbcdn.net/v/t39.30808-6/704288363_1435193651743211_2537449132824782821_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=75d36f&_nc_ohc=TToh4vJnDHEQ7kNvwH0OIVu&_nc_oc=AdodDyqiG2gm3dVvJVPDG1bv2WxHoEqFr3eD8h09mLyfvZVRM5ayJ8SI1sBDtaa-pTA&_nc_zt=23&_nc_ht=scontent-ham3-1.xx&_nc_gid=omUMHQE6ThY0blqUGrbf4Q&_nc_ss=7b2a8&oh=00_Af5zAzFx_EdJP1x1Gz3BestYGWrmfH1pk_Xa8G-AqAO1gA&oe=6A18CDCC)
 
