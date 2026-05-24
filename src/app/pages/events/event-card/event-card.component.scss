@@ -71,6 +71,12 @@
   font-weight: 400;
 }
 
+.event-hosts {
+  margin: 0;
+  color: var(--body-muted);
+  white-space: pre-line;
+}
+
 .event-content p {
   color: var(--body-muted);
 }

@@ -19,6 +19,9 @@
     <a class="event-title" [routerLink]="href">
       <h3>{{ event.title }}</h3>
     </a>
+    @if (event.hosts) {
+      <p class="event-hosts">{{ event.hosts }}</p>
+    }
     <p>
       {{ event.excerpt | slice: 0 : 200 }}
       @if (event.excerpt.length > 200) {
