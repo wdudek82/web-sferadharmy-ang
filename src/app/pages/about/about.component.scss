@@ -19,6 +19,21 @@
   }
 }
 
+.float-img.centered {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto 2rem;
+  //width: 300px;
+  max-width: 100%;
+
+  img {
+    //width: 100%;
+    height: auto;
+    //border-radius: var(--radius);
+    display: block;
+  }
+}
+
 .about-section {
   scroll-margin-top: 2rem;
   margin-bottom: 4rem;
@@ -61,18 +76,6 @@
         border-right: 2px solid currentColor;
         transform: rotate(-45deg);
         margin-top: 2px;
-      }
-
-      .sr-only {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        padding: 0;
-        margin: -1px;
-        overflow: hidden;
-        clip: rect(0, 0, 0, 0);
-        white-space: nowrap;
-        border: 0;
       }
     }
   }
@@ -222,4 +225,3 @@
   margin-top: 4rem;
   margin-bottom: 2rem;
 }
-

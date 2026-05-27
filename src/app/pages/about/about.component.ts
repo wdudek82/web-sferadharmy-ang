@@ -1,5 +1,6 @@
 import { isPlatformBrowser } from '@angular/common';
 import { AfterViewInit, ChangeDetectionStrategy, Component, ElementRef, inject, PLATFORM_ID, ViewChild } from '@angular/core';
+import { LightboxService } from '../../services/lightbox.service';
 
 @Component({
   selector: 'app-about',
@@ -12,82 +13,31 @@ export class AboutComponent implements AfterViewInit {
   @ViewChild('aboutContent') private aboutContent?: ElementRef<HTMLElement>;
 
   private readonly platformId = inject(PLATFORM_ID);
+  private readonly lightboxService = inject(LightboxService);
   private lightboxInitPending = false;
 
   ngAfterViewInit(): void {
     this.queueLightboxInit();
   }
 
-  private queueLightboxInit() {
+  private queueLightboxInit(): void {
     if (!isPlatformBrowser(this.platformId)) {
       return;
     }
-
     if (this.lightboxInitPending) {
       return;
     }
 
     this.lightboxInitPending = true;
-    // Use a slightly longer delay to ensure DOM is fully ready and images are loaded
     window.setTimeout(() => {
       this.lightboxInitPending = false;
-      this.prepareLightboxImages();
-
-      // Trigger Lightbox to scan the new DOM elements
-      const lb = (window as any).lightbox;
-      if (lb && typeof lb.init === 'function') {
-        lb.init();
+      const host = this.aboutContent?.nativeElement;
+      if (host) {
+        this.lightboxService.scheduleLightboxInit(host, {
+          galleryName: 'mistrz-hua-gallery',
+          scopeSelector: '#mistrz-hua',
+        });
       }
     }, 200);
-  }
-
-  private prepareLightboxImages() {
-    const host = this.aboutContent?.nativeElement;
-    if (!host) {
-      return;
-    }
-
-    // Only target images in the "Mistrz Hua" section as per requirements
-    const mistrzHuaSection = host.querySelector('#mistrz-hua');
-    if (!mistrzHuaSection) {
-      return;
-    }
-
-    const images = Array.from(mistrzHuaSection.querySelectorAll('img'));
-    images.forEach((image) => {
-      const lightboxTitle = image.alt || '';
-      const pictureParent = image.parentElement?.tagName === 'PICTURE' ? image.parentElement : null;
-      const wrapperTarget = pictureParent ?? image;
-      const anchorParent = wrapperTarget.parentElement;
-
-      if (anchorParent?.tagName === 'A') {
-        const anchor = anchorParent as HTMLAnchorElement;
-        if (!anchor.dataset['lightbox']) {
-          anchor.dataset['lightbox'] = 'mistrz-hua-gallery';
-        }
-        if (lightboxTitle && !anchor.dataset['title']) {
-          anchor.dataset['title'] = lightboxTitle;
-        }
-        if (!anchor.getAttribute('href')) {
-          anchor.href = (image as any).currentSrc || image.src;
-        }
-        return;
-      }
-
-      const href = (image as any).currentSrc || image.src;
-      if (!href || !wrapperTarget.parentElement) {
-        return;
-      }
-
-      const anchor = document.createElement('a');
-      anchor.href = href;
-      anchor.dataset['lightbox'] = 'mistrz-hua-gallery';
-      if (lightboxTitle) {
-        anchor.dataset['title'] = lightboxTitle;
-      }
-
-      wrapperTarget.parentElement.insertBefore(anchor, wrapperTarget);
-      anchor.appendChild(wrapperTarget);
-    });
   }
 }

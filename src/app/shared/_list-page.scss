@@ -1,0 +1,11 @@
+.section {
+  background: var(--section-bg);
+}
+
+@mixin grid($class) {
+  .#{$class} {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.6rem;
+  }
+}

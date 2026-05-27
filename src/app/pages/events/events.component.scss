@@ -1,9 +1,3 @@
-.event-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1.6rem;
-}
+@use '../../shared/list-page' as list;
 
-.section {
-  background: var(--section-bg);
-}
+@include list.grid('event-grid');

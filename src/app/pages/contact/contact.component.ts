@@ -1,62 +1,27 @@
 import { isPlatformBrowser, NgIf } from '@angular/common';
-import { AfterViewInit, Component, Inject, PLATFORM_ID, signal } from '@angular/core';
+import { AfterViewInit, Component, inject, PLATFORM_ID, signal } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
-
-declare global {
-  interface Window {
-    hcaptcha?: {
-      render: (
-        container: HTMLElement,
-        options: {
-          sitekey: string;
-          callback?: (token: string) => void;
-          'expired-callback'?: () => void;
-        },
-      ) => number;
-      reset: (id?: number) => void;
-    };
-  }
-}
+import { HcaptchaService } from '../../services/hcaptcha.service';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [FormsModule, NgIf],
+  imports: [FormsModule],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss',
 })
 export class ContactComponent implements AfterViewInit {
+  private readonly platformId = inject(PLATFORM_ID);
+  protected readonly hcaptchaService = inject(HcaptchaService);
   protected readonly captchaEnabled = false;
-  private readonly hcaptchaSitekey = '50b2fe65-b00b-4b9e-ad62-3ba471098be2';
-  private hcaptchaWidgetId?: number;
-  private hcaptchaLoader?: Promise<void>;
-  protected readonly captchaToken = signal('');
-  protected isLocalhost = false;
   protected readonly isSubmitting = signal(false);
   protected readonly submitState = signal<'idle' | 'success' | 'error'>('idle');
-
-  constructor(@Inject(PLATFORM_ID) private platformId: object) {}
 
   ngAfterViewInit() {
     if (!isPlatformBrowser(this.platformId)) {
       return;
     }
-
-    if (!this.captchaEnabled) {
-      return;
-    }
-
-    const hostname = window.location.hostname;
-    this.isLocalhost = hostname === 'localhost' || hostname === '127.0.0.1';
-    if (this.isLocalhost) {
-      return;
-    }
-
-    this.ensureHcaptchaScript()
-      .then(() => this.renderHcaptcha())
-      .catch(() => {
-        // If the script fails, the submit handler will still block without a token.
-      });
+    this.hcaptchaService.init();
   }
 
   async onSubmit(form: NgForm, formEl: HTMLFormElement) {
@@ -69,7 +34,7 @@ export class ContactComponent implements AfterViewInit {
       return;
     }
 
-    if (this.captchaEnabled && !this.isLocalhost && !this.captchaToken()) {
+    if (this.captchaEnabled && !this.hcaptchaService.isLocalhost && !this.hcaptchaService.token()) {
       alert('Please fill out captcha field');
       return;
     }
@@ -94,67 +59,13 @@ export class ContactComponent implements AfterViewInit {
       form.resetForm();
       this.submitState.set('success');
 
-      if (this.captchaEnabled && !this.isLocalhost && window.hcaptcha && this.hcaptchaWidgetId !== undefined) {
-        window.hcaptcha.reset(this.hcaptchaWidgetId);
-        this.captchaToken.set('');
+      if (this.captchaEnabled && !this.hcaptchaService.isLocalhost) {
+        this.hcaptchaService.reset();
       }
     } catch (error) {
       this.submitState.set('error');
     } finally {
       this.isSubmitting.set(false);
     }
-  }
-
-  private ensureHcaptchaScript(): Promise<void> {
-    if (window.hcaptcha) {
-      return Promise.resolve();
-    }
-
-    if (this.hcaptchaLoader) {
-      return this.hcaptchaLoader;
-    }
-
-    this.hcaptchaLoader = new Promise((resolve, reject) => {
-      const scriptId = 'hcaptcha-script';
-      const existingScript = document.getElementById(scriptId) as HTMLScriptElement | null;
-
-      if (existingScript) {
-        existingScript.addEventListener('load', () => resolve(), { once: true });
-        existingScript.addEventListener(
-          'error',
-          () => reject(new Error('hCaptcha failed to load')),
-          { once: true },
-        );
-        return;
-      }
-
-      const script = document.createElement('script');
-      script.id = scriptId;
-      script.src = 'https://js.hcaptcha.com/1/api.js?render=explicit&hl=pl&recaptchacompat=off';
-      script.async = true;
-      script.defer = true;
-      script.onload = () => resolve();
-      script.onerror = () => reject(new Error('hCaptcha failed to load'));
-      document.body.appendChild(script);
-    });
-
-    return this.hcaptchaLoader;
-  }
-
-  private renderHcaptcha() {
-    if (!window.hcaptcha) {
-      return;
-    }
-
-    const container = document.getElementById('hcaptcha-container');
-    if (!container) {
-      return;
-    }
-
-    this.hcaptchaWidgetId = window.hcaptcha.render(container, {
-      sitekey: this.hcaptchaSitekey,
-      callback: (token) => this.captchaToken.set(token),
-      'expired-callback': () => this.captchaToken.set(''),
-    });
   }
 }

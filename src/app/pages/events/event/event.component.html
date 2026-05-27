@@ -17,9 +17,9 @@
       </nav>
     }
     @if (isLoading()) {
-      <p class="article-status">Wczytywanie wydarzenia…</p>
+      <p class="article-status">{{ loadingLabel }}</p>
     } @else if (notFound()) {
-      <p class="article-status">Nie znaleziono tego wydarzenia.</p>
+      <p class="article-status">{{ notFoundLabel }}</p>
     } @else {
       <div class="article-content" #articleContent>
         <markdown [data]="content()" />

@@ -14,9 +14,11 @@
       #formEl
       novalidate
     >
-      <div class="form-overlay" *ngIf="isSubmitting()">
-        <div class="spinner" role="status" aria-live="polite" aria-label="Wysyłanie"></div>
-      </div>
+      @if (isSubmitting()) {
+        <div class="form-overlay">
+          <div class="spinner" role="status" aria-live="polite" aria-label="Wysyłanie"></div>
+        </div>
+      }
       <input type="hidden" name="access_key" value="a9dd5175-ea60-401a-afc9-e459e50b2a68" />
       <label class="form-field" [class.invalid]="name.invalid && (name.touched || contactForm.submitted)">
         <span>Twoje imię</span>
@@ -28,9 +30,11 @@
           ngModel
           #name="ngModel"
         />
-        <small class="field-error" *ngIf="name.invalid && (name.touched || contactForm.submitted)">
-          Podaj imię.
-        </small>
+        @if (name.invalid && (name.touched || contactForm.submitted)) {
+          <small class="field-error">
+            Podaj imię.
+          </small>
+        }
       </label>
       <label class="form-field" [class.invalid]="email.invalid && (email.touched || contactForm.submitted)">
         <span>Email</span>
@@ -43,9 +47,11 @@
           ngModel
           #email="ngModel"
         />
-        <small class="field-error" *ngIf="email.invalid && (email.touched || contactForm.submitted)">
-          Podaj poprawny adres email.
-        </small>
+        @if (email.invalid && (email.touched || contactForm.submitted)) {
+          <small class="field-error">
+            Podaj poprawny adres email.
+          </small>
+        }
       </label>
       <label class="form-field" [class.invalid]="message.invalid && (message.touched || contactForm.submitted)">
         <span>Wiadomość</span>
@@ -57,24 +63,31 @@
           ngModel
           #message="ngModel"
         ></textarea>
-        <small class="field-error" *ngIf="message.invalid && (message.touched || contactForm.submitted)">
-          Napisz wiadomość.
-        </small>
+        @if (message.invalid && (message.touched || contactForm.submitted)) {
+          <small class="field-error">
+            Napisz wiadomość.
+          </small>
+        }
       </label>
-      <input
-        *ngIf="captchaEnabled && !isLocalhost"
-        type="hidden"
-        name="h-captcha-response"
-        [value]="captchaToken()"
-      />
-      <div *ngIf="captchaEnabled && !isLocalhost" id="hcaptcha-container" class="h-captcha"></div>
+      @if (captchaEnabled && !hcaptchaService.isLocalhost) {
+        <input
+          type="hidden"
+          name="h-captcha-response"
+          [value]="hcaptchaService.token()"
+        />
+        <div id="hcaptcha-container" class="h-captcha"></div>
+      }
       <button class="btn primary" type="submit" [disabled]="isSubmitting()">Wyślij</button>
-      <p class="form-success" *ngIf="submitState() === 'success'">
-        Dziękujemy! Twoja wiadomość została wysłana.
-      </p>
-      <p class="form-error" *ngIf="submitState() === 'error'">
-        Nie udało się wysłać formularza. Spróbuj ponownie.
-      </p>
+      @if (submitState() === 'success') {
+        <p class="form-success">
+          Dziękujemy! Twoja wiadomość została wysłana.
+        </p>
+      }
+      @if (submitState() === 'error') {
+        <p class="form-error">
+          Nie udało się wysłać formularza. Spróbuj ponownie.
+        </p>
+      }
     </form>
     <div class="contact-panel">
       <h3>StrefaDharmy</h3>

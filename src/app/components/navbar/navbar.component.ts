@@ -4,7 +4,7 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
 import { environment } from '../../../environments/environment';
 
 type ThemeOption = {
-  id: 'sunset' | 'redwood' | 'forest' | 'classic-neutral' | 'dreamy-pastel';
+  id: 'sunset' | 'redwood' | 'forest' | 'classic-neutral' | 'dreamy-pastel' | 'midori';
   label: string;
 };
 
@@ -22,6 +22,7 @@ export class NavbarComponent {
     { id: 'forest', label: 'Forest' },
     { id: 'classic-neutral', label: 'Classic Neutral' },
     { id: 'dreamy-pastel', label: 'Dreamy Pastel' },
+    { id: 'midori', label: 'Midori' },
   ];
 
   protected readonly menuOpen = signal(false);

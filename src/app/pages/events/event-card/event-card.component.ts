@@ -1,6 +1,7 @@
-import { AfterViewInit, Component, ElementRef, Input, OnDestroy, signal } from '@angular/core';
+import { Component, ElementRef, Input } from '@angular/core';
 import { NgOptimizedImage, SlicePipe } from '@angular/common';
 import { RouterLink } from '@angular/router';
+import { CardBaseComponent } from '../../../shared/card-base';
 import { resolveEventHref, EventSummary } from '../event-data';
 
 @Component({
@@ -10,34 +11,11 @@ import { resolveEventHref, EventSummary } from '../event-data';
   templateUrl: './event-card.component.html',
   styleUrl: './event-card.component.scss',
 })
-export class EventCardComponent implements AfterViewInit, OnDestroy {
+export class EventCardComponent extends CardBaseComponent {
   @Input({ required: true }) event!: EventSummary;
-  protected readonly isVisible = signal(false);
-  private observer?: IntersectionObserver;
 
-  constructor(private host: ElementRef<HTMLElement>) {}
-
-  ngAfterViewInit() {
-    if (typeof IntersectionObserver === 'undefined') {
-      this.isVisible.set(true);
-      return;
-    }
-
-    this.observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          this.isVisible.set(true);
-          this.observer?.disconnect();
-        }
-      },
-      { threshold: 0.2 },
-    );
-
-    this.observer.observe(this.host.nativeElement);
-  }
-
-  ngOnDestroy() {
-    this.observer?.disconnect();
+  constructor(hostRef: ElementRef<HTMLElement>) {
+    super(hostRef);
   }
 
   protected get href(): string {

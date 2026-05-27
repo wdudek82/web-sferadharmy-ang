@@ -2,11 +2,13 @@ import { Injectable, inject } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { map, Observable } from 'rxjs';
 
+export type ContentFolder = 'texts' | 'event-content';
+
 @Injectable({ providedIn: 'root' })
 export class ArticleService {
   private readonly http = inject(HttpClient);
 
-  getArticle(id: string, type: 'texts' | 'event-content' = 'texts'): Observable<string> {
+  getArticle(id: string, type: ContentFolder = 'texts'): Observable<string> {
     const basePath = `/${type}/${id}/`;
     const url = `${basePath}text.md`;
 
