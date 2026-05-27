@@ -37,9 +37,9 @@ export const textsData: TextSummary[] = [
       'https://images.squarespace-cdn.com/content/v1/638101f1bfb9485af6a60b8f/1770489264052-MKICFSJG5QFPC6ZL6TIG/IMG_7478+%281%29.jpg?format=2500w',
   },
   {
-    id: 'wybudzające-odosobnienie-refleksje-uczestniczki',
+    id: 'odosobnienie-awakin-refleksje-uczestniczki',
     author: '',
-    title: 'Wybudzające odosobnienie: refleksje uczestniczki',
+    title: 'Odosobnienie Awakin: refleksje uczestniczki',
     excerpt:
       'Jednym z najbardziej poruszających momentów rekolekcji AwaKin była cicha kolacja. Goście zgromadzili się w ciszy w kamiennym kręgu, podczas gdy mnisi i wolontariusze serwowali posiłek bez słów. Już od samego początku coś świętego wypełniało przestrzeń.',
     date: '9 listopada 2025',
@@ -48,9 +48,9 @@ export const textsData: TextSummary[] = [
       'https://images.squarespace-cdn.com/content/v1/638101f1bfb9485af6a60b8f/1762685659164-5Z0WIA5E9V7H2CBLMVBW/2025-09-06+Evening+of+Stories+Along+Bodhisattva+Path-55.jpg?format=2500w',
   },
   {
-    id: 'wybudzające-odosobnienie-symfonia-szlachetnych-przyjaciół',
+    id: 'odosobnienie-awakin-symfonia-szlachetnych-przyjaciół',
     author: '',
-    title: 'Wybudzające odosobnienie: symfonia szlachetnych przyjaciół',
+    title: 'Odosobnienie Awakin: symfonia szlachetnych przyjaciół',
     excerpt:
       'Richie Davidson, pionier neuronauki i uważności, przypomniał nam, że współczucie nie jest nam obce. Jest wpisane w nasze „okablowanie”. Podzielił się badaniami pokazującymi, jak niemowlęta instynktownie skłaniają się ku życzliwości. Następnie Cynthia poprowadziła ucieleśnioną praktykę *qigong*, pomagając nam odczuć, jak nasze dobrostan przepływa przez nasze własne pole energii i do tych, którzy są wokół nas. Współczucie zaczyna się jako coś intymnego i cielesnego, co łączy nas z innymi.',
     date: '23 września 2025',
