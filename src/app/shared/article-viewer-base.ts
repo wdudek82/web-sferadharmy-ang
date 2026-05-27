@@ -1,5 +1,5 @@
 import { isPlatformBrowser } from '@angular/common';
-import { DestroyRef, Directive, ElementRef, PLATFORM_ID, ViewChild, inject, signal } from '@angular/core';
+import { DestroyRef, Directive, ElementRef, OnInit, PLATFORM_ID, ViewChild, inject, signal } from '@angular/core';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { ActivatedRoute } from '@angular/router';
 import { filter, map, switchMap, tap } from 'rxjs/operators';
@@ -15,7 +15,7 @@ import { LightboxService } from '../services/lightbox.service';
  *   - Bindings for `loadingLabel`, `notFoundLabel`, and all public signals
  */
 @Directive()
-export abstract class ArticleViewerBase {
+export abstract class ArticleViewerBase implements OnInit {
   protected readonly content = signal('');
   protected readonly isLoading = signal(true);
   protected readonly notFound = signal(false);
@@ -50,9 +50,9 @@ export abstract class ArticleViewerBase {
   /** Shown when the article is not found. */
   protected abstract get notFoundLabel(): string;
 
-  // -- constructor pipeline ----------------------------------------------------------
+  // -- ngOnInit pipeline ----------------------------------------------------------
 
-  constructor() {
+  ngOnInit(): void {
     this.route.paramMap
       .pipe(
         takeUntilDestroyed(this.destroyRef),
