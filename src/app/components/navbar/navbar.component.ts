@@ -2,9 +2,10 @@ import { isPlatformBrowser } from '@angular/common';
 import { Component, HostListener, Inject, PLATFORM_ID, signal } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import { environment } from '../../../environments/environment';
+import type { ThemeId } from '../../../environments/environment.interface';
 
 type ThemeOption = {
-  id: 'sunset' | 'redwood' | 'forest' | 'classic-neutral' | 'dreamy-pastel' | 'midori';
+  id: ThemeId;
   label: string;
 };
 
@@ -27,7 +28,7 @@ export class NavbarComponent {
 
   protected readonly menuOpen = signal(false);
   protected readonly themeMenuOpen = signal(false);
-  protected readonly currentTheme = signal<ThemeOption>(this.themes[1]);
+  protected readonly currentTheme = signal<ThemeOption>(this.resolveDefaultTheme());
   protected readonly themeSelectorEnabled = environment.themeSelectorEnabled;
 
   constructor(@Inject(PLATFORM_ID) private platformId: object) {
@@ -36,9 +37,16 @@ export class NavbarComponent {
       const initial =
         this.themes.find((theme) => theme.id === saved) ??
         this.themes.find((theme) => theme.id === document.documentElement.dataset['theme']) ??
-        this.themes[1];
+        this.resolveDefaultTheme();
       this.setTheme(initial);
     }
+  }
+
+  /** Resolves the default theme from the environment config, falling back to the first theme. */
+  private resolveDefaultTheme(): ThemeOption {
+    const configured =
+      this.themes.find((theme) => theme.id === environment.defaultTheme);
+    return configured ?? this.themes[0];
   }
 
   toggleMenu() {
