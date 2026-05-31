@@ -19,17 +19,30 @@
   }
 }
 
-.float-img.centered {
-  display: flex;
-  justify-content: center;
-  margin: 0 auto 2rem;
-  //width: 300px;
-  max-width: 100%;
+.about-section {
+  &.about-section--with-bg {
+    position: relative;
+    background-image: url('/images/Ripple-Effect-of-Kindness.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: var(--radius);
+    padding: 2rem;
+    isolation: isolate;
 
-  img {
-    max-width: 100%;
-    height: auto;
-    display: block;
+    &::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(255, 255, 255, 0.75);
+      border-radius: var(--radius);
+      z-index: 0;
+    }
+
+    > * {
+      position: relative;
+      z-index: 1;
+    }
   }
 }
 
