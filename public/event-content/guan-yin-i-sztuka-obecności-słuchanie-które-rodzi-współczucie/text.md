@@ -1,6 +1,6 @@
 # Guan Yin i sztuka obecności: Słuchanie, które rodzi współczucie
 
-![](https://scontent-ham3-1.xx.fbcdn.net/v/t39.30808-6/702990775_1435185031744073_2774750475536701450_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=75d36f&_nc_ohc=XlHfJHbe8HAQ7kNvwE5Yhsa&_nc_oc=Adpe5oWMxJqghu3pSYwcEV70JYs1W3mxY-guPqIqoHK6dWL7NUsR3QaRpD_vVHirCSg&_nc_zt=23&_nc_ht=scontent-ham3-1.xx&_nc_gid=yBz-FUrHWJbJu3ae_kaz7A&_nc_ss=7b2a8&oh=00_Af48xp3DvV37ujc1c_M9w1pCV-RYvsFA5EIBSd8ys-YXEQ&oe=6A18D212)
+![](images/events/guan-yin-i-sztuka-obecności-słuchanie-które-rodzi-współczucie.jpeg)
 
 W świecie pełnym hałasu, napięć i podziałów coraz częściej pojawia się pytanie: czy naprawdę potrafimy być obecni – dla siebie, dla innych, dla świata wokół nas?
 
