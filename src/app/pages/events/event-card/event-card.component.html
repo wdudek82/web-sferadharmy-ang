@@ -10,6 +10,10 @@
   </a>
   <div class="event-content">
     <div class="event-meta">
+      <span>{{ event.location }}</span>
+      @if (event.location) {
+        <span aria-hidden="true">&middot;</span>
+      }
       <span>{{ event.date }}</span>
       @if (event.time) {
         <span aria-hidden="true">&middot;</span>
