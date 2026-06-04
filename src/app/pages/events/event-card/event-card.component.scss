@@ -2,6 +2,18 @@
 
 @include card.card-layout('event');
 
+.event-card {
+  background: transparent;
+}
+
+.event-media {
+  background: var(--card-bg);
+}
+
+.event-content {
+  background: rgba(255, 255, 255, 0.80);
+}
+
 .event-hosts {
   margin: 0;
   color: var(--accent-highlight-strong);
