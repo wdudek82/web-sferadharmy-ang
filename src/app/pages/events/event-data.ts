@@ -39,4 +39,14 @@ export const eventsData: EventSummary[] = [
     time: '16:00-18:00',
     thumbnail: 'images/events/dekonstruując-rzeczywistość.jpeg',
   },
+  {
+    id: 'jak-odnaleźć-odwagę-by-usłyszeć-siebie',
+    title: 'Jak znaleźć odwagę, by usłyszeć siebie? Spotkanie z dwoma buddyjskimi mnichami',
+    // hosts: 'Prowadzą: Rev. Heng Sure i Ven. Jin-Wei',
+    excerpt:
+      'Spotkanie poświęcone będzie refleksji nad uważnością, ciszą, wewnętrzną równowagą oraz poszukiwaniem autentycznego kontaktu z samym sobą we współczesnym świecie.',
+    date: '9 czerwca (wtorek)',
+    time: 'start 18:00',
+    thumbnail: 'images/events/jak-dodnaleźć-odwagę-by-usłyszeć-siebie.jpg',
+  },
 ];
